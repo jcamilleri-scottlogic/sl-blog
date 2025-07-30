@@ -14,6 +14,8 @@ summary: When it comes to legacy modernisation projects, there’s a kind of rew
   inevitable part of their investment. In this blog post, I look at some of the main
   cultural, team and human challenges that arise on legacy modernisation projects,
   and how they can be tackled.
+author: taddison
+image: "/uploads/Tim-Addision---Cultural-Rework-blog.jpg"
 ---
 
 No organisation would intend to invest in rework as part of a software development project, beyond allowing for a contingency. No team would be tasked to get things intentionally wrong first, and then spend time and money trying to get things right. Instead, an effort would be made to set up the delivery side of the project as well as possible to allow the software engineers to release a quality product on time and on budget.
