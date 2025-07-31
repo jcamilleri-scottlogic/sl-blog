@@ -25,7 +25,7 @@ What works for different teams, team sizes, and contexts will vary. You’ll nee
 ## Desirable characteristics
 Regardless of which channels you have specifically or how they’re used, there are a couple of outcomes you’ll want and others to avoid (essentially the opposite of the former). Some will depend on your context and your team’s preferences.
 
-**Signal to noise.** Nobody should have to scan through lots of irrelevant messages to find what they want, or just in case they miss something important in the middle of it. We can divide channels with consideration to areas of interest and people, and can use threaded conversation for deeper specific conversations. We’re thoughtful about which bots install, how we configure them, and which channels they participate in.
+**Signal to noise.** Nobody should have to scan through lots of irrelevant messages to find what they want, or just in case they miss something important in the middle of it. We can divide channels with consideration to areas of interest and people, and can use threads for deep conversations. We’re thoughtful about which bots we install, how we configure them, and which channels they participate in.
 
 **Focused work and concentration.** We should be able to focus on deep work, without needing to constantly keep up with streams of messages and notifications. Not everything is urgent/important needing immediate reading or replying. We can separate channels so different people/roles can decide and configure what’s brought to their attention, and what can be caught up with once or twice daily (or rarely, or not at all).
 
