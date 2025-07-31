@@ -49,7 +49,7 @@ Both types of motivation have their place — but when it comes to long-term eng
 
 Because intrinsic motivation isn’t just a “nice to have” — it’s a [predictor of psychological well-being](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A572708&dswid=-439), productivity, performance, and [learning](https://journals.physiology.org/doi/full/10.1152/advan.00072.2016).
 
-Lower intrinsic motivation has been linked to higher rates of depression, while higher levels are associated with greater effort and better outcomes. So yes, offering external motivators like career progression, praise, and fair compensation still matters — but getting the balance right between *intrinsic* and *extrinsic* motivation is key to building happy, high-performing teams.
+Lower intrinsic motivation has been linked to higher rates of depression, while higher levels are associated with greater effort and better outcomes. So yes, offering external motivators like career progression, praise, and fair compensation still matters — but getting the balance right between  *intrinsic*  and *extrinsic* motivation is key to building happy, high-performing teams.
 
 ## AI’s influence on intrinsic motivation
 
