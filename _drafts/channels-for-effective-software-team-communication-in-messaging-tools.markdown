@@ -51,7 +51,7 @@ These are some channels I remember being commonplace or useful over many project
 
 **Team\[1…N\].** General channel for each small team. Sometimes private, or teams may opt to have a separate private one just for when it’s needed.
 
-**Team\[1…N\] front door.** Contact point for each team, for things that don’t need any specific person – e.g. questions, requests for help. Such a channel gets queries answered quicker, and distributes the workload to avoid it naturally concentrating as direct messages to some specific people like the tech lead.
+**Team\[1…N\] front door.** Contact point for each team, for things that don’t need any specific person – e.g. questions, requests for help. Such a channel gets queries answered quicker, and distributes the workload to avoid it concentrating as direct messages to specific go-to individuals on the team.
 
 **Team / all pull requests.** Some teams choose to post PRs in a channel to request review, in preference to using their repository platform’s own visibility and notification features. Posting may be automated by a bot integrated with the repository.
 
