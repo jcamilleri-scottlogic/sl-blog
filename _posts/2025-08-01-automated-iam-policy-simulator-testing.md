@@ -2,12 +2,13 @@
 title: Automated permissions testing with AWS IAM Policy Simulator
 date: 2025-08-01 00:00:00 Z
 categories:
-  - Cloud
+- Cloud
 tags:
-  - AWS
-  - Testing
+- AWS
+- Testing
 author: tyates
-summary: A quick guide to implementing a test framework for IAM permissions using the AWS IAM Policy Simulator API and a tiny hack.
+summary: A quick guide to implementing a test framework for IAM permissions using
+  the AWS IAM Policy Simulator API and a tiny hack.
 image: tyates/assets/policysim.png
 ---
 
