@@ -1,6 +1,6 @@
 ---
 title: Automated permissions testing with AWS IAM Policy Simulator
-date: 2025-07-10 00:00:00 Z
+date: 2025-08-01 00:00:00 Z
 categories:
   - Cloud
 tags:
@@ -8,7 +8,6 @@ tags:
   - Testing
 author: tyates
 summary: A quick guide to implementing a test framework for IAM permissions using the AWS IAM Policy Simulator API and a tiny hack.
-image: tyates/assets/awsiam.png
 ---
 
 On Scott Logic's DWP Analytics DataOps team, we're sharing a monorepo with another Scott Logic team, and exposing data in S3 for various other teams throughout DWP Analytics in both our and other AWS accounts. There are a lot of moving parts and permissions derived from shared Terraform modules, so we wanted a way to detect and highlight changes in our role and bucket policies (either deliberate or inadvertent) to ensure data access is allowed or denied correctly, and all permission sets are as least-privilege as possible.
