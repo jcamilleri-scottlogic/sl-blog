@@ -150,6 +150,7 @@ active-authors:
   - snandal
   - ssibanda
   - swoods
+  - taddison
   - tclarke-scottlogic
   - tgilbert
   - thands
@@ -945,6 +946,10 @@ authors:
   swilson:
     author-summary: "Senior Marketing Executive"
     name: "Scarlett Wilson"
+  taddison:
+    author-summary: "<p>I’m a Technical Principal based at Scott Logic’s Leeds office.</p>"
+    name: "Tim Addison"
+    picture: Tim-Addison.jpg
   tbaker:
     name: "Tom Baker"
   tbarclay:
