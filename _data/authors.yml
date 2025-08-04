@@ -134,6 +134,7 @@ active-authors:
   - rwilliams
   - rwillis
   - sanastasov
+  - sashford
   - sbaker
   - sbreingan
   - sburnstone
@@ -871,6 +872,10 @@ authors:
     name: "Svetoslav Anastasov"
     email: "sanastasov@scottlogic.com"
     author-summary: "Senior Test Engineer based in Bristol with 7+ years of experience. I have a keen interest in automation and technical areas of testing."
+    picture: picture.jpg
+  sashford:
+    name: "Seonaid Ashford"
+    author-summary: "Senior Business Analyst with more than a passing interest in User Experience. Almost a decade of experience in both public and private sector."
     picture: picture.jpg
   sbulut:
     author-summary: "<p>Full-time learner and Test Engineer at Scott Logic</p>"
