@@ -3,6 +3,14 @@ title: Why you should rethink legacy and consider Event-Driven Architecture
 date: 2025-08-06 10:07:00 Z
 categories:
 - Tech
+tags:
+- legacy modernisation
+- legacy technology
+- event-driven architecture
+- EDA
+- co-existence strategies
+- hybrid architectures
+- Change Data Capture tools
 summary: In this post, I describe how your business can assess whether a system is
   ready for modernisation and, if so, how to set your project up for success. I then
   explain why, in most cases, you’ll probably want to take an incremental approach
@@ -65,7 +73,7 @@ This approach allows new behaviour to be introduced without altering the legacy 
 
 The welcome email example is something anyone can understand, but Event-Driven Architecture supports a wide range of use cases, from audit logging and real-time analytics to fraud detection and microservice orchestration.
 
-![Event-Driven-Architecture-diagram.png](/uploads/Event-Driven-Architecture-diagram.png)
+![Event-Driven-Architecture-diagram-01.png](/uploads/Event-Driven-Architecture-diagram-01.png)
 
 ### Benefits of Event-Driven Architecture
 
