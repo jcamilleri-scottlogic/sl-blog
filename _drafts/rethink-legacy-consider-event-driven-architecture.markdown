@@ -17,6 +17,7 @@ summary: In this post, I describe how your business can assess whether a system 
   rather than replacing the old system in one fell swoop. I end by providing an example
   of one of the ways your business can do this – by using Event-Driven Architecture.
 author: jmoore
+image: "/uploads/James-Moore-blog-w-quote.png"
 ---
 
 We should redefine what we mean by legacy technology. Legacy isn’t just about age. Fundamentally, it’s about whether a system is slowing your business down or reducing your responsiveness. Modernisation should not be automatic. Instead, it should be a strategic decision based on clear business value.
