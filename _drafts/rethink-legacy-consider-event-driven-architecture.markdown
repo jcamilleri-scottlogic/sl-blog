@@ -21,9 +21,9 @@ If the rationale for modernisation is simply to move to a new tech stack, that�
 
 Even if a system is written in an outdated language on an old platform, that alone isn’t a reason to replace it. If the system only fails occasionally and can be fixed at a known cost (e.g. by hiring a specialist once a year to run maintenance on it), that may be far cheaper than investing in a full rewrite of the code.
 
-As my colleague Oliver Cronk recommends in this post, legacy modernisation should be an ongoing strategic capability rather than a one-off project. Taking this approach, you can assess a given legacy system at regular intervals—say, every six or twelve months—to see whether it’s starting to become a hindrance. Until the result of that assessment is in the affirmative, you can leave the system alone.
+As my colleague Oliver Cronk recommends in this post, [legacy modernisation should be an ongoing strategic capability](https://blog.scottlogic.com/2025/07/22/legacy-systems-beyond-the-modernisation-hype.html) rather than a one-off project. Taking this approach, you can assess a given legacy system at regular intervals—say, every six or twelve months—to see whether it’s starting to become a hindrance. Until the result of that assessment is in the affirmative, you can leave the system alone.
 
-When you’re considering whether your business needs to modernise a legacy system, the fundamental question you need to ask yourself is, “What value will the modernisation bring to our organisation?” If the answer to that question includes benefits like improving productivity or scalability, or the ability to add new features and integrate with modern systems, then you probably should modernise.
+When you’re considering whether your business needs to modernise a legacy system, the fundamental question you need to ask yourself is, “What value will the modernisation bring to our organisation?” If the answer to that question includes benefits like improving productivity or scalability, or the ability to add new features and integrate with modern systems, then you probably *should* modernise.
 
 At which point, it’s important to set things up for success.
 
