@@ -65,7 +65,7 @@ This approach allows new behaviour to be introduced without altering the legacy 
 
 The welcome email example is something anyone can understand, but Event-Driven Architecture supports a wide range of use cases, from audit logging and real-time analytics to fraud detection and microservice orchestration.
 
-![Event-Driven Architecture diagram.svg](/uploads/Event-Driven%20Architecture%20diagram.svg)
+![Event-Driven-Architecture-diagram.png](/uploads/Event-Driven-Architecture-diagram.png)
 
 ### Benefits of Event-Driven Architecture
 
@@ -76,7 +76,9 @@ With EDA, in contrast, a single event can trigger one or many downstream process
 This level of decoupling enables:
 
 * **Scalability**, since new features can be added without touching the legacy system.
+
 * **Performance**, through parallel and asynchronous processing.
+
 * **Resilience**, because failures in downstream services don't impact the core transaction.
 
 In short, EDA allows you to build new capabilities around your legacy system, rather than within it, offering a clean, modular, and future-friendly path to modernisation.
