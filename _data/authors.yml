@@ -77,6 +77,7 @@ active-authors:
   - jisted
   - jleftley
   - jmcevoy
+  - jmoore
   - jporter
   - jspruce
   - jstrachan
@@ -600,6 +601,10 @@ authors:
     name: "Jessica McEvoy"
     author-summary: "I'm a Principal at Scott Logic. Ex-Senior Civil Servant, formerly of GDS, Cabinet Office."
     picture: picture.jpg
+  jmoore:
+    name: "James Moore"
+    author-summary: "I'm a Technical Principal based at Scott Logic's Glasgow office."
+    picture: James-Moore.png
   jphillpotts:
     name: "James Phillpotts"
     picture: picture.jpg
