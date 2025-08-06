@@ -39,19 +39,19 @@ It’s also important at this stage to clarify ownership, by which I mean system
 
 ## Making modernisation feasible
 
-There may be circumstances which require the ‘Big Bang’ approach of a complete system rewrite. For example, the legacy system may not be very complex, and there may be no viable path for incremental change. However, it’s important to say that this approach still tends to be high-risk and expensive.
+There *may* be circumstances which require the ‘Big Bang’ approach of a complete system rewrite. For example, the legacy system may not be very complex, and there may be no viable path for incremental change. However, it’s important to say that this approach still tends to be high-risk and expensive.
 
 Ultimately, legacy modernisation is an ongoing journey, not a destination. Capex budgets will never stretch to overhauling a complete legacy estate (even if that were the best strategy, which is very unlikely). So, in most cases, a co-existence strategy is the best approach to take – this means allowing the legacy system to continue operating while new functionality is built alongside it, with the strategic aim to retire the legacy system at the appropriate time.
 
 A co-existence strategy has numerous benefits. It enables gradual migration, it reduces risk by avoiding disruption to stable systems, and it allows teams to focus on delivering new value rather than replicating old systems. Crucially, it makes modernisation affordable, breaking the work up into increments that can be prioritised and delivered over time.
 
-There are various technical approaches you can select from to implement a co-existence strategy. My colleague Duncan Austin discussed one of them in his blog post on desktop interoperability. As mentioned earlier, I’m going to focus on another of them—Event-Driven Architecture—to illustrate how this strategy allows you to modernise legacy in a relatively low-risk, affordable way.
+There are various technical approaches you can select from to implement a co-existence strategy. My colleague Duncan Austin discussed one of them in his [blog post on desktop interoperability](https://blog.scottlogic.com/2025/06/12/a-proven-approach-to-legacy-modernisation-that-delivers-early-value.html). As mentioned earlier, I’m going to focus on another of them—Event-Driven Architecture—to illustrate how this strategy allows you to modernise legacy in a relatively low-risk, affordable way.
 
 ## Legacy modernisation using Event-Driven Architecture
 
 Event-Driven Architecture (EDA) offers a pragmatic and minimally invasive path to legacy system modernisation. Instead of viewing the system as a monolithic whole, EDA encourages breaking it down into functional slices—each tied to a distinct business capability, such as invoicing, customer onboarding, or payment processing.
 
-In practice, this means that modern services subscribe to events emitted by the legacy system, such as "OrderPlaced" or "InvoiceGenerated". These services respond asynchronously and independently, without requiring tight coupling or direct modification of the legacy code. This decoupling enables teams to introduce new functionality incrementally, without destabilising the existing system. In this blog post, my colleague David Hope delves into this in more technical detail.
+In practice, this means that modern services subscribe to events emitted by the legacy system, such as "OrderPlaced" or "InvoiceGenerated". These services respond asynchronously and independently, without requiring tight coupling or direct modification of the legacy code. This decoupling enables teams to introduce new functionality incrementally, without destabilising the existing system. In this blog post, my colleague [David Hope delves into this in more technical detail](https://blog.scottlogic.com/2024/04/22/message_types.html).
 
 ### A practical example: Sending a welcome email
 
@@ -75,10 +75,10 @@ With EDA, in contrast, a single event can trigger one or many downstream process
 
 This level of decoupling enables:
 
-**Scalability**, since new features can be added without touching the legacy system.\
-**Performance**, through parallel and asynchronous processing.\
-**Resilience**, because failures in downstream services don't impact the core transaction.
-\
+* **Scalability**, since new features can be added without touching the legacy system.
+* **Performance**, through parallel and asynchronous processing.
+* **Resilience**, because failures in downstream services don't impact the core transaction.
+
 In short, EDA allows you to build new capabilities around your legacy system, rather than within it, offering a clean, modular, and future-friendly path to modernisation.
 
 Another often-overlooked advantage of EDA is the improvement it brings to testing and observability. Legacy systems are frequently fragile, complex, and poorly documented, which makes introducing new logic directly into them risky and difficult to validate. Tracing issues can be painful, and debugging often involves navigating tangled, monolithic workflows.
@@ -91,11 +91,11 @@ In short, EDA doesn’t just help with scaling and speed. It improves the day-to
 
 ### A widely applicable, cost-effective strategy
 
-Of course, EDA isn’t suitable for every scenario. Some business processes are too complex, stateful, or tightly coupled to be easily broken down into discrete, event-driven steps. In these cases, trying to retrofit an event model can lead to more complexity rather than less.
+Of course, EDA isn’t suitable for every scenario. Some business processes are too complex, [stateful](https://en.wikipedia.org/wiki/State_(computer_science)), or tightly coupled to be easily broken down into discrete, event-driven steps. In these cases, trying to retrofit an event model can lead to more complexity rather than less.
 
-Additionally, not all legacy databases support event emission out of the box. Older systems may require custom Change Data Capture solutions or manual polling strategies, which can add engineering overhead and introduce latency or reliability concerns. For a deeper discussion of where EDA works, and where it doesn’t, check out this episode of Beyond the Hype, Scott Logic’s podcast.
+Additionally, not all legacy databases support event emission out of the box. Older systems may require custom Change Data Capture solutions or manual polling strategies, which can add engineering overhead and introduce latency or reliability concerns. For a deeper discussion of where EDA works, and where it doesn’t, [check out this episode of Beyond the Hype](https://blog.scottlogic.com/2025/06/10/beyond-the-hype-event-driven-architecture-the-only-data-integration-approach-you-need.html), Scott Logic’s podcast.
 
-However, in a great many cases, Event-Driven Architecture offers a lightweight, low-risk, and cost-effective approach to legacy modernisation. By enabling incremental change—often following patterns like the Strangler Fig—EDA allows teams to build out new functionality around the edges of existing systems, gradually reducing reliance on the legacy core.
+However, in a great many cases, Event-Driven Architecture offers a lightweight, low-risk, and cost-effective approach to legacy modernisation. By enabling incremental change—often following [patterns like the Strangler Fig](https://en.wikipedia.org/wiki/Strangler_fig_pattern)—EDA allows teams to build out new functionality around the edges of existing systems, gradually reducing reliance on the legacy core.
 
 It’s a pragmatic strategy that balances the need for innovation with the realities of working with ageing systems, delivering real value without needing to rewrite everything from scratch.
 
