@@ -65,6 +65,8 @@ This approach allows new behaviour to be introduced without altering the legacy 
 
 The welcome email example is something anyone can understand, but Event-Driven Architecture supports a wide range of use cases, from audit logging and real-time analytics to fraud detection and microservice orchestration.
 
+![Event-Driven Architecture diagram.svg](/uploads/Event-Driven%20Architecture%20diagram.svg)
+
 ### Benefits of Event-Driven Architecture
 
 A key strength of EDA is that it’s asynchronous and fully decoupled from the legacy system. In the example above, the legacy system is unaware that a welcome email is being sent at all. If that functionality had been implemented directly within the legacy system, it would likely be embedded in a sequential, tightly coupled workflow, potentially introducing performance bottlenecks or failure points.
