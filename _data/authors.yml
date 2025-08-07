@@ -136,6 +136,7 @@ active-authors:
   - rwillis
   - sanastasov
   - sashford
+  - sashley
   - sbaker
   - sbreingan
   - sburnstone
@@ -881,6 +882,10 @@ authors:
   sashford:
     name: "Seonaid Ashford"
     author-summary: "Senior Business Analyst with more than a passing interest in User Experience. Almost a decade of experience in both public and private sector."
+    picture: picture.jpg
+  sashley:
+    name: "Sophia Ashley"
+    author-summary: "Delivery Manager with a multi-disciplinary skillset spanning across User Experience, Business Analysis, Coaching & ethical technology. Passionate about balancing people, planet and profit."
     picture: picture.jpg
   sbulut:
     author-summary: "<p>Full-time learner and Test Engineer at Scott Logic</p>"
