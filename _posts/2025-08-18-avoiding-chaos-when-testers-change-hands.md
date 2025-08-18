@@ -10,6 +10,7 @@ summary: Switching testing teams in the middle of a live project can feel like c
   In this post, we’ll look at how to hand over testing between vendors without letting
   quality or deadlines slip.
 author: sjurics
+image: "/uploads/Artboard%201-100.jpg"
 ---
 
 The old vendor’s contract ends on Friday. The new vendor starts on Monday. The release deadline hasn’t moved – and for a business delivering a critical platform to customers, production outages are not an option. In sectors like finance, healthcare or large-scale cloud-based services, even a short disruption can mean missed client commitments, reputational damage and costly remediations. 
