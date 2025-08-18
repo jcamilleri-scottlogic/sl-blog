@@ -5,7 +5,10 @@ categories:
 - Testing
 tags:
 - testing handover
-summary: Switching testing teams in the middle of a live project can feel like changing pilots mid-flight — risky if you’re unprepared, smooth if you’ve planned it right. In this post, we’ll look at how to hand over testing between vendors without letting quality or deadlines slip.
+summary: Switching testing teams in the middle of a live project can feel like changing
+  pilots mid-flight — risky if you’re unprepared, smooth if you’ve planned it right.
+  In this post, we’ll look at how to hand over testing between vendors without letting
+  quality or deadlines slip.
 author: sjurics
 ---
 
