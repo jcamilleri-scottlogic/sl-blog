@@ -8,7 +8,9 @@ tags:
 - antlr
 author: jjgray
 layout: default_post
-summary: Learn how to build a custom, user-friendly search language using ANTLR and Elasticsearch. We'll cover grammar design, query parsing, and indexing techniques to turn plain user input into powerful search results.
+summary: Learn how to build a custom, user-friendly search language using ANTLR and
+  Elasticsearch. We'll cover grammar design, query parsing, and indexing techniques
+  to turn plain user input into powerful search results.
 ---
 
 <script src="https://unpkg.com/mermaid@11.9.0/dist/mermaid.min.js"></script>
