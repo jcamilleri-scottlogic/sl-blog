@@ -1,6 +1,6 @@
 ---
 title: Is AI Taking Over Testing? Here’s Why Human Insight Still Matters
-date: 2025-08-20 16:20:00 Z
+date: 2025-08-21 14:20:00 Z
 categories:
 - Testing
 tags:
