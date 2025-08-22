@@ -1,16 +1,18 @@
 ---
 title: 'Learning Through Doing: From one language to another'
 date: 2025-08-22 00:00:00 Z
-categories: 
+categories:
 - Tech
 tags:
 - rust
 - C#
 - learning
 - deep dive
-summary: When I wanted to learn a new programming language and a new programming paradigm, I decided to cut my teeth on a practical problem.
+summary: When I wanted to learn a new programming language and a new programming paradigm,
+  I decided to cut my teeth on a practical problem.
 author: csalt
 ---
+
 Although I'm an experienced developer, there is always new technology to learn.  It's impossible for one person, after all, to learn every possible tech stack and every possible language.  A few months ago, in a gap between projects, I decided to spend some time experimenting with a language that I'd heard was getting some interesting attention, which I'd heard a few of my friends and colleagues talking about.  The Rust programming language.  This is a deep dive into my first attempt to learn Rust, in a very hands-on way.
 
 ## What's different about Rust?
