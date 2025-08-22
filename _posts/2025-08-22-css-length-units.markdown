@@ -1,11 +1,14 @@
 ---
-title: 'Making Sense of CSS Length Units'
+title: Making Sense of CSS Length Units
 date: 2025-08-22 08:00:00 Z
 categories:
 - Tech
 tags:
 - CSS
-summary: For junior developers just starting with CSS, the vast array of available length units can feel overwhelming. This post offers a clear breakdown of the main categories - absolute units; relative units, which adapt better to different screen sizes and accessibility settings; viewport units and niche units.
+summary: For junior developers just starting with CSS, the vast array of available
+  length units can feel overwhelming. This post offers a clear breakdown of the main
+  categories - absolute units; relative units, which adapt better to different screen
+  sizes and accessibility settings; viewport units and niche units.
 author: osharon
 image: "/osharon/assets/css-length-units/dpi.gif"
 ---
