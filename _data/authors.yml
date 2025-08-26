@@ -137,6 +137,7 @@ active-authors:
   - rwilliams
   - rwillis
   - sanastasov
+  - sangell
   - sashford
   - sashley
   - sbaker
@@ -476,7 +477,7 @@ authors:
     author-summary: "<p>I'm a developer at Scott Logic, Bristol. I'm interested in everything backend-related, and have a background in Data Engineering."
     picture: picture.jpg
   godds:
-    author-summary: "<p>I'm a technologist who delights in pushing at the boundaries of what is possible. As Chief Strategy Officer at Scott Logic, I worry about where we and the world we operate in are heading longer term. I'm often heard talking about social value and environmental impact, or getting nerdy about data visualisation.</p>"
+    author-summary: "<p>I'm a technologist who delights in pushing at the boundaries of what is possible. As Chief Growth Officer at Scott Logic, I worry about where we and the world we operate in are heading longer term. I'm often heard talking about social value and environmental impact, or getting nerdy about data visualisation.</p>"
     feed-description: "Graham Odds' thoughts about design, technology and data visualisation."
     google-plus-url: "https://plus.google.com/u/0/106838695703708413394"
     name: "Graham Odds"
@@ -882,6 +883,10 @@ authors:
     email: "sanastasov@scottlogic.com"
     author-summary: "Senior Test Engineer based in Bristol with 7+ years of experience. I have a keen interest in automation and technical areas of testing."
     picture: picture.jpg
+  sangell:
+    name: "Suzanne Angell"
+    author-summary: "I’m Scott Logic’s Public Sector Director. I’ve spent over 20 years advising the Public Sector on how technology can transform their services, and I joined Scott Logic in October 2024 to head up our public sector business."
+    picture: sangell.jpg
   sashford:
     name: "Seonaid Ashford"
     author-summary: "Senior Business Analyst with more than a passing interest in User Experience. Almost a decade of experience in both public and private sector."
@@ -1473,7 +1478,7 @@ authors:
     picture: picture.jpg
   mpace:
     name: "Molly Pace"
-    author-summary: "I’m a business development associate at Scott Logic with a passion for technology, background in neuroscience, and interest in all things running and outdoors related."
+    author-summary: "I’m a business development manager at Scott Logic with a passion for technology, background in neuroscience, and interest in all things running and outdoors related."
     twitter-handle: null
     picture: mpace.jpeg
   mking:
