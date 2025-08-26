@@ -73,7 +73,7 @@ Turning to community engagement, smaller suppliers like Scott Logic are often al
 
 The golden thread running through the Social Value Model is the importance of supporting SMEs. To quote the government guidance:
 
-> Markets with a broad range of suppliers of different types can offer better value for money, promote innovative solutions and give public services access to expertise and knowledge on complex issues. There is also a commercial advantage to spreading risk more broadly since it reduces commercial risk.
+> "Markets with a broad range of suppliers of different types can offer better value for money, promote innovative solutions and give public services access to expertise and knowledge on complex issues. There is also a commercial advantage to spreading risk more broadly since it reduces commercial risk."
 
 \(*The Social Value Model*, p.10, ‘Theme 2: Tackling economic inequality’)
 
