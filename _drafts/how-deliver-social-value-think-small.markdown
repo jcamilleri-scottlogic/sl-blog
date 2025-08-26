@@ -11,9 +11,11 @@ tags:
 - B Corp
 - government procurement
 - procurement
-summary: In this blog, I explore what government procurement sets out to achieve,
-  what is actually happening, and how things could be improved if the government simply
-  heeded its own guidance.
+summary: Increasingly, I’m seeing that government procurement is not giving suppliers
+  the chance to demonstrate their ability to deliver meaningful social value. In this
+  blog, I explore what government procurement sets out to achieve, what is actually
+  happening, and how things could be improved if the government simply heeded its
+  own guidance.
 author: sangell
 ---
 
