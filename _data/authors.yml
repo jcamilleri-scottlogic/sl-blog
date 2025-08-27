@@ -26,6 +26,7 @@ active-authors:
   - chayes
   - ckoris
   - colive
+  - cpratt
   - cprice
   - crobb
   - csalt
@@ -338,8 +339,12 @@ authors:
     author-summary: "<p>I’m a Business Development Campaign Manager at Scott Logic. I have a background in Sales, Marketing and PR and a keen interest in gardening.</p>"
     name: "Claire Cocks"
     picture: picture.jpg
+  cpratt:
+    author-summary: "<p>Leading the Scott Logic Bristol Office, I bring years of experience setting up and leading successful teams to deliver excellence within software delivery, early-stage startups and small businesses.</p>"
+    name: "Catherine Pratt"
+    picture: cpratt.jpg
   cprice:
-    author-summary: '<p>My name is Chris Price, I''m based in Newcastle upon Tyne and work as a Software Engineer at Scott Logic. I spend my days developing web apps for financial services companies (unfortunately mostly hidden behind paywalls). I do like to blog about things when I can and do some interesting stuff on <a href="https://github.com/chrisprice">GitHub</a>.</p>'
+    author-summary: '<p>My name is Chris Price, I'm based in Newcastle upon Tyne and work as a Software Engineer at Scott Logic. I spend my days developing web apps for financial services companies (unfortunately mostly hidden behind paywalls). I do like to blog about things when I can and do some interesting stuff on <a href="https://github.com/chrisprice">GitHub</a>.</p>'
     name: "Chris Price"
     twitter-url: "https://twitter.com/100pxls"
     twitter-handle: 100pxls
