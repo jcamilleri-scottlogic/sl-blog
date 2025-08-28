@@ -11,6 +11,7 @@ summary: Messaging-based communication tools such as Slack and Microsoft Teams a
   thoughts on what makes a good approach, and provide some example channels based
   on what I’ve seen work well in projects of various natures and sizes.
 author: rwilliams
+image: "/uploads/Channels%20for%20effective%20software%20team%20communication%20in%20messaging%20tools.jpg"
 ---
 
 Messaging-based communication tools such as Slack and Microsoft Teams are commonplace in development teams, often being the main platform for textual communication. “Channels” are a key concept in these tools for organising communication. How these are organised and used makes a big difference to their effectiveness and in turn the overall effectiveness of the team communication. In this post, I’ll share my thoughts on what makes a good approach, and provide some example channels based on what I’ve seen work well in projects of various natures and sizes.
