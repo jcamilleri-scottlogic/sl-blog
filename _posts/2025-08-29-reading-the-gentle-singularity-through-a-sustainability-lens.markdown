@@ -94,7 +94,7 @@ Using Altman’s estimates:
 
 ## Conclusion: A Call for Transparency
 
-None of this is to say that we shouldn't be using or embracing AI powered tools. Instead, this is a call to action for AI companies such as OpenAI, Mitral, Alphabet and Meta to produce an open, scientifically backed standard which openly discloses the environmental cost of training and using AI based technology.
+None of this is to say that we shouldn't be using or embracing AI powered tools. Instead, this is a call to action for AI companies such as OpenAI, Mistral, Alphabet and Meta to produce an open, scientifically backed standard which openly discloses the environmental cost of training and using AI based technology.
 
 Open metrics would allow developers and consumers to:
 
@@ -102,4 +102,4 @@ Open metrics would allow developers and consumers to:
 - Employ strategies to minimise their environmental impact (for example by using services in regions with greener power generation, or using right sized models for their workload)
 - Give AI service providers metrics to improve their environmental impact.
 
-What we want to avoid is out of context data with no way to verify it's methodology or understand the assumptions it is built on as this can lead to misunderstandings and poor decisions.
+What we want to avoid is out of context data with no way to verify its methodology or understand the assumptions it is built on as this can lead to misunderstandings and poor decisions.
