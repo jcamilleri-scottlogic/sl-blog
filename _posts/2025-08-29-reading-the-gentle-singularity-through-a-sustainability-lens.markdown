@@ -97,6 +97,7 @@ Using Altman’s estimates:
 None of this is to say that we shouldn't be using or embracing AI powered tools. Instead, this is a call to action for AI companies such as OpenAI, Mitral, Alphabet and Meta to produce an open, scientifically backed standard which openly discloses the environmental cost of training and using AI based technology.
 
 Open metrics would allow developers and consumers to:
+
 - Make informed decisions
 - Employ strategies to minimise their environmental impact (for example by using services in regions with greener power generation, or using right sized models for their workload)
 - Give AI service providers metrics to improve their environmental impact.
