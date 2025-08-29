@@ -26,15 +26,18 @@ He also shares figures on the power and water used in an average ChatGPT query.
 At first glance, these per-query figures seem reassuringly small. But without context, are they all that they seem?
 
 In this post, we examine Altman’s claims using scientific literature and accepted sustainability frameworks to better understand their implications.
+
 ## The Gentle Singularity: A Snapshot
 
 Altman’s post outlines several bold predictions:
+
 - We’ve crossed the event horizon toward superintelligence. Agents that do real cognitive work arrived in 2025; insight-generating systems may emerge in 2026, and capable robots by 2027.
 - Intelligence and energy will become abundant, driving massive gains in productivity and quality of life.
 - He estimates an average ChatGPT query uses about **0.34 watt-hours (Wh)** and **0.000085 gallons of water**—roughly one fifteenth of a teaspoon.
 - The goal is to scale safely, solve alignment, and make superintelligence cheap and widely available.
 
 To better understand the environmental implications, let’s take a closer look at Altman’s estimates for a typical ChatGPT query.
+
 ## The Numbers Problem: Averages Without Assumptions
 
 Altman writes:
@@ -48,17 +51,20 @@ So, is an average useful? On its own, probably not. We also don’t know how thi
 Another key factor is **where** the query was run. The same 0.34 Wh in a coal-powered region has a much higher carbon footprint than in a region powered by nuclear or renewables. This is called **carbon intensity** which is measured as CO₂ emissions per unit of electricity.
 
 Is Altman’s number plausible? Yes, though it’s on the lower end. *How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference*, by [Jegham et al.](https://arxiv.org/abs/2505.09598), suggests a **median estimate of 0.42 Wh** for a short GPT-4o prompt. The paper also notes that **query batching** (processing multiple queries together) can significantly reduce energy per query, while longer prompts increase it.
+
 ## Beyond Electricity: The Hidden Environmental Costs of AI
 
 If we take a **lifecycle assessment (LCA)** approach, used in studies like *Estimating the Carbon Footprint of BLOOM* ([Luccioni et al.](https://arxiv.org/abs/2211.02001)) or the [Tech Carbon Standard (TCS)](https://www.techcarbonstandard.org/), we must consider more than just electricity.
 
 Lifecycle assessment captures upstream and downstream impacts across air, water, and soil. For AI, this includes:
+
 - **Training the model**, which is often far more energy-intensive than inference.
 - The **embodied carbon** of hardware (emissions from manufacturing, transporting, and disposing of servers, GPUs, and networking equipment.)
 
 For more detail, see TCS guidance on [data centre hardware](https://www.techcarbonstandard.org/impact-categories/upstream#data-centre-and-server-hardware), [networking](https://www.techcarbonstandard.org/impact-categories/upstream#networking-hardware), and [foundation models](https://www.techcarbonstandard.org/impact-categories/upstream#foundation-models).
 
 > While this post focuses on AI-specific impacts, it's worth noting that the lack of visibility into data centre operations is a broader issue. Most providers, including those outside the AI space, offer limited transparency around infrastructure emissions, water usage, and lifecycle impacts. Addressing this industry-wide opacity is essential if we’re serious about sustainable digital infrastructure.
+
 ## Water Usage: What’s Counted and What’s Not
 
 Altman quotes **0.000085 gallons of water per query**, or about **0.32 millilitres**. Expressing the figure in gallons rather than millilitres may visually downplay its size, as the formatting introduces more leading zeros.
@@ -71,6 +77,7 @@ So, what accounts for this discrepancy? It likely comes down to **on-site vs off
 - **Off-site water** is used indirectly—primarily in generating the electricity that powers the data centre.
 
 If a data centre reduces its on-site water usage by increasing power consumption, it may shift the burden to off-site water use. Lifecycle assessments aim to capture these hidden trade-offs.
+
 ## The Impact of Scale
 
 Even if we accept Altman’s numbers, they look small until we scale them.
@@ -84,6 +91,7 @@ Using Altman’s estimates:
   
 - **Water**: 0.000085 gallons × 2.5 billion = **72,250 gallons/day**  
   Enough to supply a four-person UK household at [118.9 gallons/day](https://www.cladco.co.uk/blog/post/uk-household-water-usage) for **approximately 1.7 years**.
+
 ## Conclusion: A Call for Transparency
 
 None of this is to say that we shouldn't be using or embracing AI powered tools. Instead, this is a call to action for AI companies such as OpenAI, Mitral, Alphabet and Meta to produce an open, scientifically backed standard which openly discloses the environmental cost of training and using AI based technology.
