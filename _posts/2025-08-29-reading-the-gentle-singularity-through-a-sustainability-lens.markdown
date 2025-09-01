@@ -17,6 +17,8 @@ author: jcamilleri
 
 # Reading *The Gentle Singularity* Through a Sustainability Lens
 
+![Illustration of a microchip with the letters AI stamped on it](../_uploads/ai-chip-illustration.jpg "Musing on The Gentle Singularity")
+
 In June 2025, Sam Altman published [*The Gentle Singularity*](https://blog.samaltman.com/the-gentle-singularity), a post exploring the future of AI. Among his predictions, he claims:
 
 > “As datacenter production gets automated, the cost of intelligence should eventually converge to near the cost of electricity.”
@@ -52,14 +54,24 @@ Another key factor is **where** the query was run. The same 0.34 Wh in a coal-po
 
 Is Altman’s number plausible? Yes, though it’s on the lower end. *How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference*, by [Jegham et al.](https://arxiv.org/abs/2505.09598), suggests a **median estimate of 0.42 Wh** for a short GPT-4o prompt. The paper also notes that **query batching** (processing multiple queries together) can significantly reduce energy per query, while longer prompts increase it.
 
+|Source|Energy per Query (Wh)|Water per Query (ml)|
+|---|---|---|
+|Sam Altman (2025)|0.34|0.32|
+|Jegham et al. (2025)|0.42|1.2|
+
+![Bar Chart of reported energy use](../_uploads/ai-query-energy-bar.svg "Bar Chart of reported energy use")
+
 ## Beyond Electricity: The Hidden Environmental Costs of AI
 
 If we take a **lifecycle assessment (LCA)** approach, used in studies like *Estimating the Carbon Footprint of BLOOM* ([Luccioni et al.](https://arxiv.org/abs/2211.02001)) or the [Tech Carbon Standard (TCS)](https://www.techcarbonstandard.org/), we must consider more than just electricity.
 
 Lifecycle assessment captures upstream and downstream impacts across air, water, and soil. For AI, this includes:
 
-- **Training the model**, which is often far more energy-intensive than inference.
-- The **embodied carbon** of hardware (emissions from manufacturing, transporting, and disposing of servers, GPUs, and networking equipment.)
+|Lifecycle Stage|Description|Environmental Impact Type|
+|---|---|---|
+|Model Training|Energy-intensive process|High electricity and water usage|
+|Hardware Embodied Carbon|Manufacturing, transport, disposal of servers and GPUs|CO₂ emissions|
+|Networking Equipment|Routers, switches, cables|CO₂ emissions|
 
 For more detail, see TCS guidance on [data centre hardware](https://www.techcarbonstandard.org/impact-categories/upstream#data-centre-and-server-hardware), [networking](https://www.techcarbonstandard.org/impact-categories/upstream#networking-hardware), and [foundation models](https://www.techcarbonstandard.org/impact-categories/upstream#foundation-models).
 
@@ -75,6 +87,8 @@ So, what accounts for this discrepancy? It likely comes down to **on-site vs off
 
 - **On-site water** is used directly at the data centre, mostly for cooling.
 - **Off-site water** is used indirectly—primarily in generating the electricity that powers the data centre.
+
+![Bar Chart of reported water use](../_uploads/ai-query-water-bar.svg "Bar Chart of reported water use")
 
 If a data centre reduces its on-site water usage by increasing power consumption, it may shift the burden to off-site water use. Lifecycle assessments aim to capture these hidden trade-offs.
 
