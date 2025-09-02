@@ -62,9 +62,11 @@ MVPs are flexible by design, which is part of their appeal. Here are a few commo
 
 - **Confusing MVPs with Phase 1 of a roadmap**  
   A roadmap communicates direction and planned features. An MVP, on the other hand, is an experiment to test whether a concept is worth pursuing.
-	- Sometimes a project goal is mis-labeled as a "Minimum Viable Product" when what we are really talking about is a "Minimum Marketable Product (MMP)" - this is an important difference as features that may be cut from and MVP would not be cut from a MMP.
 
 > While a roadmap assumes you know where you're going, an MVP asks whether you're heading in the right direction.
+
+- **MVP or MMP?**
+   Sometimes a project goal is mis-labeled as a "Minimum Viable Product" when what we are really talking about is a "Minimum Marketable Product (MMP)" - this is an important difference as features that may be cut from and MVP would not be cut from a MMP.
 
 > An MVP is the smallest number of features required to test a product, while an MMP is the minimum number of features to make a useful product.
 
