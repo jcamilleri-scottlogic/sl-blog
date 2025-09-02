@@ -15,8 +15,6 @@ summary: Sam Altman says AI will cost as little as electricity—but what’s th
 author: jcamilleri
 ---
 
-# Reading *The Gentle Singularity* Through a Sustainability Lens
-
 ![Illustration of a microchip with the letters AI stamped on it]({{ site.github.url }}/uploads/ai-chip-illustration.jpg "Musing on The Gentle Singularity")
 
 In June 2025, Sam Altman published [*The Gentle Singularity*](https://blog.samaltman.com/the-gentle-singularity), a post exploring the future of AI. Among his predictions, he claims:
