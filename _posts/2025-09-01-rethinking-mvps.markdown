@@ -1,5 +1,5 @@
 ---
-title: Rethinking MVPs: Learning Tool or Delivery Strategy?
+title: 'Rethinking MVPs: Learning Tool or Delivery Strategy?'
 date: 2025-09-01 10:00:00 Z
 categories:
 - Delivery
