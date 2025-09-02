@@ -17,8 +17,6 @@ summary: A look at MVPs, when they are a good fit and alternative tools that may
 author: jcamilleri
 ---
 
-# Rethinking MVPs: Learning Tool or Delivery Strategy?
-
 Most of us are familiar with the concept of a Minimum Viable Product (MVP): the idea of delivering the smallest set of features while still providing something useful to users.
 
 In many projects, especially those with tight timelines, the concept of an MVP often comes up during planning or early implementation. It might be raised as a way to manage scope or as a response to delivery pressure.
