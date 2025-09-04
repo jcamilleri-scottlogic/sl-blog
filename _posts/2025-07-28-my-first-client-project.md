@@ -1,15 +1,13 @@
 ---
-title: 'Lessons under construction: My first client project'
+title: "Lessons under construction: My first client project"
 date: 2025-07-28 00:00:00 Z
 categories:
+  - Tech
+tags: 
 - Tech
-tags:
-- Tech
-summary: I have recently come off my first client project, which I was part of for
-  9 months, and so I wanted to reflect on everything that I learnt during that time.
+summary: I have recently come off my first client project, which I was part of for 9 months, and so I wanted to reflect on everything that I learnt during that time.
 author: hsauve
-image: "/uploads/Helene-Sauve---Lessons-under-construction---My-first-client-project.jpg"
----
+---  
 
 I have recently come off my first client project, which I was part of for 9 months, and so I wanted to reflect on everything that I learnt during that time. 
 
