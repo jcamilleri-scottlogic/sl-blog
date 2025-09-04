@@ -1,10 +1,15 @@
 ---
-author: cfreestone
 title: Some Best Practices for Writing Readable Automation Tests
-summary: While on my most recent project I had the unique experience of working closely with many testers and test minded individuals. This allowed me to learn some much-needed lessons about how to best implement automation testing with accessibility in mind, a sometimes-overlooked area of test automation.
+date: 2025-09-04 00:00:00 Z
 categories:
 - Testing
+author: cfreestone
+summary: While on my most recent project I had the unique experience of working closely
+  with many testers and test minded individuals. This allowed me to learn some much-needed
+  lessons about how to best implement automation testing with accessibility in mind,
+  a sometimes-overlooked area of test automation.
 ---
+
 While on my most recent project I had the unique experience of working closely with many testers and test minded individuals. This allowed me to learn some much-needed lessons about how to best implement automation testing with readability in mind, a sometimes-overlooked area of test automation.
 
 ## Introduction
