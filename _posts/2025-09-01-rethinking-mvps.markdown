@@ -67,33 +67,15 @@ MVPs are flexible by design, which is part of their appeal. Here are a few commo
    Sometimes a project goal is mis-labeled as a "Minimum Viable Product" when what we are really talking about is a "Minimum Marketable Product (MMP)" - this is an important difference as features that may be cut from and MVP would not be cut from a MMP.
 
 > An MVP is the smallest number of features required to test a product, while an MMP is the minimum number of features to make a useful product.
-
-## Why Misalignment Can Be Risky
-
-When MVPs are used outside of their intended purpose, teams can encounter several challenges:
-
-1. **Assumed simplicity**  
-   MVPs are designed to be lean, but that does not always mean they are simple to implement. Calling something an MVP can lead to underestimating complexity, especially if key risks or unknowns have not been surfaced.
-
-2. **Losing sight of the timeline**  
-   MVPs are not delivery tools. If a team expects to align one with a fixed deadline, they may be caught off guard by how much time is still needed.
-
-3. **Delivering too little**  
-   If the MVP becomes the entire product, users may be left without essential features. Teams may focus on refining what they have rather than expanding functionality where it's needed most.
-
-4. **Missing the chance to learn**  
-   MVPs are built to prompt user feedback. Skipping that step turns a learning opportunity into a missed one, and can lead to poor product decisions down the line.
-
+ 
 ## Using MVPs Effectively
 
-An MVP is a tool for learning. It helps you explore whether a product idea is viable without investing too much too soon. You create a basic version of the idea, share it with users, and see how it lands.
+As stated above, an MVP is a tool for learning.
 
 To use MVPs well:
 
-- Define a clear hypothesis. What do you want to learn?
-- Let the outcome guide your next step. Will you continue, adjust, or stop?
-- Use what you learn to shape your follow-up work.
-- Avoid tying MVP work to hard deadlines. Discovery takes time and flexibility.
+- Define a clear hypothesis and use the outcome to guide your next step.
+- Avoid tying MVP work to hard deadlines — discovery takes time and flexibility.
 
 If your team is operating within a firm delivery window, it may be more effective to use other techniques that are better suited for execution.
 
