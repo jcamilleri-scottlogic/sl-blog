@@ -94,7 +94,7 @@ Mini-Me, in other words, did not just teach me how to structure an AI CLI. It re
 - [ ] Centralise config and personas. Make preferences explicit and governable.  
 - [ ] Capture logs and metadata. Every response, context, and decision should be traceable.  
 - [ ] Treat AI like a co-pilot, not the driver. Governance and direction must come from you.  
-- [ ] Remember: faster is not always better. The illusion of power can derail a project.  
+- [ ] Remember: faster is not always better. What feels like momentum can just as easily be misdirection.  
 
 ## The Dawn of JARVIS
 
