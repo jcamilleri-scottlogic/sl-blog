@@ -22,7 +22,7 @@ author: rgriffiths
 
 # Building JARVIS, Phase 4: Lessons from Mini-Me
 
-Every saga needs a bridge. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, but it laid the groundwork for what came next.
+Every saga needs a bridge: a messy, transitional chapter that connects what came before with what comes next. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, but it laid the groundwork for what came next.
 
 In my own AI journey, Phase 4 was embodied by Mini-Me, my first attempt at building an AI-agnostic conversation logger. It was meant to capture and structure conversations across multiple agents, and even begin to learn my quirks and style. Ambitious? Certainly. Useful? At times. Built to last? About as much as a Tony Stark prototype: flashy, clever, but destined to explode in testing!
 
@@ -51,7 +51,7 @@ For a while, it worked. I could start a conversation, switch between backends, a
 
 ## The Product Owner’s Dilemma
 
-Working alongside AI companions is intoxicating. They constantly suggest new possibilities, enticing shortcuts, and seductive features that feel just one tweak away. It is a little like walking the Jedi path, with the dark side of scope creep always in view. Quicker, easier, more seductive. It creates the illusion of power by delivering more features more quickly. Yet those features are not always required, wanted, or even useful. Giving in feels good in the moment, but the result is a murkier product that is harder to control.
+Working alongside AI companions is intoxicating. They constantly suggest new possibilities, enticing shortcuts, and seductive features that feel just one tweak away. It is a little like walking the Jedi path, with the dark side of scope creep always beckoning from the shadows. Quicker, easier, more seductive. It creates the illusion of power by delivering more features more quickly. Yet those features are not always required, wanted, or even useful. Giving in feels good in the moment, but the result is a murkier product that is harder to control.
 
 As the product owner of Mini-Me, my hardest job was not the coding. It was keeping the project, and myself, on message.
 
