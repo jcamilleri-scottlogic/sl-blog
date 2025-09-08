@@ -1,6 +1,5 @@
 ---
-title: 'Phase 4: The AI-Agnostic Conversation Logger (aka Mini-Me) or How Scope Creep
-  Taught Me the Value of Product Ownership'
+title: 'Phase 4: The AI-Agnostic Conversation Logger (aka Mini-Me)'
 date: 2025-09-08 15:08:00 Z
 categories:
 - Artificial Intelligence
@@ -20,7 +19,7 @@ summary: This episode charts my attempt to build Mini-Me, a CLI sidekick that wa
 author: rgriffiths
 ---
 
-# Building JARVIS, Phase 4: Lessons from Mini-Me
+#How Scope Creep Taught Me the Value of Product Ownership
 
 Every saga needs a bridge: a messy, transitional chapter that connects what came before with what comes next. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, yet it laid the groundwork for what came next.
 
