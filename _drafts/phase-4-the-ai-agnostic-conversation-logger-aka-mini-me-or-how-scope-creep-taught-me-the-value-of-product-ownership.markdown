@@ -24,7 +24,7 @@ author: rgriffiths
 
 Every saga needs a bridge. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, but it laid the groundwork for what came next.
 
-In my own AI journey, Phase 4 was embodied by Mini-Me, my first attempt at building an AI-agnostic conversation logger. It was meant to capture and structure conversations across multiple agents, and even begin to learn my quirks and style. Ambitious? Certainly. Useful? At times. Sustainable? Not remotely.
+In my own AI journey, Phase 4 was embodied by Mini-Me, my first attempt at building an AI-agnostic conversation logger. It was meant to capture and structure conversations across multiple agents, and even begin to learn my quirks and style. Ambitious? Certainly. Useful? At times. Built to last? About as much as a Tony Stark prototype: flashy, clever, but destined to explode in testing!
 
 Mini-Me became a shadowy pastiche of my intentions, undone by scope creep and feature bloat. Yet from its ashes came the sharpest lesson so far: when working with AI copilots, strong product ownership and governance are not optional extras. They are the only things keeping your elegant vision from collapsing under its own weight.
 
