@@ -3,9 +3,9 @@ title: Solving Data Consistency in Distributed Systems with the Transactional Ou
 date: 2025-09-08 00:00:00 Z
 categories:
 - Data Engineering
-summary: Distributed systems often struggle with data consistency. In this post, I explore
-  how the Transactional Outbox pattern helped us solve this challenge in a client project,
-  and how it compares to CDC and Event Sourcing.
+summary: Distributed systems often struggle with data consistency. In this post, I
+  explore how the Transactional Outbox pattern helped us solve this challenge in a
+  client project, and how it compares to CDC and Event Sourcing.
 author: mdunsdon
 ---
 
