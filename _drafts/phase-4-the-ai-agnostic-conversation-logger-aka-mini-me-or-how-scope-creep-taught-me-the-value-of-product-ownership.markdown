@@ -22,7 +22,7 @@ author: rgriffiths
 
 # Building JARVIS, Phase 4: Lessons from Mini-Me
 
-Every saga needs a bridge: a messy, transitional chapter that connects what came before with what comes next. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, but it laid the groundwork for what came next.
+Every saga needs a bridge: a messy, transitional chapter that connects what came before with what comes next. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, yet it laid the groundwork for what came next.
 
 In my own AI journey, Phase 4 was embodied by Mini-Me, my first attempt at building an AI-agnostic conversation logger. It was meant to capture and structure conversations across multiple agents, and even begin to learn my quirks and style. Ambitious? Certainly. Useful? At times. Built to last? About as much as a Tony Stark prototype: flashy, clever, but destined to explode in testing!
 
