@@ -47,7 +47,7 @@ The goals were simple:
 - Orchestrate multiple AI backends (OpenAI, Anthropic, Ollama, GPT4All)  
 - Provide failover logic and some early personalisation  
 
-For a while, it worked. I could start a conversation, switch between backends, and recall earlier threads.
+For a while, it even worked. I could start a conversation, switch between backends, and recall earlier threads.
 
 ## The Product Owner’s Dilemma
 
