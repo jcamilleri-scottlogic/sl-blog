@@ -19,7 +19,7 @@ summary: This episode charts my attempt to build Mini-Me, a CLI sidekick that wa
 author: rgriffiths
 ---
 
-#How Scope Creep Taught Me the Value of Product Ownership
+#How Scope Creep Reminded Me of the Value of Product Ownership
 
 Every saga needs a bridge: a messy, transitional chapter that connects what came before with what comes next. In the MCU, Phase 4 followed the grand conclusion of the Infinity Saga. It was sprawling, uneven, and experimental, yet it laid the groundwork for what came next.
 
