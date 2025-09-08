@@ -9,7 +9,7 @@ tags:
 - AI
 summary: This episode charts my attempt to build Mini-Me, a CLI sidekick that was
   supposed to learn my quirks and write like me, but instead turned into a shadowy
-  pastiche of my style. AI tools can generate features at lightspeed, yet without
+  pastiche of my style. AI tools can generate features at light speed, yet without
   unwavering product ownership discipline, scope creep turns your elegant vision into
   feature bloat. The experience crystallised into a practical checklist for AI project
   governance - because just as every orchestra needs a score, every cinematic universe
@@ -108,11 +108,12 @@ JARVIS is:
 - Session-continuing (auto-follows your last conversation)  
 - Governance-friendly: logs everything with metadata, making decisions transparent  
 
-If Mini-Me was Ultron, JARVIS is Vision: reborn, leaner, more sustainable, and crucially, better aligned with its product owner’s vision.
+If Mini-Me was Ultron, JARVIS is Vision: reborn, leaner, more maintainable, and crucially, better aligned with its product owner’s vision.
 
-And yes, that makes me the product Visionary.
+And yes, that makes me the product *Visionary*.
 
-##Key Takeaway: A Succint Product Owner's Checklist for working with AI Agents on Projects
+##Key Takeaway: A Succinct Product Owner's Checklist for working with AI Agents on Projects
+
 Treat your AI like a teammate, not a boss: keep it on track, log everything, and stay in charge.
 
 - [] **Control scope.** Resist the lure of every AI-suggested feature.
