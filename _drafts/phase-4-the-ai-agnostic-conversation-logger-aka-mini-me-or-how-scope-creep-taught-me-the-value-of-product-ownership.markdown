@@ -51,7 +51,7 @@ For a while, it worked. I could start a conversation, switch between backends, a
 
 ## The Product Owner’s Dilemma
 
-Working alongside AI companions is intoxicating. They constantly suggest new possibilities, enticing shortcuts, and seductive features that feel just one tweak away. It is a little like walking the Jedi path, with the dark side of scope creep always beckoning from the shadows. Quicker, easier, more seductive. It creates the illusion of power by delivering more features more quickly. Yet those features are not always required, wanted, or even useful. Giving in feels good in the moment, but the result is a murkier product that is harder to control.
+Working alongside AI companions is intoxicating. They offer enticing shortcuts and seductive features that always feel just one tweak away. It is a little like walking the Jedi path, with the dark side of scope creep always beckoning from the shadows. Quicker, easier, more seductive. It creates the illusion of power by delivering more features more quickly. Yet those features are not always required, wanted, or even useful. Giving in feels good in the moment, but the result is a murkier product that is harder to control.
 
 As the product owner of Mini-Me, my hardest job was not the coding. It was keeping the project, and myself, on message.
 
@@ -61,11 +61,11 @@ Mini-Me became more powerful, seemingly, but also unstable. To really push my MC
 
 The technical weaknesses became clear:
 
-- **Monolithic architecture**: new features bolted on wherever they fitted, creating tangles  
-- **Agent sprawl**: each backend wired in separately, each loaded config.yaml separately, duplication of the model override logic, error handling, and response parsing/handling instead of abstracting these differences behind a common interface  
-- **Personalisation coupling**: early tailoring logic ended up hard-coded in the core  
-- **Failover chains**: clever in theory, unwieldy in practice  
-- **Search**: useful, but not modular  
+- **Monolithic architecture**: new features bolted on wherever they fitted, creating tangles.
+- **Agent sprawl**: each backend wired in separately, each loading its own config.yaml. Model overrides, error handling, and response parsing were duplicated instead of abstracted behind a common interface. 
+- **Personalisation coupling**: early tailoring logic ended up hard-coded in the core.
+- **Failover chains**: clever in theory, unwieldy in practice.
+- **Search**: useful, but not modular.
 
 The deeper problem was governance. I allowed scope to expand too quickly. I let myself be seduced by shiny ideas. Mini-Me's collapse wasn't just technical debt: it was a masterclass in how AI acceleration can amplify poor product decisions.
 
@@ -85,7 +85,7 @@ The experience sharpened my perspective as both architect and product owner:
 4. **Logs and metadata are gold**  
    Capturing not just responses but context, agents, personas, and modes creates transparency. It is the governance trail that prevents you from losing your way.
 
-Mini-Me, in other words, did not just teach me how to structure an AI CLI. It reminded me that even when working with AI copilots, product ownership still matters more than ever. Looking back, Mini-Me's failures taught me that every AI project needs a governance framework. Here's the checklist I wish I'd had from the start:
+Mini-Me did not just teach me how to structure an AI CLI. It reminded me that even when working with AI copilots, product ownership still matters more than ever. Looking back, Mini-Me's failures taught me that every AI project needs a governance framework. Here's the checklist I wish I'd had from the start:
 
 ### My Own "Product Owner’s Checklist" for my AI Projects
 
