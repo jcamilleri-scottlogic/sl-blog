@@ -3,7 +3,6 @@ title: Reading The Gentle Singularity Through a Sustainability Lens
 date: 2025-08-29 10:54:00 Z
 categories:
 - Sustainability
-- AI
 tags:
 - Sustainability
 - AI
