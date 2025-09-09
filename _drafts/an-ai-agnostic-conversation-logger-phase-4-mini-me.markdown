@@ -88,12 +88,12 @@ Mini-Me did not just teach me how to structure an AI CLI. It reminded me that ev
 
 ### My Own "Product Owner’s Checklist" for my AI Projects
 
-- [ ] Keep scope under control. New features are tempting, but discipline matters more than speed.  
-- [ ] Build for modularity. Agents, services, and data should be loosely coupled.  
-- [ ] Centralise config and personas. Make preferences explicit and governable.  
-- [ ] Capture logs and metadata. Every response, context, and decision should be traceable.  
-- [ ] Treat AI like a co-pilot, not the driver. Governance and direction must come from you.  
-- [ ] Remember: faster is not always better. What feels like momentum can just as easily be misdirection.  
+[ ] Keep scope under control. New features are tempting, but discipline matters more than speed.  
+[ ] Build for modularity. Agents, services, and data should be loosely coupled.  
+[ ] Centralise config and personas. Make preferences explicit and governable.  
+[ ] Capture logs and metadata. Every response, context, and decision should be traceable.  
+[ ] Treat AI like a co-pilot, not the driver. Governance and direction must come from you.  
+[ ] Remember: faster is not always better. What feels like momentum can just as easily be misdirection.  
 
 ## The Dawn of JARVIS
 
@@ -116,12 +116,12 @@ And yes, that makes me the product *Visionary*.
 
 Treat your AI like a teammate, not a boss: keep it on track, log everything, and stay in charge.
 
-- [] **Control scope.** Resist the lure of every AI-suggested feature.
-- [] **Think modular.** Keep agents, code, and data loosely coupled.
-- [] **Centralise settings.** Keep configs, preferences, and personas in one place.
-- [] **Log everything.** Preserve prompts, responses, and metadata for transparency.
-- [] **Lead, don't follow.** Treat AI as a co-pilot, not the driver.
-- [] **Value quality over speed.** Fast output can feel powerful but can be misaligned without oversight.
+[] **Control scope.** Resist the lure of every AI-suggested feature.
+[] **Think modular.** Keep agents, code, and data loosely coupled.
+[] **Centralise settings.** Keep configs, preferences, and personas in one place.
+[] **Log everything.** Preserve prompts, responses, and metadata for transparency.
+[] **Lead, don't follow.** Treat AI as a co-pilot, not the driver.
+[] **Value quality over speed.** Fast output can feel powerful but can be misaligned without oversight.
 
 ## Coming Next: Phase 5 - JARVIS Takes Shape
 
