@@ -37,7 +37,11 @@ In these cases, an MVP allows you to explore your idea with minimal upfront effo
 
 This approach helps teams focus their energy on what matters most, reduce the risk of building the wrong thing, and support continuous improvement.
 
-> **The key idea:** Put your concept in front of users early, observe how they engage with it, and use what you learn to guide your next steps.
+---
+
+**The key idea:** Put your concept in front of users early, observe how they engage with it, and use what you learn to guide your next steps.
+
+---
 
 That said, MVPs are most effective when used for discovery. When used outside of that context, especially in delivery-focused settings, challenges can arise.
 
@@ -45,28 +49,45 @@ That said, MVPs are most effective when used for discovery. When used outside of
 
 MVPs are flexible by design, which is part of their appeal. Here are a few common situations where MVPs may not serve their original goal.
 
-- **Treating the MVP as the final product**  
-  Some teams release an MVP and immediately move on to the next initiative. If no iteration follows, what’s left is often the simplest version of an idea, which may have accrued some technical debt. Without refining based on what users actually need, the result may fall short.
+### Treating the MVP as the final product
 
-> An MVP is meant to start a process of learning and improvement, not end it.
+Some teams release an MVP and immediately move on to the next initiative. If no iteration follows, what’s left is often the simplest version of an idea, which may have accrued some technical debt. Without refining based on what users actually need, the result may fall short.
+---
 
-- **Using the MVP to meet a fixed deadline**  
-  This can be problematic for several reasons:
-  - External timelines may not provide the flexibility needed for meaningful testing.
-  - Work estimates are often optimistic. If parts of the MVP are more complex than expected or unplanned issues arise, the timeline can easily slip. As Douglas Adams once wrote, deadlines often make a "whooshing sound" as they pass by.
-  - Teams may have competing responsibilities, like supporting live systems, which limit available capacity.
+*An MVP is meant to start a process of learning and improvement, not end it.*
 
-> MVPs are sometimes associated with speed or simplicity, but they can still require significant effort and coordination. That may not align well with fixed delivery expectations.
+---
+### Using the MVP to meet a fixed deadline
 
-- **Confusing MVPs with Phase 1 of a roadmap**  
-  A roadmap communicates direction and planned features. An MVP, on the other hand, is an experiment to test whether a concept is worth pursuing.
+This can be problematic for several reasons:
+- External timelines may not provide the flexibility needed for meaningful testing.
+- Work estimates are often optimistic. If parts of the MVP are more complex than expected or unplanned issues arise, the timeline can easily slip. As Douglas Adams once wrote, deadlines often make a "whooshing sound" as they pass by.
+- Teams may have competing responsibilities, like supporting live systems, which limit available capacity.
+---
 
-> While a roadmap assumes you know where you're going, an MVP asks whether you're heading in the right direction.
+*MVPs are sometimes associated with speed or simplicity, but they can still require significant effort and coordination. That may not align well with fixed delivery expectations.*
 
-- **MVP or MMP?**
-   Sometimes a project goal is mis-labeled as a "Minimum Viable Product" when what we are really talking about is a "Minimum Marketable Product (MMP)" - this is an important difference as features that may be cut from and MVP would not be cut from a MMP.
+---
 
-> An MVP is the smallest number of features required to test a product, while an MMP is the minimum number of features to make a useful product.
+### Confusing MVPs with Phase 1 of a roadmap
+
+A roadmap communicates direction and planned features. An MVP, on the other hand, is an experiment to test whether a concept is worth pursuing.
+
+---
+
+*While a roadmap assumes you know where you're going, an MVP asks whether you're heading in the right direction.*
+
+---
+
+### MVP or MMP?
+
+Sometimes a project goal is mis-labeled as a "Minimum Viable Product" when what we are really talking about is a "Minimum Marketable Product (MMP)" - this is an important difference as features that may be cut from and MVP would not be cut from a MMP.
+
+---
+
+*An MVP is the smallest number of features required to test a product, while an MMP is the minimum number of features to make a useful product.*
+
+---
  
 ## Using MVPs Effectively
 
@@ -83,20 +104,25 @@ If your team is operating within a firm delivery window, it may be more effectiv
 
 When your primary goal is to deliver a specific outcome by a set date, you need strategies that support execution. Here are some approaches to consider:
 
-- **Clarify the scope early**  
-  These projects are about commitment, not exploration. Make sure everyone agrees on what is being delivered.
+### Clarify the scope early
 
-- **Prioritize with intent**  
-  Use a method like MoSCoW to identify what is essential and what is optional. If everything is a priority, nothing is. Focus on the must-haves first.
+These projects are about commitment, not exploration. Make sure everyone agrees on what is being delivered.
 
-- **Surface foundational work early**  
-  Coordinate with engineers to identify infrastructure or technical decisions that need to be addressed up front to prevent roadblocks later.
+### Prioritize with intent
 
-- **Use prototypes and proof-of-concepts to reduce uncertainty**  
-  These can be effective ways to explore technical options quickly. Just remember: they are not production-ready and may need to be rebuilt.
+Use a method like MoSCoW to identify what is essential and what is optional. If everything is a priority, nothing is. Focus on the must-haves first.
 
-- **Run a RAT (Riskiest Assumption Test)**  
-  If a key dependency or unknown could affect the project, run a focused experiment to understand it early and adjust plans as needed.
+### Surface foundational work early
+
+Coordinate with engineers to identify infrastructure or technical decisions that need to be addressed up front to prevent roadblocks later.
+
+### Use prototypes and proof-of-concepts to reduce uncertainty
+
+These can be effective ways to explore technical options quickly. Just remember: they are not production-ready and may need to be rebuilt.
+
+### Run a RAT (Riskiest Assumption Test)
+
+If a key dependency or unknown could affect the project, run a focused experiment to understand it early and adjust plans as needed.
 
 Let’s take a closer look at how RATs work and when they make sense.
 
@@ -106,7 +132,11 @@ A **Riskiest Assumption Test (RAT)** is a simple way to test the most important 
 
 Rather than building a full product or even an MVP, a RAT helps you focus on just that one critical question.
 
-> If there is a single assumption that would cause the entire idea to fall apart, it is worth testing that first.
+---
+
+*If there is a single assumption that would cause the entire idea to fall apart, it is worth testing that first.*
+
+---
 
 ### MVP vs. RAT: What’s the Difference?
 
