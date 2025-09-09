@@ -65,6 +65,7 @@ This can be problematic for several reasons:
 - External timelines may not provide the flexibility needed for meaningful testing.
 - Work estimates are often optimistic. If parts of the MVP are more complex than expected or unplanned issues arise, the timeline can easily slip. As Douglas Adams once wrote, deadlines often make a "whooshing sound" as they pass by.
 - Teams may have competing responsibilities, like supporting live systems, which limit available capacity.
+
 ---
 
 *MVPs are sometimes associated with speed or simplicity, but they can still require significant effort and coordination. That may not align well with fixed delivery expectations.*
