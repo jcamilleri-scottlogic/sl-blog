@@ -8,8 +8,9 @@ tags:
 - AI
 - Data Centre
 - Cloud
-summary: Sam Altman says AI will cost as little as electricity—but what’s the real environmental impact of billions of queries 
-  a day? In this post I dig into the numbers from the blog post "The Gentle Singularity" and compare them to previous studies
+summary: Sam Altman says AI will cost as little as electricity—but what’s the real
+  environmental impact of billions of queries a day? In this post I dig into the numbers
+  from the blog post "The Gentle Singularity" and compare them to previous studies
   of the power and water use of AI systems.
 author: jcamilleri
 ---
