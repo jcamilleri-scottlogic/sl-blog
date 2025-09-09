@@ -52,11 +52,13 @@ MVPs are flexible by design, which is part of their appeal. Here are a few commo
 ### Treating the MVP as the final product
 
 Some teams release an MVP and immediately move on to the next initiative. If no iteration follows, what’s left is often the simplest version of an idea, which may have accrued some technical debt. Without refining based on what users actually need, the result may fall short.
+
 ---
 
 *An MVP is meant to start a process of learning and improvement, not end it.*
 
 ---
+
 ### Using the MVP to meet a fixed deadline
 
 This can be problematic for several reasons:
