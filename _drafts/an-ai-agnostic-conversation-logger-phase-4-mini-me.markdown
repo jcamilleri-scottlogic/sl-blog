@@ -1,5 +1,5 @@
 ---
-title: 'Phase 4: The AI-Agnostic Conversation Logger (aka Mini-Me)'
+title: An AI-Agnostic Conversation Logger - Phase 4:M ini-Me
 date: 2025-09-08 15:08:00 Z
 categories:
 - Artificial Intelligence
