@@ -23,7 +23,7 @@ We set out to find out:
 
 ---
 
-*Why this matters now:* as the us of AI methods such as LLMs becomes widespread there have been increasing reports into how much energy is required to run them. The point is not to halt progress, but to make trade offs visible and pick the wins that do not harm performance or user experience.
+*Why this matters now:* as the use of AI methods such as LLMs becomes widespread there have been increasing reports into how much energy is required to run them. The point is not to halt progress, but to make trade offs visible and pick the wins that do not harm performance or user experience.
 
 ---
 
