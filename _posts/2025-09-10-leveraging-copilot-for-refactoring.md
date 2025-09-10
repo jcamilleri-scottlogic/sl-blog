@@ -2,13 +2,14 @@
 title: Leveraging Copilot to rapidly refactor test automation
 date: 2025-09-10 00:00:00 Z
 categories:
-  - Testing
+- Testing
 tags:
-  - Automation
-  - UI
-  - Playwright
-  - AI
-summary: This blog explores how to best use GitHub Copilot to swiftly refactor existing test automation
+- Automation
+- UI
+- Playwright
+- AI
+summary: This blog explores how to best use GitHub Copilot to swiftly refactor existing
+  test automation
 author: mnyamunda
 image: mnyamunda/assets/mnyamunda.jpg
 ---
