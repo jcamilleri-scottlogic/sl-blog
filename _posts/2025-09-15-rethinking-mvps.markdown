@@ -13,7 +13,8 @@ tags:
 - designers
 - business analysts
 - stakeholder communication
-summary: A look at MVPs, when they are a good fit and alternative tools that may suit your use case better.
+summary: A look at MVPs, when they are a good fit and alternative tools that may suit
+  your use case better.
 author: jcamilleri
 ---
 
