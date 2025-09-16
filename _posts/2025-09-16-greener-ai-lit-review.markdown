@@ -1,6 +1,6 @@
 ---
 title: Greener AI - what matters, what helps, and what we still do not know
-date: 2025-09-22 09:00:00 Z
+date: 2025-09-16 09:00:00 Z
 categories:
 - Sustainability
 tags:
