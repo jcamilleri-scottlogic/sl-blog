@@ -31,20 +31,6 @@ We undertook the study to find out:
 
 AI’s environmental footprint is real, measurable, and often misunderstood. Our literature review found that the biggest impacts depend heavily on life cycle boundaries, usage patterns, and reporting standards. Training is a one-off spike, but inference can dominate over time. Energy, carbon, and water are linked, but not interchangeable. Two narratives compete: AI as a sustainability risk, and AI as a potential efficiency tool. Both hold under specific conditions. The good news: there are practical steps teams can take today.
 
-### Key takeaways:
-
-- **Life cycle boundaries matter**: what you include changes the story.
-- **Training vs inference**: inference often outweighs training over time.
-- **Carbon ≠ energy ≠ water**: each has its own drivers and mitigation paths.
-- **Narratives diverge**: both “AI is a problem” and “AI is a solution” can be true.
-- **Mitigation is possible**: batching, caching, model choice, and location all help.
-
----
-
-**Action you can take today**: Start tracking energy, carbon, and water in your CI pipeline, and show the numbers in your PRs or a regular report.
-
----
-
 ## Methodology
 
 We drew on a selection of recent academic papers, technical reports, and industry benchmarks that explore the environmental impacts of AI, with a focus on carbon emissions, energy use, and life cycle analysis. Sources were selected based on their relevance, transparency, and contribution to either empirical findings or methodological frameworks. Key works include the BLOOM LCA study[^15], infrastructure-aware benchmarks for inference emissions[^9], and comparative life cycle assessments of generative AI services[^2].
@@ -57,7 +43,7 @@ Assessing AI’s environmental impact demands more than a single metric. It requ
 
 ### LCA as a Common Foundation
 
-The principles outlined by Klöpffer[^12] remain central: define scope, compile an inventory, assess impacts, and interpret results. Applied to AI, these stages typically cover:
+The principles outlined by Klöpffer[^12] remain central: define scope, compile an inventory, assess impacts, and interpret results. Applied to AI, these stages typically cover the following emission types:
 
 | Emission Type             | Example Sources             |
 | ------------------------- | --------------------------- |
@@ -87,7 +73,7 @@ Efforts like Hugging Face’s **AI Energy Score** and Mistral AI’s LCA reporti
 
 These initiatives are complementary but incomplete. A unified approach would blend scope with accessibility, rooted in ISO 14040 principles and the GHG Protocol.
 
-Since completing the review we have seen several companies release data about their energy usage, carbon and/or water impact. However, without a standard (or even published) approach comparison is, at best, very challenging.
+Since completing the review we have seen several companies release data about their energy usage, carbon and/or water impact. Without a standard or published approach, comparison becomes highly difficult.
 
 ### Training vs. Inference: Shifting the Emissions Centre of Gravity
 
@@ -122,7 +108,11 @@ The following strategies were used or suggested in the literature to mitigate th
 5. **Transparency**: Dual reporting for research depth and user clarity.
 6. **Governance**: Efficiency as a research metric; procurement from renewable-powered data centres.
 
-Decarbonisation requires a three-tier approach: (1) workload-specific optimisation, (2) infrastructure alignment, and (3) system-level governance to prevent rebound effects (Jevon's Paradox).
+These strategies can be classified in three tiers: 
+
+- **workload-specific optimisation**: Applying methods and tools to reduce the processing required to train and run your LLM.
+- **infrastructure alignment**: Using hardware effeciently aacross it's lifecycle from procurement to disposal. Guidence on these topics can be founr in the [Technical Carbon Standard](https://www.techcarbonstandard.org/).
+- **system-level governance to prevent rebound effects (Jevon's Paradox)**: When designing the system, take a holistic view, looking not just aat your use, but how it will impact both your upstream suppliers and downstream customers.
 
 ### Challenges: Barriers to Progress
 
@@ -138,9 +128,19 @@ These challenges reinforce each other: incomplete reporting hides hardware’s f
 
 AI’s environmental footprint is measurable and reducible, but progress depends on integrating measurement, mitigation, and governance into a unified framework. The evidence converges on three imperatives:
 
-- **Measure comprehensively** — Include training, inference, and embodied hardware emissions.
-- **Report transparently** — Declare boundaries, functional units, and assumptions to enable comparability.
-- **Govern at the system level** — Pair efficiency improvements with demand-side controls to ensure absolute emissions reductions.
+- **Measure comprehensively**: Include training, inference, and embodied hardware emissions.
+- **Report transparently**: Declare boundaries, functional units, and assumptions to enable comparability.
+- **Govern at the system level**: Pair efficiency improvements with demand-side controls to ensure absolute emissions reductions.
+
+### Key takeaways:
+
+- **Life cycle boundaries matter**: what you include changes the story.
+- **Training vs inference**: inference often outweighs training over time.
+- **Carbon ≠ energy ≠ water**: each has its own drivers and mitigation paths.
+- **Narratives diverge**: both “AI is a problem” and “AI is a solution” can be true.
+- **Mitigation is possible**: batching, caching, model choice, and location all help.
+
+**Action you can take today**: Start tracking energy, carbon, and water in your CI pipeline, and show the numbers in your PRs or a regular report.
 
 Without shared standards and life cycle-inclusive reporting, efficiency gains risk being cosmetic. With them, environmental performance could become as visible and competitive a metric as accuracy or speed — aligning AI’s development with global climate goals.
 
