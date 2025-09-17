@@ -111,7 +111,7 @@ The following strategies were used or suggested in the literature to mitigate th
 These strategies can be classified in three tiers: 
 
 - **workload-specific optimisation**: Applying methods and tools to reduce the processing required to train and run your LLM.
-- **infrastructure alignment**: Using hardware effeciently aacross it's lifecycle from procurement to disposal. Guidence on these topics can be founr in the [Technical Carbon Standard](https://www.techcarbonstandard.org/).
+- **infrastructure alignment**: Using hardware efficiently across it's lifecycle from procurement to disposal. Guidance on these topics can be found in the [Technical Carbon Standard](https://www.techcarbonstandard.org/).
 - **system-level governance to prevent rebound effects (Jevon's Paradox)**: When designing the system, take a holistic view, looking not just aat your use, but how it will impact both your upstream suppliers and downstream customers.
 
 ### Challenges: Barriers to Progress
@@ -119,7 +119,7 @@ These strategies can be classified in three tiers:
 Three interconnected barriers slow progress:
 
 1. **Inconsistent reporting**: Boundaries, functional units, and life cycle stages vary, making results incomparable.
-2. **Hardware opacity**: Lack of cradle-to-gate emissions data from manufacturers skews focus toward operational emissions.
+2. **Hardware opacity**: Lack of cradle-to-grave emissions data from manufacturers skews focus toward operational emissions.
 3. **System-level blind spots**: Efficiency gains can drive up total demand, negating benefits.
 
 These challenges reinforce each other: incomplete reporting hides hardware’s footprint; lack of hardware data biases optimisation; absent demand governance allows rebound effects to erase gains.
