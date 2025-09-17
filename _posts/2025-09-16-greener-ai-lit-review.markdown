@@ -8,9 +8,13 @@ tags:
 - AI
 - Data Centre
 - Cloud
-summary: We recently undertook a literature review about the environmental impact of AI, across carbon, energy, and water. It offers practical strategies for teams to reduce impact today, while highlighting the gaps in measurement, reporting, and governance that still need to be addressed.
+summary: We recently undertook a literature review about the environmental impact
+  of AI, across carbon, energy, and water. It offers practical strategies for teams
+  to reduce impact today, while highlighting the gaps in measurement, reporting, and
+  governance that still need to be addressed.
 author: jcamilleri
 ---
+
 Artificial intelligence (AI), and particularly large language models (LLMs), have rapidly transitioned from niche research to global infrastructure, bringing with it significant environmental impacts. We conducted a literature review to find and evaluate recent academic and industry research to integrate evidence on emissions across the AI life cycle, from hardware manufacturing to large-scale deployment.
 
 We undertook the study to find out:
