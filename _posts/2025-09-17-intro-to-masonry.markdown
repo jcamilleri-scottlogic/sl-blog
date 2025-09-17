@@ -6,7 +6,13 @@ categories:
 tags:
 - CSS
 - Javascript
-summary: Let's explore the concept of 'masonry' layout in web development where items share the same width but differ in height. We'll explain when a simple CSS grid is sufficient, when to rely on libraries like Masonry.js for dynamic content, and why the CSS grid-template-rows experimental value 'masonry' remains impractical due to limited browser support. We'll also touch on accessibility concerns, the underlying column-stacking logic, and more advanced rectangle-packing techniques for layouts with both variable widths and heights.
+summary: Let's explore the concept of 'masonry' layout in web development where items
+  share the same width but differ in height. We'll explain when a simple CSS grid
+  is sufficient, when to rely on libraries like Masonry.js for dynamic content, and
+  why the CSS grid-template-rows experimental value 'masonry' remains impractical
+  due to limited browser support. We'll also touch on accessibility concerns, the
+  underlying column-stacking logic, and more advanced rectangle-packing techniques
+  for layouts with both variable widths and heights.
 author: osharon
 image: "/osharon/assets/masonry/pinterest.png"
 ---
