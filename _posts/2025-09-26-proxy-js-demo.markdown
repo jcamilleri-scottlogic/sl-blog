@@ -5,7 +5,13 @@ categories:
 - Tech
 tags:
 - Javascript
-summary: We explore using JavaScript’s native Proxy object as a simpler, safer alternative to external state-management libraries. We demonstrate how a Proxy can intercept gets and sets on an object to enable reactive behavior—like creating computed properties, triggering listeners when state changes, and even achieving bi-directional binding between form inputs and state. Drawing inspiration from Angular Signals, we argue that for many cases, proxies are sufficient without needing full frameworks, reducing complexity and dependency risk.
+summary: We explore using JavaScript’s native Proxy object as a simpler, safer alternative
+  to external state-management libraries. We demonstrate how a Proxy can intercept
+  gets and sets on an object to enable reactive behavior—like creating computed properties,
+  triggering listeners when state changes, and even achieving bi-directional binding
+  between form inputs and state. Drawing inspiration from Angular Signals, we argue
+  that for many cases, proxies are sufficient without needing full frameworks, reducing
+  complexity and dependency risk.
 author: osharon
 ---
 
