@@ -114,7 +114,7 @@ Fluxnova's flexible deployment model, whether on-premises or cloud-native, allow
 
 Fluxnova is more than a new open-source project. It represents a collective shift towards standardised, transparent, and collaborative process automation in financial services.
 
-By pairing the platform with the blueprint library started by Scott Logic, the two biggest barriers to adoption — tool complexity and the blank canvas problem — are addressed directly. Institutions can migrate from existing Camunda 7 environments or begin afresh, using blueprints that capture real regulatory and operational requirements.
+By pairing the platform with the blueprint library started by Scott Logic, the two biggest barriers to adoption are addressed directly, i.e., tool complexity and the blank canvas problem. Institutions can migrate from existing Camunda 7 environments or begin afresh, using blueprints that capture real regulatory and operational requirements.
 
 The future of financial services lies in collaborative innovation: sharing knowledge, tools, and best practice across the industry. Fluxnova embodies this philosophy, and Scott Logic is proud to have helped shape its launch.
 
