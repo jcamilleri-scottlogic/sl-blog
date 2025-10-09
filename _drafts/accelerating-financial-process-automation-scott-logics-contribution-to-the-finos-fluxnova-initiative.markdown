@@ -56,15 +56,13 @@ In short, for institutions already invested in Camunda 7, Fluxnova offers contin
 
 When Scott Logic offered to support Fluxnova, we recognised the fundamental challenge every new platform faces: the “empty canvas” problem. Tools, however powerful, only prove their worth when paired with concrete, real-world examples.
 
-Our task was to create what we’ve termed blueprint processes: generic yet realistic examples of financial workflows that capture essential regulatory, risk, and operational logic, whilst being flexible enough to adapt to different institutional contexts.
-
-These blueprints not only accelerate adoption but also help overcome SDLC bottlenecks by providing ready-to-execute templates that reduce reliance on manual testing and *ad hoc* documentation.
-
 ### The Challenge We Tackled
 
 Financial processes exist in some form at every investment bank, but the specifics vary dramatically between institutions. A trade settlement process at a Tier 1 US investment bank could well differ significantly from the equivalent at a Tier 1 European investment bank, not just in implementation details but often in fundamental approach. Yet beneath these variations lie common patterns: regulatory requirements, risk controls, and business logic that transcend individual institutional preferences.
 
 Our task was to create what we've termed "blueprint processes", i.e., examples that are sufficiently generic to capture the essential elements of real-world financial workflows while remaining generally applicable across different institutional contexts. Think of them as architectural blueprints: not the final building, but detailed enough to understand the structure and adaptable enough to accommodate different requirements through modifications that are achievable easily.
+
+These blueprints not only accelerate adoption but also help overcome SDLC bottlenecks by providing ready-to-execute templates that reduce reliance on manual testing and *ad hoc* documentation.
 
 ### Our Approach
 
