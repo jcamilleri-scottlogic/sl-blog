@@ -80,9 +80,9 @@ Drawing on our deep domain knowledge and subject matter expertise in financial s
 
 * **Pre-Trade**: KYC onboarding and compliance checks
 
-* **Execution**: risk management, real-time assessment, and position limit monitoring
+* **Execution**: "Flash Risk" management including a real-time risk assessment and position limit monitoring
 
-* **Post-Trade**: trade settlement and delivery versus payment coordination
+* **Post-Trade**: A full trade settlement process
 
 The technical implementation of these BPMN flows was led by my colleague [Fanis Vlachos](https://blog.scottlogic.com/fvlachos/), one of Scott Logic’s Senior Developers, whose expertise in orchestration platforms such as Temporal and Cadence proved invaluable.
 
@@ -114,9 +114,7 @@ Fluxnova's flexible deployment model, whether on-premises or cloud-native, allow
 
 Fluxnova is more than a new open-source project. It represents a collective shift towards standardised, transparent, and collaborative process automation in financial services.
 
-By pairing the platform with Scott Logic’s blueprint library, the two biggest barriers to adoption — tool complexity and the blank canvas problem — are addressed directly. Institutions can migrate from existing Camunda 7 environments or begin afresh, using blueprints that capture real regulatory and operational requirements.
-
-This also supports institutions responding to both proactive and reactive data-driven initiatives, particularly in the face of evolving regulatory requirements.
+By pairing the platform with the blueprint library started by Scott Logic, the two biggest barriers to adoption — tool complexity and the blank canvas problem — are addressed directly. Institutions can migrate from existing Camunda 7 environments or begin afresh, using blueprints that capture real regulatory and operational requirements.
 
 The future of financial services lies in collaborative innovation: sharing knowledge, tools, and best practice across the industry. Fluxnova embodies this philosophy, and Scott Logic is proud to have helped shape its launch.
 
@@ -144,7 +142,7 @@ While the full collection will be available on the [FINOS website](https://www.f
 [![Risk management  
 <sub><em>Click to enlarge</em></sub>](/uploads/02.Trade.01.Risk.BusinessProcessDefinition.png){: style="max-width:90%; border-radius:8px; display:block; margin:1.5em auto; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);"}](/uploads/02.Trade.01.Risk.BusinessProcessDefinition.png){: target="_blank" title="Click to view full-size"}
 
-* **Post-Trade Processes**: Trade setlement
+* **Post-Trade Processes**: Trade settlement
 [![Trade settlement  
 <sub><em>Click to enlarge</em></sub>](/uploads/03.Post-Trade.01.Settlement.BusinessProcessDefinition.png){: style="max-width:90%; border-radius:8px; display:block; margin:1.5em auto; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);"}](/uploads/03.Post-Trade.01.Settlement.BusinessProcessDefinition.png){: target="_blank" title="Click to view full-size"}
 
