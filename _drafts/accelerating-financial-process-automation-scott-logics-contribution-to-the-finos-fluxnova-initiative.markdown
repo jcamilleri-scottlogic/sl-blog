@@ -18,7 +18,7 @@ author:
 - fvlachos
 ---
 
-Walk into any investment bank’s trading floor, and you’ll witness a symphony of controlled chaos. Behind the scenes of every trade, from the initial client enquiry to final settlement, lies a complex web of interconnected processes, each governed by regulations, risk controls, and institutional procedures that have evolved over decades. Yet despite this complexity being universal across financial institutions, the tools to model, standardise, and optimise these processes have remained fragmented, proprietary, and often inadequate.
+Walk into any investment bank’s trading floor, and you step into a theatre of expertly controlled chaos. Behind the scenes of every trade, from the initial client enquiry to final settlement, lies a complex web of interconnected processes, each governed by regulations, risk controls, and institutional procedures that have evolved over decades. Yet despite this complexity being universal across financial institutions, the tools to model, standardise, and optimise these processes have remained fragmented, proprietary, and often inadequate.
 
 This is where FINOS Fluxnova enters the picture. Launched at the Open Source in Finance Forum (OSFF) in New York this October (2025), Fluxnova represents a fundamental shift towards collaborative, open-source process orchestration designed specifically for financial services. However, such tools are only as valuable as the real-world examples that demonstrate their capabilities, which is where Scott Logic’s contribution becomes crucial.
 
