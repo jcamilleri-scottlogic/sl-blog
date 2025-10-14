@@ -13,8 +13,7 @@ summary: Fluxnova is now live under FINOS, and with it comes a powerful new way 
   the launch, contributing a suite of executable blueprint processes that span the
   full trade lifecycle. From KYC to settlement, these templates combine subject matter
   expertise with engineering precision. Curious how it all came together? Read on.
-author:
-- rgriffiths
+author: rgriffiths
 contributor: fvlachos
 ---
 
