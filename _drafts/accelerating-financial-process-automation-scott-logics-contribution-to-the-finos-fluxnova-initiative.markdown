@@ -88,7 +88,7 @@ The technical implementation of these BPMN flows was led by my colleague [Fanis 
 
 ### From Modelling to Execution
 
-Although Fluxnova's modeler was not yet available at launch, we used Camunda Modeler to draft diagrams and adapted the exported BPMN XML for Fluxnova compatibility. This not only accelerated delivery but also showcased practical migration paths for institutions with existing Camunda 7 models.
+Although Fluxnova's modeller was not yet available at launch, we used Camunda Modeler to draft diagrams and adapted the exported BPMN XML for Fluxnova compatibility. This not only accelerated delivery but also showcased practical migration paths for institutions with existing Camunda 7 models.
 
 Each blueprint is more than illustrative: it is executable. Features such as boundary timers, escalation gateways, DMN decision tables, and parallel compute tasks are embedded to reflect real-world operational realities. Institutions can download a blueprint, adapt it to their own environment, and run it in Fluxnova with minimal friction.
 

@@ -6,12 +6,12 @@ categories:
 - Technology
 tags:
 - Sustainability
-summary: Why the smartest investors are finding that sustainability isn't a trade-off—it's
-  a competitive advantage. The narrative around sustainability has too often been
-  dominated by compliance costs and regulatory burden. But this framing misses the
-  bigger picture. The most successful companies aren't just ticking regulatory boxes;
-  they're using sustainability as a lens to unlock operational efficiencies, reduce
-  costs, and create entirely new revenue streams.
+summary: Why the smartest investors are finding that sustainability is a competitive
+  advantage. The narrative around sustainability has too often been dominated by compliance
+  costs and regulatory burden. But this framing misses the bigger picture. The most
+  successful companies aren't just ticking regulatory boxes; they're using sustainability
+  as a lens to unlock operational efficiencies, reduce costs, and create entirely
+  new revenue streams.
 author: ocronk
 ---
 
