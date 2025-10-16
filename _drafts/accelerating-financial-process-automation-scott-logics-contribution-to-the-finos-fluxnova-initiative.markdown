@@ -25,7 +25,10 @@ This is where FINOS Fluxnova enters the picture. Launched at the Open Source in 
 
 Fluxnova is an open-source orchestration platform for designing and running end-to-end workflows at scale. Governed by FINOS under the Linux Foundation and released under the Apache 2.0 licence, it combines BPMN and DMN compatibility, migration tooling, and audit-ready execution from day one.
 
-At its core, Fluxnova provides financial institutions with a standardised way to describe, visualise, and execute business processes using internationally recognised notation. Think of it as a common language that allows different systems, teams, and even organisations to speak about complex workflows in the same terms, whether you are describing a simple KYC check or a multi-counterparty derivatives settlement process.
+At its core, Fluxnova provides financial institutions with a standardised way to describe, visualise, and execute business processes using internationally recognised notation. Think of it as a common language that allows different systems, teams, and even organisations to speak about complex workflows in the same terms, whether you are describing a simple KYC check (see below for an example flow) or a multi-counterparty derivatives settlement process.
+
+[![KYC onboarding  
+<sub><em>Click to enlarge</em></sub>](/uploads/01.Pre-Trade.01.KYC.BusinessProcessDefinition.png){: style="max-width:90%; border-radius:8px; display:block; margin:1.5em auto; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);"}](/uploads/01.Pre-Trade.01.KYC.BusinessProcessDefinition.png){: target="_blank" title="Click to view full-size"}
 
 Unlike static process documentation, these models are executable. They integrate with existing systems, enforce business rules, and provide audit trails, bridging the gap between business intent and system implementation.
 
