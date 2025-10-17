@@ -14,7 +14,9 @@ summary: Fluxnova is now live under FINOS, and with it comes a powerful new way 
   full trade lifecycle. From KYC to settlement, these templates combine subject matter
   expertise with engineering precision. Curious how it all came together? Read on.
 author: rgriffiths
-contributors: fvlachos
+contributors:
+- fvlachos
+- tyates
 ---
 
 Walk into any investment bank’s trading floor, and you step into a theatre of expertly controlled chaos. Behind the scenes of every trade, from the initial client enquiry to final settlement, lies a complex web of interconnected processes, each governed by regulations, risk controls, and institutional procedures that have evolved over decades. Yet despite this complexity being universal across financial institutions, the tools to model, standardise, and optimise these processes have remained fragmented, proprietary, and often inadequate.
