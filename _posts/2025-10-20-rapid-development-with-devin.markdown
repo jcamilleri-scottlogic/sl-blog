@@ -9,7 +9,8 @@ tags:
 - Agentic AI
 - Devin
 - Copilot
-summary: Rebuilding a carbon emissions calculator with Devin vs Copilot, where agentic AI speeds delivery and where human engineering remains essential.
+summary: Rebuilding a carbon emissions calculator with Devin vs Copilot, where agentic
+  AI speeds delivery and where human engineering remains essential.
 author: jcamilleri
 ---
 
