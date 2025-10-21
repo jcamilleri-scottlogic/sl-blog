@@ -30,7 +30,7 @@ image: "/uploads/BeyondTheHype---green-and-green---episode-29---social.jpg"
 
 <iframe title="Embed Player" src="https://play.libsyn.com/embed/episode/id/38726855/height/192/theme/modern/size/large/thumbnail/yes/custom-color/ffffff/time-start/00:00:00/playlist-height/200/direction/backward/download/yes/font-color/252525" height="192" width="100%" scrolling="no" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" style="border: none;"></iframe>
 
-In this episode, Oliver Cronk is joined by Josie Walledge (Delivery Principal), Catherine Pratt (Delivery Principal) and Dave Ogle (Lead Developer) to explore whether Agile has lost its meaning – or worse, become a dirty word. With years of combined experience, we reflect on Agile’s evolution from a revolutionary mindset to a sometimes rigid and misunderstood process.
+In this episode, I'm joined by Josie Walledge (Delivery Principal), Catherine Pratt (Delivery Principal) and Dave Ogle (Lead Developer) to explore whether Agile has lost its meaning – or worse, become a dirty word. With years of combined experience, we reflect on Agile’s evolution from a revolutionary mindset to a sometimes rigid and misunderstood process.
 
 We unpack common misconceptions, like Agile being synonymous with speed or chaos, and discuss how frameworks like Scrum and SAFe can either empower or constrain teams. Our conversation highlights the importance of planning, governance, and trust, emphasising that Agile works best when it’s flexible, outcome-focused, and tailored to context.
 
