@@ -25,6 +25,7 @@ contributors:
 - jwalledge
 - cpratt
 - dogle
+image: "/uploads/BeyondTheHype---green-and-green---episode-29---social.jpg"
 ---
 
 <iframe title="Embed Player" src="https://play.libsyn.com/embed/episode/id/38726855/height/192/theme/modern/size/large/thumbnail/yes/custom-color/ffffff/time-start/00:00:00/playlist-height/200/direction/backward/download/yes/font-color/252525" height="192" width="100%" scrolling="no" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" style="border: none;"></iframe>
