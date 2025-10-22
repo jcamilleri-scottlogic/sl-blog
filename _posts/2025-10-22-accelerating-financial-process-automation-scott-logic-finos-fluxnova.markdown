@@ -1,7 +1,7 @@
 ---
 title: 'Accelerating Financial Process Automation: Scott Logic’s Contribution to the
   FINOS Fluxnova Initiative'
-date: 2025-10-22 10:30:00 Z
+date: 2025-10-22 09:23:00 Z
 categories:
 - Open Source
 tags:
