@@ -2,13 +2,15 @@
 title: Mapping the carbon footprint of digital content
 date: 2025-10-23 00:00:00 Z
 categories:
-  - Sustainability
-  - Tech
+- Sustainability
+- Tech
 tags:
-  - Tech
-  - Sustainability
-  - Sustainable AI
-summary: Following the latest update of the Technology Carbon Standard, this blog explores the carbon footprint of digital content throughout its entire lifecycle, highlighting key carbon emissions hotspots and offering strategies to mitigate them.
+- Tech
+- Sustainability
+- Sustainable AI
+summary: Following the latest update of the Technology Carbon Standard, this blog
+  explores the carbon footprint of digital content throughout its entire lifecycle,
+  highlighting key carbon emissions hotspots and offering strategies to mitigate them.
 author: hsauve
 ---
 
