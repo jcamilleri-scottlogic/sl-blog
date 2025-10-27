@@ -4,7 +4,9 @@ date: 2025-10-27 00:00:00 Z
 categories:
 - Artificial Intelligence
 - Open Source
-summary: Organizations seeking cost-effective, privacy-conscious alternatives to proprietary AI solutions can leverage well-chosen open-source LLMs for internal agentic tasks. We tested whether open-source models could substitute OpenAI in multi-agent workflows.
+summary: Organizations seeking cost-effective, privacy-conscious alternatives to proprietary
+  AI solutions can leverage well-chosen open-source LLMs for internal agentic tasks.
+  We tested whether open-source models could substitute OpenAI in multi-agent workflows.
 author: osouthwell
 ---
 
