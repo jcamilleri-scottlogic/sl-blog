@@ -1,12 +1,13 @@
 ---
-title: "Introducing the Latest Version of the Tech Carbon Standard Estimator"
+title: Introducing the Latest Version of the Tech Carbon Standard Estimator
 date: 2025-11-07 00:00:00 Z
 categories:
-  - Sustainability
-  - Open Source
-  - Tech
+- Sustainability
+- Open Source
+- Tech
 author: kellis
-summary: "Introducing the latest enhancements to the Tech Carbon Standard Estimator — schema updates, kg CO₂e values, and exportable data."
+summary: Introducing the latest enhancements to the Tech Carbon Standard Estimator
+  — schema updates, kg CO₂e values, and exportable data.
 ---
 
 # Introducing the Latest Version of the Tech Carbon Standard Estimator
