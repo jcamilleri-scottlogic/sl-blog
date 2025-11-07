@@ -1,5 +1,6 @@
 ---
-title: 'Artificial Intelligence (AI) in Mental Health Services: Will AI Burn Us or Warm Us?'
+title: 'Artificial Intelligence (AI) in Mental Health Services: Will AI Burn Us or
+  Warm Us?'
 date: 2025-11-07 00:00:00 Z
 categories:
 - Artificial Intelligence
@@ -10,7 +11,10 @@ tags:
 - People
 - Mental Health
 - Therapy
-summary: This article looks at how AI can provide support and guidance to people by offering tools and reflections that complement traditional therapy sessions.  AI cannot replace the full depth of the therapeutic journey, but it can enhance care while preserving the integrity of the therapeutic space.  
+summary: This article looks at how AI can provide support and guidance to people by
+  offering tools and reflections that complement traditional therapy sessions.  AI
+  cannot replace the full depth of the therapeutic journey, but it can enhance care
+  while preserving the integrity of the therapeutic space.
 author: lperrett
 ---
 
