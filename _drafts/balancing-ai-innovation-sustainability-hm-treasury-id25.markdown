@@ -10,6 +10,11 @@ tags:
 - Sustainability
 - digital government
 - Tech Carbon Standard
+summary: Last week, we had the privilege of speaking at HM Treasury at the ID25 (Innovation
+  Day) event on the crucial topic of balancing AI innovation with sustainability.
+  In this post, we share the points we raised in that presentation on the current
+  "brute force" reality of GenAI models, and the potential for the UK to lead the
+  way in developing AI systems that are both powerful and sustainable.
 author: ocronk
 contributors:
 - sangell
@@ -19,6 +24,8 @@ contributors:
 Last week, we had the privilege of speaking at HM Treasury at the ID25 (Innovation Day) event on the crucial topic of balancing AI innovation with sustainability.
 
 Joined by Suzanne Angell, our Public Sector Director, we addressed government and industry leaders about how the UK can lead in developing AI systems that are both powerful and sustainable.
+
+![Ollie-HMT-talk-crop.jpg](/uploads/Ollie-HMT-talk-crop.jpg)
 
 ## Reframing the conversation
 
@@ -53,5 +60,7 @@ This approach is fundamentally unsustainable for several reasons:
 * Degradation of the information space as models train on increasingly synthetic content.
 
 * Lack of transparency about true environmental costs.
+
+![HMT-talk-train-opt.jpg](/uploads/HMT-talk-train-opt.jpg)
 
 Illustrating brute force AI development through the use of a metaphor of a train trying to bridge a gap, we illustrated how current AI development is at risk of failure under its own resource requirements and the risk of model collapse. Some AI data centres are being powered directly by gas turbines because there simply isn't time to sort out grid infrastructure – which isn’t the sustainable future we should be building or supporting.
