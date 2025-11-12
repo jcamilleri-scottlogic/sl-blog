@@ -1,24 +1,22 @@
 ---
-title: Introducing the Latest Version of the Tech Carbon Standard Estimator
+title: Introducing the Latest Version of the Tech Carbon Estimator
 date: 2025-11-07 00:00:00 Z
 categories:
 - Sustainability
 - Open Source
 - Tech
+summary: Introducing the latest enhancements to the Tech Carbon Estimator — schema
+  updates, kg CO₂e values, and exportable data.
 author: kellis
-summary: Introducing the latest enhancements to the Tech Carbon Standard Estimator
-  — schema updates, kg CO₂e values, and exportable data.
 ---
-
-# Introducing the Latest Version of the Tech Carbon Standard Estimator
 
 ## Overview
 
-The [Technology Carbon Standard Estimator](https://www.techcarbonstandard.org/estimator) (TCSE) is designed to provide a high-level overview of the potential areas of carbon impact within your IT estate.
+The [Technology Carbon Estimator](https://www.techcarbonstandard.org/estimator) (TCE) is designed to provide a high-level overview of the potential areas of carbon impact within your IT estate.
 
 The estimations are framed within our proposed model of tech emissions — the Technology Carbon Standard — designed to help you map, measure, and improve the environmental impact of your technology.
 
-Since its inception in July 2024, the TCSE has undergone various updates, and we are excited to announce the next batch of feature enhancements. The idea behind these updates is to ensure the tool continues to be valuable across a variety of use cases, while laying the groundwork for future improvements.
+Since its inception in July 2024, the TCE has undergone various updates, and we are excited to announce the next batch of feature enhancements. The idea behind these updates is to ensure the tool continues to be valuable across a variety of use cases, while laying the groundwork for future improvements.
 
 A big thank you to Daniel Moorhouse, Ben Stinchcombe, Max Nyamunda, and Matthew Griffin for all their hard work on these enhancements.
 
@@ -26,13 +24,13 @@ A big thank you to Daniel Moorhouse, Ben Stinchcombe, Max Nyamunda, and Matthew 
 
 ## Schema Updates
 
-The TCSE now uses the latest version of the [Tech Carbon Standard](https://www.techcarbonstandard.org/) schema. This is particularly important when it comes to data export, as we can now provide raw emission data in a predefined, consistent structure for users to ingest into their own tools or applications if required.
+The TCE now uses the latest version of the [Tech Carbon Standard](https://www.techcarbonstandard.org/) schema. This is particularly important when it comes to data export, as we can now provide raw emission data in a predefined, consistent structure for users to ingest into their own tools or applications if required.
 
 ---
 
 ## Emissions Data Available in kg CO₂e and Percentages
 
-Previously, the TCSE only displayed estimated carbon emissions as a percentage breakdown across the four sectors of the Tech Carbon Standard. With this latest release, users can now view this data as either **kg CO₂e** or a percentage breakdown. This provides better context around estimated emissions and makes the tool even more valuable.
+Previously, the TCE only displayed estimated carbon emissions as a percentage breakdown across the four sectors of the Tech Carbon Standard. With this latest release, users can now view this data as either **kg CO₂e** or a percentage breakdown. This provides better context around estimated emissions and makes the tool even more valuable.
 
 We’ve also updated the tool to use the latest version of the CO2.js library, ensuring the most accurate estimates possible.
 
@@ -72,8 +70,8 @@ The new framework also adopts a Page Object Model, making future test writing an
 
 ## What’s Next?
 
-Hot on the heels of this v0.5.0 release, we expect v0.6.0 to be available soon. For this version, we have worked with the team at DEFRA to define features that would make the TCSE a useful tool for UK Government departments to leverage when reporting carbon emissions (part of the [Greening Government strategy](https://www.gov.uk/government/publications/greening-government-commitments-2021-to-2025/greening-government-commitments-2021-to-2025)). This includes a features that estimates carbon emissions for SaaS solutions — primarily Microsoft 365 — along with improved documentation, including a best practice guide that offers tips for entering estimation inputs. Beyond that, we plan to implement emission estimates for both AI inference and model training...watch this space!
+Hot on the heels of this v0.5.0 release, we expect v0.6.0 to be available soon. For this version, we have worked with the team at DEFRA to define features that would make the TCE a useful tool for UK Government departments to leverage when reporting carbon emissions (part of the [Greening Government strategy](https://www.gov.uk/government/publications/greening-government-commitments-2021-to-2025/greening-government-commitments-2021-to-2025)). This includes a features that estimates carbon emissions for SaaS solutions — primarily Microsoft 365 — along with improved documentation, including a best practice guide that offers tips for entering estimation inputs. Beyond that, we plan to implement emission estimates for both AI inference and model training...watch this space!
 
 ---
 
-If you’re interested in learning more about the Tech Carbon Standard Estimator, check out the latest version here [here](https://www.techcarbonstandard.org/estimator) and the GitHub project [here](https://github.com/ScottLogic/sl-tech-carbon-estimator)
+If you’re interested in learning more about the Tech Carbon Estimator, check out the latest version here [here](https://www.techcarbonstandard.org/estimator) and the GitHub project [here](https://github.com/ScottLogic/sl-tech-carbon-estimator)
