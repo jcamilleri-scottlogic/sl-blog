@@ -77,13 +77,13 @@ We have done [an extensive literature review](https://blog.scottlogic.com/2025/0
 
 We proposed a human-led approach to AI, one that empowers people with AI tools rather than attempting to replace them. This means:
 
-1. Measuring first – Understanding the full lifecycle impact of AI systems using frameworks like the Tech Carbon Standard.
+1. **Measuring first** – Understanding the full lifecycle impact of AI systems using frameworks like the Tech Carbon Standard.
 
-2. Embedding sustainability into procurement – Using standards and spend controls to incentivise sustainable AI.
+2. **Embedding sustainability into procurement** – Using standards and spend controls to incentivise sustainable AI.
 
-3. Right-sizing models – Using domain-specific models rather than general-purpose ones for specialised tasks.
+3. **Right-sizing models** – Using domain-specific models rather than general-purpose ones for specialised tasks.
 
-4. Distributing computing – Moving from centralised cloud-only models to a mix including private infrastructure and edge AI.
+4. **Distributing computing** – Moving from centralised cloud-only models to a mix including private infrastructure and edge AI.
 
 The evolution from "clock towers to wrist watches" provides a useful parallel. Just as timekeeping evolved from public clocktowers to personal watches, AI is evolving from massive centralised systems to more distributed and personalised ones.
 
