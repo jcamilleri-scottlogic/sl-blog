@@ -63,13 +63,13 @@ This approach is fundamentally unsustainable for several reasons:
 
 ![HMT-talk-train-opt.jpg](/uploads/HMT-talk-train-opt.jpg)
 
-Illustrating brute force AI development through the use of a metaphor of a train trying to bridge a gap, we illustrated how current AI development is at risk of failure under its own resource requirements and the risk of model collapse. Some AI data centres are being powered directly by gas turbines because there simply isn't time to sort out grid infrastructure – which isn’t the sustainable future we should be building or supporting.
+Illustrating brute force AI development through the use of a metaphor of a train trying to bridge a gap, we explained how current AI development is at risk of failure under its own resource requirements and the risk of model collapse. Some AI data centres are being powered directly by gas turbines because there simply isn't time to sort out grid infrastructure – which isn’t the sustainable future we should be building or supporting.
 
 ### This is not an outlier perspective
 
 We have done [an extensive literature review](https://blog.scottlogic.com/2025/09/16/greener-ai-lit-review.html) of industry and academic material relating to AI sustainability, and it provides a solid evidence base for these positions. Recently, Dr Sacha Lucconi recorded [a TED Talk on this topic](https://www.ted.com/talks/sasha_luccioni_we_re_doing_ai_all_wrong_here_s_how_to_get_it_right), and it's a very compelling 10-minute watch.
 
-&nbsp;
+ 
 
 ## A more sustainable path forward
 
