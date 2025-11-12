@@ -32,14 +32,26 @@ At Scott Logic, we've developed the [Tech Carbon Standard](https://www.techcarbo
 
 The standard highlights three critical areas:
 
-1. Upstream emissions – The hardware manufacturing, software development, and content creation that can make up 50-60% of technology's environmental impact.
+1. **Upstream emissions** – The hardware manufacturing, software development, and content creation that can make up 50-60% of technology's environmental impact.
 
-2. Operational emissions – The running of technology services, which gets most of the attention today.
+2. **Operational emissions** – The running of technology services, which gets most of the attention today.
 
-3. Downstream emissions – The impact on citizens and businesses using government services.
+3. **Downstream emissions** – The impact on citizens and businesses using government services.
 
 Most organisations are shocked to discover that often the majority of their environmental impact comes from hardware procurement rather than operational energy use. This insight alone can transform decision-making.
 
 ## The reality of GenAI models
 
 While celebrating AI's potential, we must confront uncomfortable truths about current approaches, particularly with many large generative models. The industry has adopted what I described as a "brute force" approach – throwing massive computing resources at problems, with corresponding energy and resource requirements.
+
+This approach is fundamentally unsustainable for several reasons:
+
+* Enormous compute and energy requirements, often directly powered by fossil fuels due to grid limitations.
+
+* Generation of substantial e-waste as specialised hardware is quickly obsolesced.
+
+* Degradation of the information space as models train on increasingly synthetic content.
+
+* Lack of transparency about true environmental costs.
+
+Illustrating brute force AI development through the use of a metaphor of a train trying to bridge a gap, we illustrated how current AI development is at risk of failure under its own resource requirements and the risk of model collapse. Some AI data centres are being powered directly by gas turbines because there simply isn't time to sort out grid infrastructure – which isn’t the sustainable future we should be building or supporting.
