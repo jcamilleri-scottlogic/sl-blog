@@ -68,7 +68,9 @@ Illustrating brute force AI development through the use of a metaphor of a train
 ### This is not an outlier perspective
 
 We have done [an extensive literature review](https://blog.scottlogic.com/2025/09/16/greener-ai-lit-review.html) of industry and academic material relating to AI sustainability, and it provides a solid evidence base for these positions. Recently, Dr Sacha Lucconi recorded [a TED Talk on this topic](https://www.ted.com/talks/sasha_luccioni_we_re_doing_ai_all_wrong_here_s_how_to_get_it_right), and it's a very compelling 10-minute watch.
+
 &nbsp;
+
 ## A more sustainable path forward
 
 We proposed a human-led approach to AI, one that empowers people with AI tools rather than attempting to replace them. This means:
