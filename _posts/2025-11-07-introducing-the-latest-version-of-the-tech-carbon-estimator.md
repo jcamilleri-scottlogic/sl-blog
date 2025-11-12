@@ -8,6 +8,7 @@ categories:
 summary: Introducing the latest enhancements to the Tech Carbon Estimator — schema
   updates, kg CO₂e values, and exportable data.
 author: kellis
+image: "/uploads/Introducing-the-Latest-Version-of-the-Tech-Carbon--Estimator-updated-01.jpg"
 ---
 
 ## Overview
