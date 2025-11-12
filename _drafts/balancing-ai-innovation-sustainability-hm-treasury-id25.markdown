@@ -69,4 +69,48 @@ Illustrating brute force AI development through the use of a metaphor of a train
 
 We have done [an extensive literature review](https://blog.scottlogic.com/2025/09/16/greener-ai-lit-review.html) of industry and academic material relating to AI sustainability, and it provides a solid evidence base for these positions. Recently, Dr Sacha Lucconi recorded a TED Talk on this topic, and it's a very compelling 10-minute watch.
 
-<iframe src="https://www.ted.com/talks/sasha_luccioni_we_re_doing_ai_all_wrong_here_s_how_to_get_it_right" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="We’re doing AI all wrong. Here’s how to get it right" width="560" height="315" src="https://www.ted.com/talks/sasha_luccioni_we_re_doing_ai_all_wrong_here_s_how_to_get_it_right" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## A more sustainable path forward
+
+We proposed a human-led approach to AI, one that empowers people with AI tools rather than attempting to replace them. This means:
+
+1. Measuring first – Understanding the full lifecycle impact of AI systems using frameworks like the Tech Carbon Standard.Embedding sustainability into procurement – Using standards and spend controls to incentivise sustainable AI.Right-sizing models – Using domain-specific models rather than general-purpose ones for specialised tasks.Distributing computing – Moving from centralised cloud-only models to a mix including private infrastructure and edge AI.
+
+The evolution from "clock towers to wrist watches" provides a useful parallel. Just as timekeeping evolved from public clocktowers to personal watches, AI is evolving from massive centralised systems to more distributed and personalised ones.
+
+Edge AI – running models directly on end-user devices – offers particular promise. It diffuses energy demand, leverages existing devices (reducing e-waste), and benefits from the rapid innovation in smaller, open-source models.
+
+Maximising existing assets, diffusing power demand
+
+A critical point to emphasise here: when we advocate for running AI on end-user devices, we're not suggesting increasing hardware consumption (although of course there is a danger of a rebound effect). Rather, we're promoting the efficient utilisation of hardware that already exists. Consumer and business devices typically have significant unused computing capacity. Smartphones, laptops and desktops often run at a fraction of their processing potential.
+
+By "sweating these assets" to extract more value from hardware already manufactured and distributed, we avoid the substantial upstream carbon costs of creating new, specialised AI hardware. This approach acknowledges that the environmental impact of manufacturing devices has already occurred; maximising their utility before end-of-life becomes the most sustainable path forward.
+
+This aligns with circular economy principles: extending product lifespans, maximising resource utilisation, and reducing the demand for new manufacturing. The beauty of this approach is that it transforms what might initially appear as a contradiction – running AI across more devices –into a sustainability advantage. It does this through the more efficient use of existing resources across a range of locations that are easier to decarbonise (moving the compute is often easier than moving the power) rather than centralised locations that suffer from grid bottlenecks. There is also the potential to run AI on business and end-user devices overnight – when they are not used, scheduled for times when there is lower-cost and lower-carbon electricity.
+
+\## The UK opportunity
+
+What might initially appear as constraints for the UK – our regulatory environment and grid capacity limitations – can actually drive innovation rather than inhibit it. The UK has a proud history of pragmatic, efficient engineering excellence, from ARM microprocessors to Formula 1 and Rolls Royce jet engines.
+
+Our position enables us to focus on developing AI that is:
+
+* more efficient in its use of resources
+
+* more transparent in its operations
+
+* more trustworthy for sensitive applications
+
+* more tailored to specific domains – particularly those in scientific and highly regulated areas
+
+Rather than competing on raw scale, we can lead in creating specialist models that excel in specific domains while maintaining a smaller footprint. This approach plays to our strengths in scientific innovation and high-end, regulated engineering.
+
+## Looking ahead
+
+After the presentation, there was a panel discussion chaired by Jess McEvoy with government panellists exploring concrete steps forward. There was a strong consensus that:
+
+Sustainability must be baked into the AI development process from the beginningCentral standards coupled with distributed responsibility provide an effective governance modelThe UK has an opportunity to be a global leader in sustainable AI innovation
+
+As we concluded, UK innovation is the key to sustainable AI. By focusing on measurement, embedding sustainability in procurement, right-sizing models, and embracing a range of computing approaches, we can build AI systems that deliver tremendous value while respecting planetary boundaries.
+
+Scott Logic works with public and private sector organisations to design, build and deploy technology that makes a measurable difference to people's lives. To learn more about our approach to sustainable technology, visit scottlogic.com.
