@@ -23,7 +23,7 @@ contributors:
 
 Last week, we had the privilege of speaking at HM Treasury at the ID25 (Innovation Day) event on the crucial topic of balancing AI innovation with sustainability.
 
-Joined by Suzanne Angell, our Public Sector Director, we addressed government and industry leaders about how the UK can lead in developing AI systems that are both powerful and sustainable.
+Joined by [Suzanne Angell](https://blog.scottlogic.com/sangell/), our Public Sector Director, we addressed government and industry leaders about how the UK can lead in developing AI systems that are both powerful and sustainable.
 
 ![Ollie-HMT-talk-crop.jpg](/uploads/Ollie-HMT-talk-crop.jpg)
 
@@ -71,7 +71,7 @@ We have done [an extensive literature review](https://blog.scottlogic.com/2025/0
 
 <div style="max-width:1024px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/sasha_luccioni_we_re_doing_ai_all_wrong_here_s_how_to_get_it_right" width="1024px" height="576px" title="We’re doing AI all wrong. Here’s how to get it right" style="position:absolute;left:0;top:0;width:100%;height:100%"  frameborder="0" scrolling="no" allowfullscreen onload="window.parent.postMessage('iframeLoaded', 'https://embed.ted.com')"></iframe></div></div>
 
-&nbsp;
+ 
 
 ## A more sustainable path forward
 
@@ -115,7 +115,7 @@ Rather than competing on raw scale, we can lead in creating specialist models th
 
 ## Looking ahead
 
-After the presentation, there was a panel discussion chaired by Jess McEvoy with government panellists exploring concrete steps forward. There was a strong consensus that:
+After the presentation, there was a panel discussion chaired by [Jess McEvoy](https://blog.scottlogic.com/jmcevoy/) with government panellists exploring concrete steps forward. There was a strong consensus that:
 
 1. Sustainability must be baked into the AI development process from the beginning
 
