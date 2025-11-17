@@ -6,20 +6,16 @@ categories:
 tags:
 - AI
 - product owner
-summary: 'Phase 5 marks the moment JARVIS stopped being an experiment and started
-  demanding discipline. When Mini-Me collapsed, the temptation to immediately add
-  RAG, FAISS, and knowledge retrieval was overwhelming: every instinct screamed to
-  make it "intelligent" right away. Instead, I did something harder: I said "not yet"
-  and built multi-agent orchestration and governance first. JARVIS can now critique
-  itself, challenge other agents, synthesize consensus across conversation histories,
-  and most critically, every thread carries a blast_radius marker - governance baked
-  in from day one, not bolted on as an afterthought. This is delayed gratification
-  as product strategy: building the decision-making loop before giving the system
-  real power. The temptation to rush to memory was real. The decision to build orchestration
-  first was right. Because just as Vision proved worthy of wielding Thor''s hammer
-  through restraint rather than raw power, JARVIS earns its capabilities by demonstrating
-  it can be trusted with them. The transformation from JARVIS to Vision begins next,
-  and the foundations are finally sound enough to support it.'
+summary: Phase 5 was the strategic rebirth of the JARVIS project, moving it from the
+  chaos of the self-destructive ‘Ultron’ stage to a state of purposeful discipline.
+  Following a rather dramatic system collapse, I put the brakes on the overwhelming
+  temptation to immediately bolt on intelligence features like RAG and memory. Instead,
+  I executed a disciplined pivot to multi-agent orchestration and governance. This
+  foundational work now allows JARVIS to critique itself, synthesise consensus across
+  conversations, and, most critically, embed a `blast_radius` governance marker from
+  the very first line of code. This strategy of delayed gratification was about building
+  a robust decision-making loop and earning trust before granting the system real
+  power, ensuring the foundations are sound for its ultimate transformation into Vision.
 author: rgriffiths
 ---
 
