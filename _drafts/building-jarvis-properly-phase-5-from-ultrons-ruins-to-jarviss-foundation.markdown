@@ -21,7 +21,7 @@ author: rgriffiths
 
 ## Act 1: Picking up the pieces
 
-When Mini-Me collapsed under its own weight, it was terribly tempting to declare the entire experiment a failure and simply walk away. It had been, initially, a rather promising AI-agnostic logger, but governance slipped, scope crept, and before long it was a monolith wobbling on foundations that could never hold.
+When Mini-Me [collapsed under its own weight](https://blog.scottlogic.com/2025/09/08/building-an-ai-agnostic-conversation-logger-phase-4-mini-me.html), it was terribly tempting to declare the entire experiment a failure and simply walk away. It had been, initially, a rather promising AI-agnostic logger, but governance slipped, scope crept, and before long it was a monolith wobbling on foundations that could never hold.
 
 The ruins, though, were instructive. Out of that wreckage came a clear view of what truly mattered: modularity, clean interfaces, and, most importantly, a product owner's steady hand. Phase 5 is therefore not a patch job. It is a rebirth. This is where JARVIS takes its true shape, leaner, more sustainable, and truer to its vision.
 
