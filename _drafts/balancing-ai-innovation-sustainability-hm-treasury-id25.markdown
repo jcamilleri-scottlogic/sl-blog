@@ -39,7 +39,7 @@ At Scott Logic, we've developed the [Tech Carbon Standard](https://www.techcarbo
 
 The standard highlights three critical areas:
 
-1. **Upstream emissions** – The hardware manufacturing, software development, and content creation that can make up 50-60% of technology's environmental impact.
+1. **Upstream emissions** – The hardware manufacturing, software development, and content creation that can make up 50–60% of technology's environmental impact.
 
 2. **Operational emissions** – The running of technology services, which gets most of the attention today.
 
@@ -69,8 +69,6 @@ Illustrating brute force AI development through the use of a metaphor of a train
 
 We have done [an extensive literature review](https://blog.scottlogic.com/2025/09/16/greener-ai-lit-review.html) of industry and academic material relating to AI sustainability, and it provides a solid evidence base for these positions. Recently, Dr Sacha Lucconi recorded [a TED Talk on this topic](https://www.ted.com/talks/sasha_luccioni_we_re_doing_ai_all_wrong_here_s_how_to_get_it_right), and it's a very compelling 10-minute watch.
 
- 
-
 ## A more sustainable path forward
 
 We proposed a human-led approach to AI, one that empowers people with AI tools rather than attempting to replace them. This means:
@@ -83,9 +81,9 @@ We proposed a human-led approach to AI, one that empowers people with AI tools r
 
 4. **Distributing computing** – Moving from centralised cloud-only models to a mix including private infrastructure and edge AI.
 
-The evolution from "clock towers to wrist watches" provides a useful parallel. Just as timekeeping evolved from public clocktowers to personal watches, AI is evolving from massive centralised systems to more distributed and personalised ones.
+The evolution from "clock towers to wristwatches" provides a useful parallel. Just as timekeeping evolved from public clocktowers to personal watches, AI is evolving from massive centralised systems to more distributed and personalised ones.
 
-Edge AI – running models directly on end-user devices – offers particular promise. It diffuses energy demand, leverages existing devices (reducing e-waste), and benefits from the rapid innovation in smaller, open-source models.
+Edge AI (running models directly on end-user devices) offers particular promise. It diffuses energy demand, leverages existing devices (reducing e-waste), and benefits from the rapid innovation in smaller, open-source models.
 
 ## Maximising existing assets, diffusing power demand
 
