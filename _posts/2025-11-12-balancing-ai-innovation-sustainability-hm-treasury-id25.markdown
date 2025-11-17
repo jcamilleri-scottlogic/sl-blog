@@ -10,6 +10,15 @@ tags:
 - Sustainability
 - digital government
 - Tech Carbon Standard
+- edge AI
+- distributed computing
+- brute force AI
+- generative AI
+- Technology Carbon Standard
+- upstream emissions
+- downstream emissions
+- operational emissions
+- UN Sustainable Development Goals
 summary: Last week, we had the privilege of speaking at HM Treasury at the ID25 (Innovation
   Day) event on the crucial topic of balancing AI innovation with sustainability.
   In this post, we share the points we raised in that presentation on the current
