@@ -59,7 +59,7 @@ The architecture is modular from the ground up. No more dumping everything into 
 
 * **Agents** (`jarvis/agents`) contain backend-specific adapters. Whether it's OpenAI, Claude, or the late-arriving (to my implementation!) Gemini, each conforms to the same interface.
 * **Services** (`jarvis/services`) handle cross-cutting concerns like logging, search (for a future version), and orchestration logic.
-* **Data** (`jarvis/data`) holds threads and metadata. Each conversation is its own object, with clean methods for adding messages, following existing sessions, or starting anew.
+* **Data** (`jarvis/data`) holds threads and metadata. Each conversation is its own object, with clean methods for adding messages, following existing sessions, or starting anew. For now, JSON serves the purpose, but the modular design anticipates migration to more sophisticated backends when the time comes, *e.g.*, graph structures, bidirectional linking, or protocol-driven knowledge stores.
 * **Resources** (`jarvis/resources/prompts`) defines the special instructions for critique (including self-critique and cross-critique), consensus (including the consensus_last_n special option), and also both the compare & contrast modes.
 
 The CLI (`jarvis/cli/main.py`) stitches these parts together. Its job is orchestration, not heavy lifting.
@@ -101,17 +101,26 @@ There's a quiet satisfaction in seeing JARVIS operate: not perfect, not finished
 
 JARVIS is no longer just an experiment. It is a platform with foundations solid enough to support the transformation ahead. From Ultron's chaos, I've built something purposeful and restrained. JARVIS is ready to evolve.
 
-## The roadmap: An evolutionary arc
+## The Current Roadmap: An Evolutionary Arc
 
-The path forward follows the natural progression of Tony Stark's own AI evolution, and it's a deliberate sequence built on delayed gratification:
+The path forward follows the natural progression of Tony Stark's own AI evolution, and it's a deliberate sequence built on delayed gratification, focusing on **control first, capability second**:
 
-**Phase 6: Vision Awakens** will mark JARVIS's transformation into something greater. Like Falcon's wings extending capability through disciplined tool use, JARVIS will gain the ability to interact with the world: reading files, listing directories, working with local codebases. But these capabilities will be strictly governed by the `blast_radius` marker already in place. This is where JARVIS becomes Vision, *worthy* of wielding <del>Thor's hammer</del> power because restraint is built into its very nature.
+* **Immediate Horizon: Vision Awakens**
+    JARVIS's next transformation will grant it the ability to interact with the world: reading files, working with local codebases, and accessing external tools. Like Falcon's wings extending capability through disciplined tool use, JARVIS will gain power, but this power will be strictly governed by the `blast_radius` marker already in place.
 
-**Phase 7: Friday's Library** continues the evolution. With orchestration proven and tool use safely implemented, the system gains the retrieval layer (the placeholder for which exists already) that transforms context-awareness into knowledge-awareness. Like Friday accessing all of Stark's historical data and institutional knowledge, JARVIS will finally have RAG, FAISS, and the memory infrastructure originally envisioned. Memory arrives, but only after we've proven we can control what the system does with that memory.
+    This is also where the architecture for knowledge persistence becomes critical. Plain JSON files have served their purpose, but the future demands something more robust: a proper knowledge backend that can handle versioning, relationships, and structured retrieval. Whether through graph databases, structured note systems, or protocol-based context sharing, the foundation must support institutional memory without sacrificing the vendor agnosticism that makes JARVIS unique.
 
-**Phase 8: House Party Protocol** explores genuine autonomy. Remember Iron Man 3's climactic battle, when Tony summoned the entire Iron Legion? Marks 1 through 42, each with different specialisations, operating autonomously but coordinated towards a single goal. That's the vision for Phase 8 and beyond: multiple agents working in concert, chaining actions, making decisions, operating with minimal human intervention. But by that point, every layer beneath will be solid, auditable, and safe.
+    This is where JARVIS begins to become **Vision**, *worthy* of wielding <del>Thor's Hammer</del> power because restraint is baked into its very nature.
 
-This is not the roadmap of a project chasing shiny objects. This is architecture with intent. From JARVIS to Vision to Friday to the Iron Legion, each phase builds on the last. This is delayed gratification as competitive advantage.
+* **Medium Term: Friday’s Library**
+    With orchestration proven and tool use safely implemented, the focus can now shift to true knowledge-awareness. Like Friday accessing all of Stark’s historical data and institutional knowledge, JARVIS will finally gain a comprehensive **retrieval layer**. The memory infrastructure originally envisioned will arrive, but only after we've proven we can control *what* the system does with that memory.
+
+    This phase also represents an opportunity to embrace emerging standards for context and tool integration. Rather than reinventing protocols, JARVIS should participate in the broader ecosystem, *e.g.*, connecting to multiple data sources, exposing capabilities through standard interfaces, and maintaining that critical vendor agnosticism while playing well with others.
+
+* **Long Term: House Party Protocol**
+    The ultimate vision explores genuine autonomy. Remember Iron Man 3's climactic battle, when Tony summoned the entire Iron Legion? That’s the aspiration: **multiple agents working in concert, chaining actions, and operating with minimal human intervention**. By that point, every layer beneath will be solid, auditable, and safe, allowing for reliable, coordinated action.
+
+This is not the roadmap of a project chasing shiny objects; it is architecture with intent. From JARVIS to Vision to Friday to the Iron Legion, each stage builds upon the last. This remains a strategy of **delayed gratification as competitive advantage**.
 
 ## Closing: The foundations are sound
 
