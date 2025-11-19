@@ -1,14 +1,17 @@
 ---
-title: 'Sustainability in AI - why we must listen to the smaller players'
+title: Sustainability in AI - why we must listen to the smaller players
 date: 2025-11-19 00:00:00 Z
 categories:
-  - Sustainability
-  - Tech
+- Sustainability
+- Tech
 tags:
-  - Tech
-  - Sustainability
-  - Sustainable AI
-summary: As AI systems scale to billions of daily interactions, their environmental impact remains largely invisible. Building sustainable AI requires transparency in reporting, prioritising efficiency over scale, and challenging the use of AI when it is truly necessary.
+- Tech
+- Sustainability
+- Sustainable AI
+summary: As AI systems scale to billions of daily interactions, their environmental
+  impact remains largely invisible. Building sustainable AI requires transparency
+  in reporting, prioritising efficiency over scale, and challenging the use of AI
+  when it is truly necessary.
 author: hsauve
 ---
 
