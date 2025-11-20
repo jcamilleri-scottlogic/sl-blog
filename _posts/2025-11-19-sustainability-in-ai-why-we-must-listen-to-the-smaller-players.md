@@ -13,6 +13,7 @@ summary: As AI systems scale to billions of daily interactions, their environmen
   in reporting, prioritising efficiency over scale, and challenging the use of AI
   when it is truly necessary.
 author: hsauve
+image: "/uploads/Sustainability-in-AI---why-we-must-listen-to-the-smaller-players-01.jpg"
 ---
 
 As Large Language Models (LLMs) become increasingly adopted across all disciplines, their environmental impact remains opaque, with limited transparency from major providers. With model sizes reaching hundreds of billions of parameters, training and developing state-of-the-art AI systems generates substantial carbon emissions and strains vital resources like electricity and water, particularly in certain regions of the world. 
