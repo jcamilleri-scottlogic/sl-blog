@@ -23,13 +23,13 @@ author: rgriffiths
 
 When Mini-Me [collapsed under its own weight](https://blog.scottlogic.com/2025/09/08/building-an-ai-agnostic-conversation-logger-phase-4-mini-me.html), it was terribly tempting to declare the entire experiment a failure and simply walk away. It had been, initially, a rather promising AI-agnostic logger, but governance slipped, scope crept, and before long it was a monolith wobbling on foundations that could never hold.
 
-The ruins, though, were instructive. Out of that wreckage came a clear view of what truly mattered: modularity, clean interfaces, and, most importantly, a product owner's steady hand. Phase 5 is therefore not a patch job. It is a rebirth. This is where JARVIS takes its true shape, leaner, more sustainable, and truer to its vision.
+The ruins, though, were instructive. Out of that wreckage came a clear view of what truly mattered: modularity, clean interfaces, and a product owner's steady hand. Phase 5 is therefore not a patch job. It is a rebirth. This is where JARVIS takes its true shape, leaner, more sustainable, and truer to its vision.
 
 If Mini-Me was Ultron, powerful but unstable, overreaching until it self-destructed, then what emerges from Phase 5 is JARVIS itself: purposeful, disciplined, and built on foundations solid enough to support the transformation ahead.
 
 ## Act 2: The temptation to rush ahead
 
-The original plan was straightforward: implement a retrieval layer immediately. RAG, FAISS, vector stores, the whole knowledge-awareness infrastructure. Let JARVIS draw on external memory, make it truly intelligent, and watch it soar.
+The original plan was straightforward: implement a retrieval layer immediately. RAG, FAISS, vector stores, the whole knowledge retrieval infrastructure. Let JARVIS draw on external memory, make it truly intelligent, and watch it soar.
 
 It was seductive. It was also precisely the wrong move.
 
@@ -57,9 +57,9 @@ It is contrary to how most AI projects evolve. It requires saying "not yet" when
 
 The architecture is modular from the ground up. No more dumping everything into a single script and hoping it plays nicely. Instead:
 
-* **Agents** (`jarvis/agents`) contain backend-specific adapters. Whether it's OpenAI, Claude, or the late-arriving (to my implementation!) Gemini, each conforms to the same interface.
+* **Agents** (`jarvis/agents`) contain backend-specific adapters. Whether it's OpenAI, Claude, or Gemini, each conforms to the same interface.
 * **Services** (`jarvis/services`) handle cross-cutting concerns like logging, search (for a future version), and orchestration logic.
-* **Data** (`jarvis/data`) holds threads and metadata. Each conversation is its own object, with clean methods for adding messages, following existing sessions, or starting anew. For now, JSON serves the purpose, but the modular design anticipates migration to more sophisticated backends when the time comes, *e.g.*, graph structures, bidirectional linking, or protocol-driven knowledge stores.
+* **Data** (`jarvis/data`) holds threads and metadata. Each conversation is its own object, with clean methods for adding messages, following existing sessions, or starting afresh. For now, JSON serves the purpose, but the modular design anticipates migration to more sophisticated backends when the time comes, *e.g.*, graph structures, bidirectional linking, or protocol-driven knowledge stores.
 * **Resources** (`jarvis/resources/prompts`) defines the special instructions for critique (including self-critique and cross-critique), consensus (including the consensus_last_n special option), and also both the compare & contrast modes.
 
 The CLI (`jarvis/cli/main.py`) stitches these parts together. Its job is orchestration, not heavy lifting.
@@ -93,7 +93,7 @@ The `blast_radius` marker is a constraint that travels with every thread. It sig
 
 This isn't theoretical. When Phase 6 introduces tool use, the orchestration layer will check this marker before granting any permissions. The governance isn't bolted on afterwards. It's baked in from the start.
 
-This is what mature AI engineering looks like: Built-in not Bolt-on.
+This is what mature AI engineering looks like: Built-in, not Bolt-on.
 
 ## Act 5: The foundation is laid
 
@@ -101,7 +101,7 @@ There's a quiet satisfaction in seeing JARVIS operate: not perfect, not finished
 
 JARVIS is no longer just an experiment. It is a platform with foundations solid enough to support the transformation ahead. From Ultron's chaos, I've built something purposeful and restrained. JARVIS is ready to evolve.
 
-## The Current Roadmap: An Evolutionary Arc
+## Act 6: The Evolutionary Arc
 
 The path forward follows the natural progression of Tony Stark's own AI evolution, and it's a deliberate sequence built on delayed gratification, focusing on **control first, capability second**:
 
