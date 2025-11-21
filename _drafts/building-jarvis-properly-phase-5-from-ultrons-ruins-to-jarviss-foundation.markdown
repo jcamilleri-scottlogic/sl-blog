@@ -1,6 +1,6 @@
 ---
 title: 'Building JARVIS Properly - Phase 5: From Ultron''s Ruins to JARVIS''s Foundation'
-date: 2025-11-17 12:28:00 Z
+date: 2025-11-21 16:50:00 Z
 categories:
 - AI
 tags:
