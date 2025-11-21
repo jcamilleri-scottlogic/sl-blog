@@ -128,4 +128,4 @@ Phase 5 marks the point where this project stopped being a tinkering experiment 
 
 The temptation to rush to memory was real. The decision to build orchestration first was right.
 
-The transformation from JARVIS to Vision begins next. The journey continues, with discipline as my guide.
+The transformation from JARVIS to Vision begins next. I just need to stop myself from trying to build the flying suit before I've finished the brain!
