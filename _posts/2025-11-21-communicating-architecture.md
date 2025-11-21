@@ -4,7 +4,10 @@ date: 2025-11-21 00:00:00 Z
 categories:
 - Tech
 author: sbreingan
-summary: One of the key responsibilities of a software architect is communicating effectively—more often than not, that means using visuals rather than relying on text. This post explores approaches and tools for modelling architecture and creating diagrams.
+summary: One of the key responsibilities of a software architect is communicating
+  effectively—more often than not, that means using visuals rather than relying on
+  text. This post explores approaches and tools for modelling architecture and creating
+  diagrams.
 ---
 
 One of the key responsibilities of a software architect is communicating architecture effectively. Architecture never exists in a vacuum — it exists to align people, guide decisions, and help teams move toward the same goals. Whether you're sketching a new system or explaining how existing components fit together, effective communication means helping others understand the structure, purpose, and implications of the architecture.
