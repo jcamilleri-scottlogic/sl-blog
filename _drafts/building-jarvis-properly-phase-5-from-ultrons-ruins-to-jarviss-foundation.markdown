@@ -66,7 +66,8 @@ The CLI (`jarvis/cli/main.py`) stitches these parts together. Its job is orchest
 
 The difference is subtle but profound. JARVIS is no longer "code that works for now" but a system that can grow without becoming incomprehensible.[^1]
 
-[^1]: For those interested in implementation details: JARVIS now supports full vendor agnosticism with `--agent` (persistent switching) and `--using` (temporary override) flags. Persona management via `--as` allows loading context-specific instruction sets. The three supported backends (OpenAI, Anthropic, Gemini) all implement the same core interface, making vendor lock-in a relic of the past.<hr />
+[^1]: For those interested in implementation details: JARVIS now supports full vendor agnosticism with `--agent` (persistent switching) and `--using` (temporary override) flags. Persona management via `--as` allows loading context-specific instruction sets. The three supported backends (OpenAI, Anthropic, Gemini) all implement the same core interface, making vendor lock-in a relic of the past.
+<hr />
 
 ### Multi-agent orchestration: The real innovation
 
