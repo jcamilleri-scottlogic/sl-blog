@@ -135,7 +135,7 @@ As we concluded, UK innovation is the key to sustainable AI. By focusing on meas
 
 Scott Logic works with public and private sector organisations to design, build and deploy technology that makes a measurable difference to people's lives. You can learn more here about [our approach to sustainable technology](https://www.scottlogic.com/what-we-do/sustainable-software).
 
-After the event, I recorded my talk for publication on YouTube. You can watch it here:
+After the event, I recorded the talk for publication on YouTube. You can watch it here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cOFNzhathnU?si=yD_dFXTvYMpwKpL2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 &nbsp;
