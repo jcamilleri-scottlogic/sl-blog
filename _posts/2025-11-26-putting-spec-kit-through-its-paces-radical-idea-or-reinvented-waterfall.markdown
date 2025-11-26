@@ -8,6 +8,7 @@ summary: Spec-Driven Development promises reliable, specification-led software g
   prompting. This post walks through a real-world test using Spec Kit and explains
   why traditional AI-assisted development still outpaces SDD by a wide margin.
 author: ceberhardt
+image: "/uploads/timeline-sdd.png"
 ---
 
 As AI coding tools have become ever more powerful, taking on sizeable programming tasks with autonomy, the industry is pondering how we adapt our processes to capitalise on the strengths of this technology and address its weaknesses.
@@ -33,11 +34,7 @@ As an aside, it’s amazing how much things have changed in less than a year. I�
 I wanted to give SDD a try, but there are growing number of frameworks and approaches to choose from. Here are a few notable projects and tools relating to this nascent approach:
 
 * [GitHub Spec Kit](https://github.com/github/spec-kit/) (Sept 25) - An open source, AI agent agnostic toolkit, that encodes a multi-step spec workflow (Constitution → Specify → Plan → Tasks → Implement → PR)
-
-
 * [Tessl Framework and Registry](https://tessl.io/) (Sept 25) - A startup, "Tessl is pioneering spec-driven development"
-
-
 * [Amazon Kiro](https://kiro.dev/) (Nov 25) - Amazon's offering that “helps you do your best work by bringing structure to AI coding with spec-driven development.” (Requirements → Design → Tasks → Implement → PR)
 
 While these tools all provide a form of SDD, their workflow to differ quite a bit. I’d definitely recommend reading Birgitta's post which outlines three different levels, [spec-first, spec-anchored and spec-as-source,](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html) which helps to understand the differences.
@@ -58,7 +55,7 @@ Rather than implement a new feature I decided to ‘surgically remove’ an exis
 
 ![kartlog.png](/uploads/kartlog.png)
 
-I removed this feature, reverting it to a simple string when recording sessions. This resulted in [\~1000 lines of code being deleted.](https://github.com/ColinEberhardt/kartlog/commit/e2c31dab77b501c03dca92b08789079904ee9208)
+I removed this feature, reverting it to a simple string when recording sessions. This resulted in [~1000 lines of code being deleted].(https://github.com/ColinEberhardt/kartlog/commit/e2c31dab77b501c03dca92b08789079904ee9208)
 
 My goal was to re-create this functionality using Spec Kit, evaluating whether this approach is superior to the current vibe engineering techniques I use (covered later). This felt like a good test case; a reasonably sizeable product increment of modest complexity (CRUD functionality, integration with existing data model, GPS integration), but also one where I could confidently write an unambiguous specification – because I’d already built it.
 
@@ -81,9 +78,7 @@ You can see the file it produced in the [corresponding commit](https://github.co
 Going forwards, for each step, I’m going to include the overall statistics relating to agent execution time, the time I spent on reviewing artefacts and tokens consumed:
 
 * 4min generation
-
 * 5min review and adjust
-
 * 161 lines of markdown generated
 
 ## Specify
@@ -99,9 +94,7 @@ Oh yes, it also added a 41-line self-assessment, checking this specification aga
 I did make a few changes to the specification (via the chat), removing some NFRs that felt a little misplaced.
 
 * 6min generation
-
 * 15min review and adjust
-
 * 230 lines of markdown generated
 
 ## Plan
@@ -111,21 +104,15 @@ The next step is to create a plan, “Once a feature specification exists, this 
 Executing this step took 8 minutes, and created a *lot* of markdown:
 
 * **444-line module contract** – a human-readable description of the persistence JavaScript module, which includes a lot of code snippets. Ironically this is 4x the length of the actual module itself (once implemented).
-
-* **395-line data model **– that has a few interesting migration details, but otherwise a lot of code snippets and excessive detail (in my opinion). Much of this feels like an obvious and valueless transformations of the spec (validation logic, lifecycle, ...)
-
+* **395-line data model**– that has a few interesting migration details, but otherwise a lot of code snippets and excessive detail (in my opinion). Much of this feels like an obvious and valueless transformations of the spec (validation logic, lifecycle, ...)
 * **285-line plan** - reiterates tech stack, outlines folder structure
-
-* **500-line quick start **– details the** **step by step implementation, plus test plan
-
+* **500-line quick start **– details the** \*\*step by step implementation, plus test plan
 * **406-line research document** - including justification of decisions (e.g. why it is using the SMUI (Svelte Material UI) library? erm ... because every other page uses that!)
 
 It isn’t entirely clear whether you are supposed to review the output of the Plan step, but the contents detailed above feels quite excessive. Take a [look for yourself](https://github.com/ColinEberhardt/kartlog/commit/66763b0032147d20b5ecd3b35d4d672d91d01931#diff-fe1be781470cad9029e0ca9200fb7905bb9016dced6ef48dedb71ab1a7d54889).
 
 * 8m30 generation
-
 * 2 hour review (might not have been needed)
-
 * 2,067 lines of markdown generated
 
 ## Tasks
@@ -135,9 +122,7 @@ At this point I thought it was time to implement, but not yet, there is one more
 Thankfully this was relatively brief, creating a 66-step implementation plan, mapped to user stories, includes checkpoints, opportunities for parallel execution. Here’s the [commit](https://github.com/ColinEberhardt/kartlog/commit/ba036c702472a693816799d3ef2bd57c919f31f8).
 
 * 8m30 generation
-
 * 2 hour review (might not have been needed)
-
 * 2,067 lines of markdown generated
 
 ## Implementation
@@ -151,9 +136,7 @@ Given that I am following SDD, I should clarify my specification, then repeat th
 There is a lot of debate on the GitHub Discussions board about [how to refine / fix the implementation](https://github.com/github/spec-kit/discussions/501). It isn’t entirely clear.
 
 * 13m15 generation time
-
 * 689 lines of code
-
 * 30min review
 
 After this, I now had a fully functional application where I can add / remove circuits and associate them with sessions:
@@ -163,11 +146,8 @@ After this, I now had a fully functional application where I can add / remove ci
 And the grand totals were:
 
 * 33m30 - of agent execution time
-
 * 689 loc
-
 * 2,577 lines of markdown
-
 * 3.5 hrs review time
 
 ## Next increment
@@ -179,12 +159,9 @@ The next step was to add GPS functionality, deriving a spec from the following:
 I’ll not got into the detail of each step again, just provide the totals:
 
 * 23m30 - of agent execution time
-
-* \~300 loc
-
+* ~300 loc
 * 2,262 lines of markdown
-
-* \~ 2 hrs review
+* ~2 hrs review
 
 You can see the individual steps in my [commit history](https://github.com/ColinEberhardt/kartlog/commits/004-geolocation/) if you’re interested. Given that this was a small increment, I was surprised to find the implementation step took 11 minutes to execute.
 
@@ -203,11 +180,8 @@ So, how does this compare to the approach I typically use, building features usi
 Here’s the summary:
 
 * 8m - of agent execution time
-
 * 1,000 loc (and no markdown!)
-
 * 15 min code review
-
 * 9 min functional test and small fixes / tweaks
 
 I reached my end goal much faster, and without any bugs in the implementation.
@@ -218,10 +192,8 @@ Viewing the process as a timeline you can see some significant differences betwe
 
 My high-level approach is as follows:
 
-* Prompt Copilot to implement a modest size increment, something I feel i can confidently review in 10 minutes.
-
+* Prompt Copilot to implement a modest size increment, something I feel I can confidently review in 10 minutes.
 * When it has finished, immediately move to a functional verification, providing additional prompts if I see bugs or visual issues.
-
 * Once it passes my functional tests, I prompt Copilot to implement the next feature while I spend time familiarising myself with the code from the previous step. At this point I might determine the need to refactor some of the code, which I'll bundle into my next functional test / fix cycle.
 
 Compared to working with Spec Kit there is very little down-time at all. I am working while the agent works alongside me.
@@ -242,7 +214,9 @@ Code is law because it is formal language you can reason about. You can test it.
 
 Much of the content within the various Spec Kit steps is duplicative, and faux context. For example, it creates ‘fake’ background context (reasoning about the UI design because I might be wearing gloves at the circuit). This is a common problem with the use of AI in general – it creates detail that fundamentally lacks depth of value.
 
-> **\*\*Rationale\*\***: Karting users need to log data trackside on mobile devices, often with gloves or in suboptimal lighting. Poor mobile UX renders the app unusable in its primary context of use.
+~~~
+**Rationale**: Karting users need to log data trackside on mobile devices, often with gloves or in suboptimal lighting. Poor mobile UX renders the app unusable in its primary context of use.
+~~~
 
 Finally, in most development processes specifications are a point-in-time tool for steering implementation. Once complete, and fully tested, how often do you re-visit a user story? Very rarely, they lack much value once the feature is complete.
 
