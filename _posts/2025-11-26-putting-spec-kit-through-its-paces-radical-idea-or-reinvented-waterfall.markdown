@@ -33,9 +33,9 @@ As an aside, it’s amazing how much things have changed in less than a year. I�
 
 I wanted to give SDD a try, but there are growing number of frameworks and approaches to choose from. Here are a few notable projects and tools relating to this nascent approach:
 
-* [GitHub Spec Kit](https://github.com/github/spec-kit/) (Sept 25) - An open source, AI agent agnostic toolkit, that encodes a multi-step spec workflow (Constitution → Specify → Plan → Tasks → Implement → PR)
-* [Tessl Framework and Registry](https://tessl.io/) (Sept 25) - A startup, "Tessl is pioneering spec-driven development"
-* [Amazon Kiro](https://kiro.dev/) (Nov 25) - Amazon's offering that “helps you do your best work by bringing structure to AI coding with spec-driven development.” (Requirements → Design → Tasks → Implement → PR)
+* [GitHub Spec Kit](https://github.com/github/spec-kit/) **(Sept 25)** - An open source, AI agent agnostic toolkit, that encodes a multi-step spec workflow (Constitution → Specify → Plan → Tasks → Implement → PR)
+* [Tessl Framework and Registry](https://tessl.io/) **(Sept 25)** - A startup, "Tessl is pioneering spec-driven development"
+* [Amazon Kiro](https://kiro.dev/) **(Nov 25)** - Amazon's offering that “helps you do your best work by bringing structure to AI coding with spec-driven development.” (Requirements → Design → Tasks → Implement → PR)
 
 While these tools all provide a form of SDD, their workflow to differ quite a bit. I’d definitely recommend reading Birgitta's post which outlines three different levels, [spec-first, spec-anchored and spec-as-source,](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html) which helps to understand the differences.
 
