@@ -102,11 +102,10 @@ When I ran the system with `--blast-radius low` (Safety Mode), I deliberately as
 
 The logs told the story better than I could:
 
-```text
+```
 INFO: 🛠️ Agent requests tool: append_note
 ```
-
-```text
+```
 WARN: 🛡️ Governance Block: 'append_note' blocked by LOW blast radius.
 ```
 
@@ -124,13 +123,17 @@ The terminal came alive:
 
 ```
 ✅ MCP Session Initialised
-
+```
+```
 🔎 Discovered Tools: ['list_notes', 'read_note', 'create_note', 'append_note']
-
+```
+```
 🛠️ Executing Tool: list_notes
-
+```
+```
 🛠️ Executing Tool: read_note (path: 'JARVIS Board.md')
-
+```
+```
 🛠️ Executing Tool: create_note (path: 'Summary.md')
 ```
 
