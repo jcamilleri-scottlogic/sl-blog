@@ -80,9 +80,13 @@ With the directories clean, I built the integration in three parts, each deliber
 Previously, the Orchestrator was a simple pipeline: receive prompt, send to LLM, return response. This worked for conversational AI but couldn't support tool use. I upgraded it to implement a **Reasoning + Acting (ReAct)** pattern.
 
 Now, when I send a prompt, the Orchestrator:
+
 1. Connects to the MCP server and asks "What can you do?"
+
 2. Injects the tool definitions into the system prompt
+
 3. Sends the user's prompt to the LLM
+
 4. Watches the response carefully
 
 If the LLM replies with text, we show it to the user. But if the LLM replies with a JSON tool call, the Orchestrator intercepts it, executes the tool via the MCP client, and feeds the result back to the LLM as a new "observation". The LLM can then reason about that observation and either use another tool or provide a final answer.
