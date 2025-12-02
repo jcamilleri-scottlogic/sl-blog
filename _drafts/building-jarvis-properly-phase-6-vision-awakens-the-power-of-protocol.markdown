@@ -104,6 +104,8 @@ The logs told the story better than I could:
 
 ```text
 INFO: 🛠️ Agent requests tool: append_note
+```
+```text
 WARN: 🛡️ Governance Block: 'append_note' blocked by LOW blast radius.
 ```
 
