@@ -35,7 +35,7 @@ Moreover, change for change’s sake diverts resources from initiatives that cre
 
 ##Current doesn’t always mean better
 
-There’s an accepted norm that staying current is synonymous with staying secure and efficient and aligned with best practice.  Whilst there are undisputable benefits from some upgrades, it’s not universally applicable. Mature software versions often receive long-term support, ensuring stability without mandating upgrades. For businesses that prioritise reliability and stability over significant new features, these mature versions can be a sensible safe harbour. 
+There’s an accepted norm that staying current is synonymous with staying secure and efficient and aligned with best practice.  Whilst there are indisputable benefits from some upgrades, it’s not universally applicable. Mature software versions often receive long-term support, ensuring stability without mandating upgrades. For businesses that prioritise reliability and stability over significant new features, these mature versions can be a sensible safe harbour. 
 
 Sometimes factors other than features and functionality become a powerful catalyst for change, for example, significant licensing changes that alter the economics of the platform, placing increased pressure on budgets and operational costs.
 
@@ -45,23 +45,24 @@ The answer comes very much in the form of ensuring you know why you are upgradin
 
 ##Open-Source advantage
 
-This is where open-source software introduces a compelling alternative. Unlike proprietary products, where the vendor dictates the roadmap and retirement schedule, open-source solutions empower users to take control. If a version works perfectly for your business, you’re not at the mercy of a vendor’s lifecycle decisions. A group of interested parties, vendors, customers, and community contributors, can maintain and evolve the product indefinitely.
+This is where open-source software introduces a compelling alternative ([read about our commitment to open source](https://www.scottlogic.com/who-we-are/our-commitment-open-source)). Unlike proprietary products, where the vendor dictates the roadmap and retirement schedule, open-source solutions empower users to take control. If a version works perfectly for your business, you’re not at the mercy of a vendor’s lifecycle decisions. A group of interested parties, vendors, customers, and community contributors, can maintain and evolve the product indefinitely.
+
 This collaborative model offers two major benefits:
 
-* Longevity without lock-in
-  *	Continue using a stable version without fearing forced obsolescence.
-  * If/when official support ends, the community (including your own teams) can step in to provide patches, security updates, and even new features.
-* Direction driven by real needs
-  * Development priorities reflect actual business and user requirements, not vendor roadmaps.
-  * Community focus ensures that resources are spent on improvements with tangible business value.
+1. Longevity without lock-in
+    *	Continue using a stable version without fearing forced obsolescence.
+    * If/when official support ends, the community (including your own teams) can step in to provide patches, security updates, and even new features.
+1. Direction driven by real needs
+    * Development priorities reflect actual business and user requirements, not vendor roadmaps.
+    * Community focus ensures that resources are spent on improvements with tangible business value.
 
 ##Fluxnova: A real-world example
 
-A great example of this principle in action is Fluxnova, the open-source fork of Camunda. When Camunda announced a licensing change for their product, many organisations faced uncertainty about the future of their workflow platforms. Rather than being locked into a vendor-driven roadmap, a core community rallied with FINOS (Fintech Open Source Foundation) to create Fluxnova, publicly launched in October 2025.
+A great example of this principle in action is [Fluxnova](https://fluxnova.finos.org/), the open-source fork of Camunda. When Camunda announced a licensing change for their product, many organisations faced uncertainty about the future of their workflow platforms. Rather than being locked into a vendor-driven roadmap, a core community rallied with [FINOS](https://www.finos.org/) (Fintech Open Source Foundation) to create Fluxnova, publicly launched in October 2025. Read more about [Scott Logic's Fluxnova Migration Service]((https://www.scottlogic.com/what-we-do/fluxnova-migration)).
 
-Fluxnova offers a choice for those where an upgrade isn’t their chosen path; the current version does what is needed and underpins a vast array of business-critical processes. In this scenario, new features aren’t as valuable as being able to maintain the current business operations and continuing to use a familiar, stable product without disruption.
+[Fluxnova (Project Page on FINOS's GitHub Repo)](https://github.com/finos#Fluxnova) offers a choice for those where an upgrade isn’t their chosen path; the current version does what is needed and underpins a vast array of business-critical processes. In this scenario, new features aren’t as valuable as being able to maintain the current business operations and continuing to use a familiar, stable product without disruption.
 
-Critically, Fluxnova now gives those business consumers a voice in its evolution. Fluxnova is governed by a consortium of maintainers, ensuring that its development aligns with real-world needs rather than commercial pressures. For organisations heavily invested in Camunda workflows, Fluxnova provides continuity, control, and confidence, demonstrating the power of open-source governance in safeguarding critical systems.
+Critically, Fluxnova now gives those business consumers a voice in its evolution. [Fluxnova (GitHub Repo)](https://github.com/finos/fluxnova-bpm-platform/) is governed by a consortium of maintainers, ensuring that its development aligns with real-world needs rather than commercial pressures. For organisations heavily invested in Camunda workflows, Fluxnova provides continuity, control, and confidence, demonstrating the power of open-source governance in safeguarding critical systems.
 
 Fluxnova’s journey isn’t a new path, it’s a well-trodden one: OpenTofu fork of Terraform (2023), OpenBao fork of HashiCorp Vault (2023) and Valkey fork of Redis (2024). Similar examples are likely to emerge in the future.
 

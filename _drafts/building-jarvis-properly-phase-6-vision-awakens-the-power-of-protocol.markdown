@@ -105,6 +105,7 @@ The logs told the story better than I could:
 ```
 INFO: 🛠️ Agent requests tool: append_note
 ```
+
 ```
 WARN: 🛡️ Governance Block: 'append_note' blocked by LOW blast radius.
 ```
@@ -124,15 +125,19 @@ The terminal came alive:
 ```
 ✅ MCP Session Initialised
 ```
+
 ```
 🔎 Discovered Tools: ['list_notes', 'read_note', 'create_note', 'append_note']
 ```
+
 ```
 🛠️ Executing Tool: list_notes
 ```
+
 ```
 🛠️ Executing Tool: read_note (path: 'JARVIS Board.md')
 ```
+
 ```
 🛠️ Executing Tool: create_note (path: 'Summary.md')
 ```
@@ -143,9 +148,21 @@ JARVIS had successfully reached out of the Python execution environment, navigat
 
 Vision had awakened.
 
-It was a small moment, but it felt seismic. This wasn't a chatbot parroting responses. This was a system that could perceive, reason, and act in the real world. Constrained, yes. Governed, absolutely. But *capable*.[^2]
+It was a small moment, but it felt seismic. This wasn't a chatbot parroting responses. This was a system that could perceive, reason, and act in the real world. Constrained, yes. Governed, absolutely. But *capable*.
 
 The disembodied voice finally had hands.
+
+###A Note on Reality:
+
+Readers should not mistake this smooth narrative for a smooth implementation. This phase involved:
+
+1. **Goal Drift:** My first attempt at the "Read & Write" test failed because JARVIS read the file, got excited, and just chatted to me about the contents instead of writing the summary file. I had to update the system prompt to be significantly "bossier" to stop him getting distracted by his own voice.
+1. **Regex Betrayal:** My initial JSON parser was too lazy and cut off the end of long responses, causing the tools to fail silently.
+1. **Running Out of Breath:** Even after fixing the parser, the write operation failed because the LLM simply hit the token limit. Generating a large markdown summary *inside* a JSON wrapper consumes a huge number of tokens. I had to manually increase the `max_tokens` limit on the backend adapter to stop the model from cutting off mid-sentence.
+1. **The Infinite Loop:** During the final test, JARVIS tried to create a file that already existed. Instead of failing, it reasoned that it should try to *append* to the file instead. It then got stuck in a loop of trying to be helpful until the safety governor killed the process.
+1. **The Gemini Gap:** While this works beautifully with OpenAI and Anthropic, I discovered that Google's Gemini models struggle with this specific implementation. My current approach relies on "Prompt Engineering" (telling the model to reply with a specific JSON schema). Gemini prefers its own native Function Calling API and often ignores raw JSON instructions, meaning I will need to write a specific adapter for it in a future phase.
+
+AI engineering, it turns out, is 10% AI and 90% fixing regex, race conditions, and token limits.
 
 ## Closing: The Ecosystem Expands
 
@@ -169,13 +186,4 @@ For those following the code, three implementation challenges deserve mention:
 
 **Environment Management:** I learned the hard way that Python's `dotenv` doesn't automatically propagate to subprocesses. Explicitly injecting environment variables into the MCP server's execution context was critical for it to locate the Obsidian vault path.
 
-**Defence in Depth:** The MCP server implements strict path validation to ensure JARVIS cannot read files outside the designated vault, preventing path traversal attacks. Governance exists at two levels: the Orchestrator checks intent (should this tool be allowed?), and the Server enforces execution boundaries (is this path safe?). Both layers are necessary.</hr>
-
-[^2]: **A Note on Reality:** Readers should not mistake this smooth narrative for a smooth implementation. This phase involved:
-1. **Goal Drift:** My first attempt at the "Read & Write" test failed because JARVIS read the file, got excited, and just chatted to me about the contents instead of writing the summary file. I had to update the system prompt to be significantly "bossier" to stop him getting distracted by his own voice.
-1. **Regex Betrayal:** My initial JSON parser was too lazy and cut off the end of long responses, causing the tools to fail silently.
-1. **Running Out of Breath:** Even after fixing the parser, the write operation failed because the LLM simply hit the token limit. Generating a large markdown summary *inside* a JSON wrapper consumes a huge number of tokens. I had to manually increase the `max_tokens` limit on the backend adapter to stop the model from cutting off mid-sentence.
-1. **The Infinite Loop:** During the final test, JARVIS tried to create a file that already existed. Instead of failing, it reasoned that it should try to *append* to the file instead. It then got stuck in a loop of trying to be helpful until the safety governor killed the process.
-1. **The Gemini Gap:** While this works beautifully with OpenAI and Anthropic, I discovered that Google's Gemini models struggle with this specific implementation. My current approach relies on "Prompt Engineering" (telling the model to reply with a specific JSON schema). Gemini prefers its own native Function Calling API and often ignores raw JSON instructions, meaning I will need to write a specific adapter for it in a future phase.
-
-AI engineering, it turns out, is 10% AI and 90% fixing regex, race conditions, and token limits.
+**Defence in Depth:** The MCP server implements strict path validation to ensure JARVIS cannot read files outside the designated vault, preventing path traversal attacks. Governance exists at two levels: the Orchestrator checks intent (should this tool be allowed?), and the Server enforces execution boundaries (is this path safe?). Both layers are necessary.
