@@ -1,6 +1,6 @@
 ---
 title: 'Building JARVIS Properly - Phase 6: Vision Awakens (The Power of Protocol)'
-date: 2025-12-01 10:54:00 Z
+date: 2025-12-03 10:54:00 Z
 categories:
 - AI
 tags:
@@ -61,9 +61,9 @@ A younger me, the one who built Mini-Me, might posssibly have hacked the path in
 
 But the product owner in me, the one who had painfully learned the lessons of Phase 4, called a halt. You cannot build a sophisticated AI agent on top of a shaky file structure. If the foundation is wonky, everything above it inherits that wobble.
 
-I spent a morning performing what I privately called "emergency refactoring" on the repository. I shut down the IDEs, killed the file watchers, backed everything up twice, and painstakingly moved the entire `planning` vault to the root level where it belonged. It was unglamorous housekeeping, the kind of work that generates no demos and impresses no stakeholders.
+I spent a morning performing "emergency refactoring" on the repository. I shut down the IDEs, killed the file watchers, backed everything up twice, and painstakingly moved the entire `planning` vault to the root level where it belonged. It was unglamorous housekeeping, the kind of work that generates no demos and impresses no stakeholders.
 
-But it meant that when JARVIS finally opened its eyes, it wouldn't be cross-eyed trying to find its own backlog with both of his new hands!
+But it meant that when JARVIS finally opened his eyes, he wouldn't be cross-eyed trying to find his own backlog with both of his new hands!
 
 Sometimes the most important work is the work nobody sees.
 
