@@ -3,6 +3,8 @@ title: 'Beyond the Hype: Will sustainable AI ever be a reality?'
 date: 2025-12-11 09:36:00 Z
 categories:
 - Podcast
+- Artificial Intelligence
+- Sustainability
 tags:
 - AI sustainability
 - artificial intelligence
