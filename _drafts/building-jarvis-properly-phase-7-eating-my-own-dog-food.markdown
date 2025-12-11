@@ -184,12 +184,12 @@ Here is the breakdown of the battles we (JARVIS and I) fought to get **v0.7.0** 
 ### 4\. The Infinite Stutter
 
 **The Symptom:** `Error: Maximum tool turns reached.`
-**The Cause:** The Agent would list repositories, show me the JSON, and then my regex parser would see that JSON and think, *"Aha! A tool call!"* It would try to execute the data as code, fail, and loop forever.
+**The Cause:** The Agent would list repositories, show me the JSON, and then my regex parser would see that JSON and think, *"Aha! A tool call!"*. It would then try to execute the data as code, fail, and loop forever.
 **The Fix:** We hardened the parser in `jarvis_agent.py`. It now checks if the JSON actually contains `"tool": "..."` before attempting execution.
 
 ### 5\. The UI Wars (Colours & Clipboard)
 
-Once the backend stopped crashing, I got greedy. I wanted the agent's output to pop. Green for success, Cyan for prompts and so on. I updated the logger to send coloured text.
+Once the backend stopped crashing, I got *really* greedy. I wanted the agent's output to pop. Green for success, Cyan for prompts and so on. I updated the logger to send coloured text.
 
   * **Expectation:** A beautiful green <code style="color: green;">[SUCCESS]</code> message.
   * **Reality:** The screen literally printed `[bold green]SUCCESS[/bold green]` in white text.
@@ -232,3 +232,4 @@ I was trying to shove the raw `CallToolResult` object from the MCP SDK directly 
 Reading raw JSON from SQLite is painful. I didn't want to use a SQL client to read my chat logs: that felt unnecessarily cumbersome. So, I built a small utility script, `view_chats.py`. It uses the `Rich` library to render the database rows into a beautiful, colour-coded script, stripping away the GUIDs and metadata so I can just read the story.
 
 NOW, Phase 7 is complete.
+
