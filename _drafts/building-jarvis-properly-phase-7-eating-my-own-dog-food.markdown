@@ -144,7 +144,9 @@ In the span of an hour, JARVIS had:
 3.  Updated the ticket with progress.
 4.  Closed the ticket upon completion.
 
-The "Lobotomy Loop" was broken. The GitHub connection was live. But there was still one problem: staring at scrolling text is boring...
+The "Lobotomy Loop" was broken. The GitHub connection was live.
+
+But there was still one problem: staring at the scrolling text of the end credits is boring...
 
 ## Mid-Credits Scene: The Dashboard War
 
