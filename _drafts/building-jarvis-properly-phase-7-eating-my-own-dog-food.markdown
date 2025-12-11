@@ -28,6 +28,7 @@ Phase 7 is about changing that dynamic. My goal was simple but ambitious: I want
 However, attempting this immediately revealed a dangerous cycle I call the **Lobotomy Loop**.
 
 If I ask JARVIS to rewrite his own brain and he makes a syntax error, he crashes. A crashed JARVIS cannot fix the crash. You are left with a broken Python script, a very quiet terminal, and a profound sense of regret.
+
 To solve this, I had to give him eyes. Before he could rewrite his own code, he first needed the ability to read it.
 
 ## Act 2: The Gemini Upgrade
@@ -64,7 +65,7 @@ It was going perfectly, right up until we hit the **Escaping Horizon**.
 
 ## Act 4: Infinite Madness
 
-In physics, an Event Horizon is the _point of no return_ around a black hole. In AI engineering, the *Escaping Horizon* is the point where an LLM tries to write Python code *wrapped in* a JSON string *inside* a tool call reminiscent of Churchill's _"a riddle wrapped in a mystery inside an enigma"_.
+In physics, an Event Horizon is the _point of no return_ around a black hole. In AI engineering, the *Escaping Horizon* is the point where an LLM tries to write Python code *wrapped in* a JSON string *inside* a tool call much like Churchill's _"a riddle wrapped in a mystery inside an enigma"_.
 
 Python code contains quotes, newlines, and indentation. JSON also uses quotes and newlines. If the model misses a single escape character (e.g. `print("hello")` remains as `print("hello")` instead of becoming `print(\"hello\")`), the entire JSON structure collapses.
 
