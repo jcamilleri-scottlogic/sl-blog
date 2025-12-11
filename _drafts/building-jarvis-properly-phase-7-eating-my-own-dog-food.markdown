@@ -25,7 +25,8 @@ Phase 7 is about changing that dynamic. My goal was simple but ambitious: I want
 
 However, attempting this immediately revealed a dangerous cycle I call the **Lobotomy Loop**.
 
-If I ask JARVIS to rewrite his own brain and he makes a syntax error, he crashes. A crashed JARVIS cannot fix the crash. You are left with a broken Python script, a very quiet terminal, and a profound sense of regret. To solve this, I had to give him eyes. Before he could rewrite his own code, he first needed the ability to read it.
+If I ask JARVIS to rewrite his own brain and he makes a syntax error, he crashes. A crashed JARVIS cannot fix the crash. You are left with a broken Python script, a very quiet terminal, and a profound sense of regret.
+To solve this, I had to give him eyes. Before he could rewrite his own code, he first needed the ability to read it.
 
 ## Act 2: The Gemini Upgrade
 
@@ -33,7 +34,7 @@ But eyes are useless without a visual cortex. Simply giving JARVIS access to the
 
 In previous phases, I relied on "Prompt Engineering" to make models use tools. I would inject a system prompt saying "Please reply with a JSON block if you want to use a tool". OpenAI and Claude are very good at this.
 
-Google's Gemini, however, is somewhat more of a free spirit! It often ignored the JSON instruction, or wrapped it in conversational filler ("Here is the JSON you asked for..."), or formatted it in ways that broke my regex parsers. Again. And again.
+Google's Gemini, however, is more of a free spirit! It often ignored the JSON instruction, or wrapped it in conversational filler ("Here is the JSON you asked for..."), or formatted it in ways that broke my regex parsers. Again. And again.
 
 To fix this, I stopped fighting the model and started using the platform. I rewrote the Google backend (`backend_google.py`) to use **Native Function Calling**. Instead of text prompts, I translate my MCP tool definitions into Google's Protocol Buffer format.
 
