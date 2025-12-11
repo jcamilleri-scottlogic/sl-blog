@@ -194,7 +194,7 @@ Then came the most humbling moment of the project. I tried to copy the agent's r
 I clicked. I dragged. Nothing.
 I held `Shift`. I held `Alt`. I held `Fn`. The TUI refused to release the mouse capture.
 
-I was building an autonomous AI system, but I couldn't copy text out of my own terminal which was one of the very first key drivers that set me down the path for this whole project! The irony is not lost on me.
+I was building an autonomous AI system, but I couldn't copy text out of my own terminal which was one of the very first key drivers that set me down the path for this whole project! The irony is not lost on me (see [Extracting Data From AI Models - Phase 3: A Tale of Three Approaches (https://blog.scottlogic.com/2025/07/23/extracting-data-from-ai-models-a-tale-of-three-approaches.html) for further context).
 
 I fought the framework for an hour and lost. In the end, I implemented the "Ultimate Give-Up": a custom `/copy` command. Now, when I type `/copy`, JARVIS programmatically dumps his last response into my system clipboard using `pyperclip`. It is not elegant, but it works sufficiently well for now.
 
