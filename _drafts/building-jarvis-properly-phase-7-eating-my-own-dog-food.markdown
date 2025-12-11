@@ -64,7 +64,7 @@ It was going perfectly, right up until we hit the **Escaping Horizon**.
 
 ## Act 4: Infinite Madness
 
-In physics, an Event Horizon is the point of no return around a black hole. In AI engineering, the *Escaping Horizon* is the point where an LLM tries to write Python code *inside* a JSON string *inside* a tool call.
+In physics, an Event Horizon is the _point of no return_ around a black hole. In AI engineering, the *Escaping Horizon* is the point where an LLM tries to write Python code *inside* a JSON string *inside* a tool call.
 
 Python code contains quotes, newlines, and indentation. JSON also uses quotes and newlines. If the model misses a single escape character (e.g. `print("hello")` remains as `print("hello")` instead of becoming `print(\"hello\")`), the entire JSON structure collapses.
 
