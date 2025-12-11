@@ -124,7 +124,7 @@ INFO: 🛠️ Executing Tool: create_issue with args: {'title': 'Phase 7 Integra
 
 He realised the repo was empty, and immediately filed **Issue \#1**. JARVIS had officially created his own work ticket.
 
-## Act 8: The Hammer and The Tin of Baked Beans
+## Act 8: The Hammer and Baked Beans Tin
 
 Hubris, however, is a constant companion in AI development (or any development!). Emboldened by success, I immediately asked JARVIS to add a comment to that ticket.
 
