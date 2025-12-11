@@ -68,7 +68,7 @@ In physics, an Event Horizon is the _point of no return_ around a black hole. In
 
 Python code contains quotes, newlines, and indentation. JSON also uses quotes and newlines. If the model misses a single escape character (e.g. `print("hello")` remains as `print("hello")` instead of becoming `print(\"hello\")`), the entire JSON structure collapses.
 
-For a few hours, I felt like Sam Neill in *Event Horizon*, staring into a chaotic dimension of malformed syntax from which no valid JSON could ever return (*libera te tutemet ex inferis*, indeed).
+For a few hours, I felt like Sam Neill's character in *Event Horizon*, staring into a chaotic dimension of malformed syntax from which no valid JSON could ever return (*libera te tutemet ex inferis*, indeed).
 
 While Gemini is brilliant at logic, it struggled with this specific syntactic nesting doll. I had to step in as the "Principal Engineer" to fix the brackets, but the Junior Developer (JARVIS) had still done 90% of the heavy lifting. Nice work, JARVIS!
 
