@@ -124,7 +124,7 @@ INFO: 🛠️ Executing Tool: create_issue with args: {'title': 'Phase 7 Integra
 
 He realised the repo was empty, and immediately filed **Issue \#1**. JARVIS had officially created his own work ticket.
 
-## Act 8: The Hammer and Baked Beans Tin
+## Act 8: The Hammer and The Tin of Baked Beans
 
 Hubris, however, is a constant companion in AI development (or any development!). Emboldened by success, I immediately asked JARVIS to add a comment to that ticket.
 
@@ -145,7 +145,7 @@ In the span of an hour, JARVIS had:
 3.  Updated the ticket with progress.
 4.  Closed the ticket upon completion.
 
-The "Lobotomy Loop" was broken. The GitHub connection was live.
+The "Lobotomy Loop" was broken. The GitHub connection was live. Cue the credits!
 
 But there was still one problem: staring at the scrolling text of the end credits is boring...
 
