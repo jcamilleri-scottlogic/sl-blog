@@ -15,8 +15,6 @@ summary: 'If a tool isn''t good enough to build itself, it isn''t good enough. T
 author: rgriffiths
 ---
 
-# Building JARVIS Properly — Phase 7: Eating My Own Dog Food
-
 ## Act 1: The Lobotomy Loop
 
 By the end of Phase 6, JARVIS had hands. He could read my backlog and write notes in Obsidian. But he still had a critical limitation: he couldn't read his own code.
