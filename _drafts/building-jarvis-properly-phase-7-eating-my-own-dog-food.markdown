@@ -171,7 +171,7 @@ Here is the breakdown of the battles we (JARVIS and I) fought to get **v0.7.0** 
 
 ### 2\. The "Phantom Error" (Stderr Swallowing)
 
-**The Symptom:** A huge error traceback would flash on the screen for 100ms, then vanish, replaced by a "Timeout" error.
+**The Symptom:** A huge error traceback would flash on the screen for ~100-150ms (just long enough to see), then vanish, replaced by a "Timeout" error.
 **The Cause:** The MCP Server process was crashing (due to a missing token check), printing to `stderr`, and dying. The TUI repainted the screen immediately, hiding the evidence.
 **The Fix:** We hijacked `sys.stderr` in `tui.py` and redirected it to a file (`tui_debug.log`). This allowed us to catch the crash so we could do a post-mortem exam.
 
@@ -232,4 +232,3 @@ I was trying to shove the raw `CallToolResult` object from the MCP SDK directly 
 Reading raw JSON from SQLite is painful. I didn't want to use a SQL client to read my chat logs: that felt unnecessarily cumbersome. So, I built a small utility script, `view_chats.py`. It uses the `Rich` library to render the database rows into a beautiful, colour-coded script, stripping away the GUIDs and metadata so I can just read the story.
 
 NOW, Phase 7 is complete.
-
