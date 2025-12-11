@@ -197,12 +197,19 @@ Once the backend stopped crashing, I got *really* greedy. I wanted the agent's o
 I learned (the hard way) that the standard `Log` widget is dumb: it only takes strings. I had to rip out the widgets and replace them with `RichLog`, which understands markup natively. Finally, the colours appeared.
 
 Then came the most humbling moment of the project. I tried to copy the agent's response.
+
 I clicked. I dragged. Nothing.
+
 I held <kbd>⇧ Shift</kbd>.
+
 I held <kbd>⌥ Option</kbd>.
+
 I held <kbd>Fn Function</kbd>.
+
 I held <kbd>⌘ Command</kbd>.
+
 I held <kbd>^ Control</kbd>.
+
 The TUI refused to release the mouse capture.
 
 I was building an autonomous AI system, but I couldn't copy text out of my own terminal which was one of the very first key drivers that set me down the path for this whole project! The irony is not lost on me (see [Extracting Data From AI Models - Phase 3: A Tale of Three Approaches (https://blog.scottlogic.com/2025/07/23/extracting-data-from-ai-models-a-tale-of-three-approaches.html) for further context).
@@ -232,4 +239,3 @@ I was trying to shove the raw `CallToolResult` object from the MCP SDK directly 
 Reading raw JSON from SQLite is painful. I didn't want to use a SQL client to read my chat logs: that felt unnecessarily cumbersome. So, I built a small utility script, `view_chats.py`. It uses the `Rich` library to render the database rows into a beautiful, colour-coded script, stripping away the GUIDs and metadata so I can just read the story.
 
 NOW, Phase 7 is complete.
-
