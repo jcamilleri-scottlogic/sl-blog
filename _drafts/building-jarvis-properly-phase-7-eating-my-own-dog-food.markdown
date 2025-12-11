@@ -123,7 +123,7 @@ INFO: 🛠️ Executing Tool: create_issue with args: {'title': 'Phase 7 Integra
 
 He realized the repo was empty, and immediately filed **Issue \#1**. JARVIS had officially created his own work ticket.
 
-## Act 8: The Hammer and the Screwdriver
+## Act 8: The Hammer and The Tin of Baked Beans
 
 Hubris, however, is a constant companion in AI development (or any development!). Emboldened by success, I immediately asked JARVIS to add a comment to that ticket.
 
@@ -135,7 +135,7 @@ When an LLM wants to solve a problem but lacks the precise tool, it engages in "
 
 It’s the digital equivalent of trying to hammer in a nail with a tin of baked beans. It _would_ work, but it makes a mess.
 
-I had to lift the bonnet on `server.py`, get my hands dirty once more, and implement `create_issue_comment`. Once I rebooted the server, JARVIS discovered the new tool and immediately corrected his behavior, successfully posting: *"Phase 7 Integration: Automated comment capability verified."*
+I had to lift the bonnet on `server.py`, get my hands dirty once more, and implement `create_issue_comment`. Once I rebooted the server, JARVIS discovered the new tool and immediately corrected his behaviour, successfully posting: *"Phase 7 Integration: Automated comment capability verified."*
 
 In the span of an hour, JARVIS had:
 
