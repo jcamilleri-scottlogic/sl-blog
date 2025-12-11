@@ -3,6 +3,40 @@ title: 'Beyond the Hype: Will sustainable AI ever be a reality?'
 date: 2025-12-11 09:36:00 Z
 categories:
 - Podcast
+tags:
+- AI sustainability
+- artificial intelligence
+- green AI
+- environmental impact
+- carbon emissions
+- water usage
+- lifecycle analysis
+- federated learning
+- smaller models
+- energy efficiency
+- data centres
+- cooling systems
+- renewable energy
+- nuclear power
+- hydroelectric power
+- Hugging Face
+- OpenAI
+- Mistral
+- French Tech 2030
+- ARM processors
+- cloud computing
+- inference vs training
+- sustainable technology
+- tech carbon standard
+- government digital sustainability
+- ethical AI
+- resource constraints
+- decentralised AI
+- local AI processing
+- Apple M-series chips
+- TPUs
+- efficiency in AI
+- podcast transcript
 summary: In this episode, I'm joined by colleagues James Camilleri and Hélène Sauvé
   to explore the complex topic of AI sustainability. It’s a conversation that spans
   the environmental impact of AI, from carbon emissions to water usage, and examines
