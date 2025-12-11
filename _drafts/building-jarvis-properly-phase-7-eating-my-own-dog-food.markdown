@@ -212,7 +212,7 @@ The TUI refused to release the mouse capture.
 
 I was building an autonomous AI system, but I couldn't copy text out of my own terminal which was one of the very first key drivers that set me down the path for this whole project! The irony is not lost on me! See [Extracting Data From AI Models - Phase 3: A Tale of Three Approaches](https://blog.scottlogic.com/2025/07/23/extracting-data-from-ai-models-a-tale-of-three-approaches.html) for additional context.
 
-I fought the framework for an hour and lost. In the end, I implemented the "Ultimate Give-Up": a custom `/copy` command. Now, when I type `/copy`, JARVIS programmatically dumps his last response into my system clipboard using `pyperclip`. It is not elegant, but it works sufficiently well for now.
+I fought the framework for an hour and lost. In the end, I implemented the "Ultimate Give-Up": a custom `/copy` command. Now, when I type `/copy`, JARVIS programmatically dumps his last response into my system clipboard using `pyperclip`. It is not elegant, but it works sufficiently well for now. This will be revisited!
 
 ## Post-Credits Scene: The Memory Hole
 
@@ -221,6 +221,7 @@ Just as I was about to wrap up, I realised a fatal flaw. I had a beautiful dashb
 If I quit the TUI, the conversation vanished. `tasks` were stored in SQLite, but the actual *thinking* (the prompts, the tool outputs, the reasoning) was purely in RAM. JARVIS had amnesia, poor chap.
 
 **The Recorder**
+
 I hooked into the Agent's chat loop to log every interaction to a new `chat_history` table in `jarvis.db`.
 
   * **User Input:** Logged immediately.
@@ -228,12 +229,14 @@ I hooked into the Agent's chat loop to log every interaction to a new `chat_hist
   * **Final Answers:** Logged as "Assistant" responses.
 
 **The Final Crash**
+
 Of course, it wasn't that simple. The first time I ran it:
 `InterfaceError: Error binding parameter 3 - probably unsupported type.`
 
 I was trying to shove the raw `CallToolResult` object from the MCP SDK directly into a SQLite `TEXT` column. One quick `str(result)` cast later, and the crash was gone.
 
 **The Viewer**
+
 Reading raw JSON from SQLite is painful. I didn't want to use a SQL client to read my chat logs: that felt unnecessarily cumbersome. So, I built a small utility script, `view_chats.py`. It uses the `Rich` library to render the database rows into a beautiful, colour-coded script, stripping away the GUIDs and metadata so I can just read the story.
 
 NOW, Phase 7 is complete.
