@@ -164,25 +164,33 @@ Here is the breakdown of the battles we (JARVIS and I) fought to get **v0.7.0** 
 ### 1\. The "Worker Fratricide" Bug
 
 **The Symptom:** The TUI would start, but the moment I typed a command, the Agent would disconnect ("Shutting down MCP connection...").
+
 **The Cause:** Textual's `@work(exclusive=True)` decorator puts workers into a default group. Both our **Agent Lifecycle** (which holds the connection open) and our **Input Handler** (which processes typing) were in the same group. When I typed, the UI spawned the Input worker, which *killed* the Agent worker to enforce exclusivity.
+
 **The Fix:** We assigned them explicit groups: `group="agent_core"` and `group="user_input"`. Now they coexist.
 
 ### 2\. The "Phantom Error" (Stderr Swallowing)
 
 **The Symptom:** A huge error traceback would flash on the screen for ~100-150ms (just long enough to see), then vanish, replaced by a "Timeout" error.
+
 **The Cause:** The MCP Server process was crashing (due to a missing token check), printing to `stderr`, and dying. The TUI repainted the screen immediately, hiding the evidence.
+
 **The Fix:** We hijacked `sys.stderr` in `tui.py` and redirected it to a file (`tui_debug.log`). This allowed us to catch the crash so we could do a post-mortem exam.
 
 ### 3\. The Threading Deadlock
 
 **The Symptom:** `RuntimeError: The 'call_from_thread' method must run in a different thread.`
+
 **The Cause:** We built a `WidgetLogger` to write logs to the screen. When called from a background worker, it needed `call_from_thread` to update the UI safely. When called from the main startup routine, that same call caused a crash because we were *already* on the main thread.
+
 **The Fix:** A "Thread-Smart" Logger. We implemented a check using `threading.get_ident()` to determine if we were on the Main Thread or a Worker, and dispatched the write command accordingly.
 
 ### 4\. The Infinite Stutter
 
 **The Symptom:** `Error: Maximum tool turns reached.`
+
 **The Cause:** The Agent would list repositories, show me the JSON, and then my regex parser would see that JSON and think, *"Aha! A tool call!"*. It would then try to execute the data as code, fail, and loop forever.
+
 **The Fix:** We hardened the parser in `jarvis_agent.py`. It now checks if the JSON actually contains `"tool": "..."` before attempting execution.
 
 ### 5\. The UI Wars (Colours & Clipboard)
