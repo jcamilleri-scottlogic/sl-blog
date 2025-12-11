@@ -192,7 +192,7 @@ I learned (the hard way) that the standard `Log` widget is dumb: it only takes s
 
 Then came the most humbling moment of the project. I tried to copy the agent's response.
 I clicked. I dragged. Nothing.
-I held <kbd>⇧ Shift</kbd>. I held `Alt`. I held <kbd>⌥ Option</kbd>. I held `Fn`. I held <kbd>⌘ Command</kbd>. I held <kbd>^ Control</kbd>. The TUI refused to release the mouse capture.
+I held <kbd>⇧ Shift</kbd>. I held <kbd>⌥ Option</kbd>. I held <kbd>Fn Function</kbd>. I held <kbd>⌘ Command</kbd>. I held <kbd>^ Control</kbd>. The TUI refused to release the mouse capture.
 
 I was building an autonomous AI system, but I couldn't copy text out of my own terminal which was one of the very first key drivers that set me down the path for this whole project! The irony is not lost on me (see [Extracting Data From AI Models - Phase 3: A Tale of Three Approaches (https://blog.scottlogic.com/2025/07/23/extracting-data-from-ai-models-a-tale-of-three-approaches.html) for further context).
 
