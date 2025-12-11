@@ -70,7 +70,7 @@ Python code contains quotes, newlines, and indentation. JSON also uses quotes an
 
 For a few hours, I felt like Sam Neill's character in *Event Horizon*, staring into a chaotic dimension of malformed syntax from which no valid JSON could ever return (*libera te tutemet ex inferis*, indeed).
 
-While Gemini is brilliant at logic, it struggled with this specific syntactic nesting doll. I had to step in as the "Principal Engineer" to fix the brackets, but the Junior Developer (JARVIS) had still done 90% of the heavy lifting. Nice work, JARVIS!
+Whilst Gemini is brilliant at logic, it struggled with this specific syntactic nesting doll. I had to step in as the "Principal Engineer" to fix the brackets, but the Junior Developer (JARVIS) had still done 90% of the heavy lifting. Nice work, JARVIS!
 
 ## Act 5: The Self-Awareness Paradox
 
@@ -121,7 +121,7 @@ INFO: 🛠️ Executing Tool: read_issue with args: {'issue_number': 1}
 INFO: 🛠️ Executing Tool: create_issue with args: {'title': 'Phase 7 Integration'}
 ```
 
-He realized the repo was empty, and immediately filed **Issue \#1**. JARVIS had officially created his own work ticket.
+He realised the repo was empty, and immediately filed **Issue \#1**. JARVIS had officially created his own work ticket.
 
 ## Act 8: The Hammer and The Tin of Baked Beans
 
@@ -148,9 +148,9 @@ The "Lobotomy Loop" was broken. The GitHub connection was live. But there was st
 
 ## Mid-Credits Scene: The Dashboard War
 
-After closing the loop on the logic, I realized something: if JARVIS is going to be a system, he needs a dashboard.
+After closing the loop on the logic, I realised something: if JARVIS is going to be a system, he needs a dashboard.
 
-I spent a whole Monday morning building a **Terminal User Interface (TUI)** using Python's `textual` library. Instead of a black box, I wanted a split-screen command center:
+I spent a whole Monday morning building a **Terminal User Interface (TUI)** using Python's `textual` library. Instead of a black box, I wanted a split-screen command centre:
 
   * **Left Pane:** The conversation.
   * **Right Pane:** The "Matrix" (Real-time system logs and tool calls).
@@ -184,14 +184,14 @@ Here is the breakdown of the battles we (JARVIS and I) fought to get **v0.7.0** 
 **The Cause:** The Agent would list repositories, show me the JSON, and then my regex parser would see that JSON and think, *"Aha! A tool call!"* It would try to execute the data as code, fail, and loop forever.
 **The Fix:** We hardened the parser in `jarvis_agent.py`. It now checks if the JSON actually contains `"tool": "..."` before attempting execution.
 
-### 5\. The UI Wars (Colors & Clipboard)
+### 5\. The UI Wars (Colours & Clipboard)
 
-Once the backend stopped crashing, I got greedy. I wanted the agent's output to pop. Green for success, Cyan for prompts and so on. I updated the logger to send colored text.
+Once the backend stopped crashing, I got greedy. I wanted the agent's output to pop. Green for success, Cyan for prompts and so on. I updated the logger to send coloured text.
 
   * **Expectation:** A beautiful green `[SUCCESS]` message.
   * **Reality:** The screen literally printed `[bold green]SUCCESS[/bold green]` in white text.
 
-I learned (the hard way) that the standard `Log` widget is dumb: it only takes strings. I had to rip out the widgets and replace them with `RichLog`, which understands markup natively. Finally, the colors appeared.
+I learned (the hard way) that the standard `Log` widget is dumb: it only takes strings. I had to rip out the widgets and replace them with `RichLog`, which understands markup natively. Finally, the colours appeared.
 
 Then came the most humbling moment of the project. I tried to copy the agent's response.
 I clicked. I dragged. Nothing.
@@ -208,7 +208,7 @@ I fought the framework for an hour and lost. In the end, I implemented the "Ulti
 
 ## Post-Credits Scene: The Memory Hole
 
-Just as I was about to wrap up, I realized a fatal flaw. I had a beautiful dashboard, stable threads, and a powerful agent... but no memory.
+Just as I was about to wrap up, I realised a fatal flaw. I had a beautiful dashboard, stable threads, and a powerful agent... but no memory.
 
 If I quit the TUI, the conversation vanished. `tasks` were stored in SQLite, but the actual *thinking* (the prompts, the tool outputs, the reasoning) was purely in RAM. JARVIS had amnesia, poor chap.
 
@@ -226,6 +226,6 @@ Of course, it wasn't that simple. The first time I ran it:
 I was trying to shove the raw `CallToolResult` object from the MCP SDK directly into a SQLite `TEXT` column. One quick `str(result)` cast later, and the crash was gone.
 
 **The Viewer**
-Reading raw JSON from SQLite is painful. I didn't want to use a SQL client to read my chat logs: that felt unnecessarily cumbersome. So, I built a small utility script, `view_chats.py`. It uses the `Rich` library to render the database rows into a beautiful, color-coded script, stripping away the GUIDs and metadata so I can just read the story.
+Reading raw JSON from SQLite is painful. I didn't want to use a SQL client to read my chat logs: that felt unnecessarily cumbersome. So, I built a small utility script, `view_chats.py`. It uses the `Rich` library to render the database rows into a beautiful, colour-coded script, stripping away the GUIDs and metadata so I can just read the story.
 
 NOW, Phase 7 is complete.
