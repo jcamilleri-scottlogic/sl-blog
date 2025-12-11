@@ -191,7 +191,7 @@ Here is the breakdown of the battles we (JARVIS and I) fought to get **v0.7.0** 
 
 Once the backend stopped crashing, I got greedy. I wanted the agent's output to pop. Green for success, Cyan for prompts and so on. I updated the logger to send coloured text.
 
-  * **Expectation:** A beautiful green `[SUCCESS]` message.
+  * **Expectation:** A beautiful green <code style="color: green;">[SUCCESS]</code> message.
   * **Reality:** The screen literally printed `[bold green]SUCCESS[/bold green]` in white text.
 
 I learned (the hard way) that the standard `Log` widget is dumb: it only takes strings. I had to rip out the widgets and replace them with `RichLog`, which understands markup natively. Finally, the colours appeared.
