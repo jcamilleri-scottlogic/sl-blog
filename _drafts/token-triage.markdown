@@ -7,8 +7,6 @@ summary: Visualising the hidden building blocks of LLM text
 author: jstrong
 ---
 
-# Token Prism:
-
 When working with agentic AI, tool calls and their results abound and the tokens mount up quite quickly. Resultantly, I wanted to visualise the token output of [OpenAI](https://openai.com/) models. OpenAI already provides a [tokeniser website](https://platform.openai.com/tokenizer) for its models but due to data sensitivity, using this with any more than toy data would be inappropriate. Consequently, I set out to make my own, more secure, offline solution.
 
 ## Background
