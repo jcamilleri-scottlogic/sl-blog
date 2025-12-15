@@ -47,7 +47,7 @@ The first step was to implement text tokenisation. Luckily, `tiktoken` provides 
 
 ```python
 from tiktoken import encoding_for_model
-
+    
 tokeniser = encoding_for_model("gpt-4")
 ```
 
@@ -56,10 +56,10 @@ This looks up the corresponding tokeniser, and downloads and installs it. Next, 
 ```python
 input_text = "Hello, World!"
 encoded_text = tokeniser.encode(input_text)
-
+    
 decoded_tokens = [tokeniser.decode_single_token_bytes(raw_token) for raw_token in encoded_text]
 string_tokens = [bytes_to_string(token) for token in decoded_tokens]
-
+    
 def bytes_to_string(item: bytes) -> str:
     return item.decode("utf-8", errors="replace")
 ```
@@ -72,8 +72,9 @@ However, you may wonder why `bytes_to_string` uses `errors="replace"` when movin
 
 For the CLI, I went with [`click`](https://github.com/pallets/click) to define the various flags and arguments available. The options include:
 
-- `text`: What to tokenise. If not included then prompts to enter text, or reads from `stdin`.
-- `-m`\\`--model`: The model to use e.g. `gpt-5`. Default is `gpt-4`.
+* `text`: What to tokenise. If not included then prompts to enter text, or reads from `stdin`.
+
+* `-m`\\`--model`: The model to use e.g. `gpt-5`. Default is `gpt-4`.
 
 With the tokens separated and decoded, I applied a colour cycle to the output. The resulting CLI looks like this:
 
