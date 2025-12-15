@@ -90,7 +90,7 @@ The good news: these are learnable skills. The better news: they make you a bett
 
 2. **Be specific about outcomes**: "Make it faster" isn't a specification; "Reduce order page refresh response time below 200ms" is
 
-3. **Define what makes your problem novel. **Document your context: make the constraints and unique project attributes explicit (remembering that AI generated output will skew toward the average). Maintain clear architectural decision records and coding standards
+3. **Define what makes your problem novel.** Document your context: make the constraints and unique project attributes explicit (remembering that AI generated output will skew toward the average). Maintain clear architectural decision records and coding standards
 
 4. **Practice verification**: Learn to spot subtle bugs in code you didn't write
 
