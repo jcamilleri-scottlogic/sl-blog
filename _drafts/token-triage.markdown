@@ -7,7 +7,7 @@ summary: Visualising the hidden building blocks of LLM text
 author: jstrong
 ---
 
-When working with agentic AI, tool calls and their results abound and the tokens mount up quite quickly. Resultantly, I wanted to visualise the token output of [OpenAI](https://openai.com/) models. OpenAI already provides a [tokeniser website](https://platform.openai.com/tokenizer) for its models but due to data sensitivity, using this with any more than toy data would be inappropriate. Consequently, I set out to make my own, more secure, offline solution.
+When working with agentic AI, tool calls and results abound. With tokens quicky mounting up, it's common to want to visualise them, with the obvious solution being websites like [OpenAI's](https://platform.openai.com/tokenizer). However, using these with any more than toy data raises serious data privacy concerns. Consequently, I set out to make my own, more secure, offline solution.
 
 ## Background
 
