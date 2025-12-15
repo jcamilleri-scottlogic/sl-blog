@@ -1,13 +1,11 @@
 ---
 title: Token Triage
-date: 2025-12-15 10:53:00 Z
+date: 2025-12-15 11:02:00 Z
 categories:
 - Artificial Intelligence
 summary: Making a simple CLI tool to visualise tokeniser output.
 author: jstrong
 ---
-
-# Token Triage
 
 Recently, I have been working on an agentic AI system. Tool calls and their results abound and the tokens mount up quite quickly. I had a need to see where all the tokens were coming from, what they consisted of, and if they were all necessary. In particular, I wanted to visualise the token output of [OpenAI](https://openai.com/) models. OpenAI already provides a [tokeniser website](https://platform.openai.com/tokenizer) for its models but given the sensitivity of the data I am working with, using this with any more than toy data would be inappropriate. Consequently, I set out to make my own, more secure, offline solution.
 
@@ -25,7 +23,7 @@ Whilst tokens may be more efficient, they are not without their drawbacks. An of
 
 The eagle-eyed among you will notice the answer is 3. However, even the most advanced LLMs of the day regularly claim otherwise - and this is almost all down to tokenisation. For example, GPT-4 does not see 'strawberry' as 'S-T-R-A-W-B-E-R-R-Y,' but instead 'STR-AW-BERRY.'
 
-![Strawberry tokenisation with images courtesy of Nano Banana Pro.](tokenisation_diagram.png)
+![Strawberry tokenisation with images courtesy of Nano Banana Pro.](/uploads/tokenisation_diagram.png)
 
 It cannot 'see' the letters individually, so it is difficult for it to count them correctly.
 
@@ -35,7 +33,7 @@ These oddities highlight precisely why we cannot simply treat LLM input as plain
 
 The core aim was to produce a simple interface that I could start up locally, have tokenisers automatically downloaded, and then see the distinction between tokens via coloured highlighting, much like OpenAI has on their site.
 
-![Tokenisation visualiser from OpenAI.](openai_website_tokeniser.png)
+![Tokenisation visualiser from OpenAI.](/uploads/openai_website_tokeniser.png)
 
 In particular, I wanted a CLI-based solution for ease of use that would support both live typing/updating and passing whole strings/files at once.
 
@@ -79,11 +77,11 @@ For the CLI, I went with [`click`](https://github.com/pallets/click) to define t
 
 With the tokens separated and decoded, I applied a colour cycle to the output. The resulting CLI looks like this:
 
-![Piping file to CLI.](cli_file_pipe.png)
+![Piping file to CLI.](/uploads/cli_file_pipe.png)
 
 This works as I had envisioned, so now it is time to move on to the reactive aspect. I decided to go with the [`textual`](https://github.com/Textualize/textual) TUI package to facilitate this. The API was straightfoward and easy to use and now when you pass `-i` or `--interactive` then you see:
 
-![TUI shown via the interactive flag.](tui_video.gif)
+![TUI shown via the interactive flag.](/uploads/tui_video.gif)
 
 At present, only 3 'statistics' are displayed, but I have plans to add more which would aid in tokenised input analysis.
 
@@ -91,7 +89,7 @@ At present, only 3 'statistics' are displayed, but I have plans to add more whic
 
 With these features, the application had reached MVP status. However, I saw an avenue for improving upon its capabilities: supporting any tokeniser available from [HuggingFace](https://huggingface.co/). The change to allow this was small, given the API for the [`tokenizers`](https://github.com/huggingface/tokenizers) library is relatively similar to that of `tiktoken`. This change expanded the horizons of the application massively and allowed for seeing how thousands of open-source models approach tokenisation, which is often very different to OpenAI:
 
-![CLI with the Google model 'bert-base-cased', sourced from HuggingFace.](bert_cli.png)
+![CLI with the Google model 'bert-base-cased', sourced from HuggingFace.](/uploads/bert_cli.png)
 
 ## Conclusion
 
