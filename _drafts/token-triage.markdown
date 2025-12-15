@@ -45,15 +45,15 @@ In particular, I wanted a CLI-based solution for ease of use that would support 
 
 The first step was to implement text tokenisation. Luckily, `tiktoken` provides a friendly API to do this. To fetch a tokeniser for a particular model is simple:
 
-```python
+~~~ python
 from tiktoken import encoding_for_model
     
 tokeniser = encoding_for_model("gpt-4")
-```
+~~~
 
 This looks up the corresponding tokeniser, and downloads and installs it. Next, we can tokenise a string via `encode`, separate the tokens, and then decode each individually.
 
-```python
+~~~ python
 input_text = "Hello, World!"
 encoded_text = tokeniser.encode(input_text)
     
@@ -62,7 +62,7 @@ string_tokens = [bytes_to_string(token) for token in decoded_tokens]
     
 def bytes_to_string(item: bytes) -> str:
     return item.decode("utf-8", errors="replace")
-```
+~~~
 
 This allows us to see where the token boundaries lie.
 
