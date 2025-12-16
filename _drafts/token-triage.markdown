@@ -8,7 +8,7 @@ tags:
 - Artificial Intelligence
 summary: Visualising the hidden building blocks of LLM text
 author: jstrong
-image: "/uploads/left_right_tokeniser_thumb.png"
+image: "/uploads/left_right_tokeniser_thumb%20(Social).png"
 ---
 
 When working with agentic AI, tool calls and results abound. With tokens quicky mounting up, it's common to want to visualise them, with the obvious solution being websites like [OpenAI's](https://platform.openai.com/tokenizer). However, using these with any more than toy data raises serious data privacy concerns. Consequently, I set out to make my own, more secure, offline solution.
