@@ -1,10 +1,11 @@
 ---
 title: Token Prism
-date: 2025-12-15 15:11:00 Z
+date: 2025-12-16 07:30:00 Z
 categories:
 - Artificial Intelligence
 tags:
 - AI
+- Artificial Intelligence
 summary: Visualising the hidden building blocks of LLM text
 author: jstrong
 image: "/uploads/left_right_tokeniser_thumb.png"
