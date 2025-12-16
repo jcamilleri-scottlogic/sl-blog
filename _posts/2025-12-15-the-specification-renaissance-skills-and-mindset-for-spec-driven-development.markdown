@@ -20,11 +20,11 @@ author: ocronk
 
 The rise of AI coding assistants has exposed an uncomfortable truth: many people struggle to articulate what they actually want to build. Machines struggle to understand the messy realities of brownfield projects and changes to software. We've spent decades optimising for implementation speed whilst specification skills have atrophied. Now AI can handle much of the implementation, and suddenly the bottleneck has shifted upstream. My colleague [Colin recently wrote about his practical experiences with spec driven development](https://blog.scottlogic.com/2025/11/26/putting-spec-kit-through-its-paces-radical-idea-or-reinvented-waterfall.html) so do check that out alongside this article, although note we don’t always agree on everything! (This is one of beauties of the Scott Logic blog – we sometimes publish differing positions as long as they are well researched and articulated).
 
-# **Problem Articulation**
+## **Problem Articulation**
 
 Before you can specify anything, you need to understand what problem you're solving. This means asking "why" repeatedly until you've stripped away assumed solutions and reached the actual user need. Developers often leap to implementation details ("we need a Redis cache") before fully understanding the problem ("users experience delays when..."). AI amplifies this tendency because it's eager to build whatever you describe. GenAI output naturally tends to skew towards it’s training data – therefore solutions will feature what has been mostly commonly built before (rather than factoring in the nuances of your project’s requirements).
 
-## **Specification & Requirements**
+### **Specification & Requirements**
 
 This is where many developers falter. Good specification requires precision without over-constraint. You need to describe the "what" and "why" whilst leaving room for the "how". This means understanding:
 
@@ -36,11 +36,11 @@ This is where many developers falter. Good specification requires precision with
 
 The irony is that some developers dismiss this as "business analyst work" whilst simultaneously complaining when requirements are unclear. AI doesn't fix poor specifications; it just implements its best guess with great speed. Introducing a stack of assumptions (that likely will lean towards the global average from its training data set) into the implementation that comes out.
 
-# **Prompt and Context Engineering**
+## **Prompt and Context Engineering**
 
-Naturally AI models have constraints – an important one here is they have no memory of your previous conversations, your codebase architecture, or your team's conventions unless you explicitly provide this context (or this is implemented through features of the AI based product you are using). Context engineering is the art of:
+Naturally, AI models have constraints – an important one here is they have no memory of your previous conversations, your codebase architecture, or your team's conventions unless you explicitly provide this context (or this is implemented through features of the AI based product you are using). Context engineering is the art of:
 
-* Structuring your codebase so relevant context is discoverable
+* Structuring your codebase so that relevant context is discoverable
 
 * Maintaining clear documentation that can be referenced
 
@@ -50,7 +50,7 @@ Naturally AI models have constraints – an important one here is they have no m
 
 This resembles good API design: create clear interfaces, maintain consistent patterns, document the non-obvious bits. Of course it goes beyond this as the requirements for what you feed an AI model are different from what you would provide a person.
 
-## **Prompt Engineering**
+### **Prompt Engineering**
 
 This is the most discussed but arguably least important skill on the continuum. Prompt engineering is tactical execution: "how do I phrase this request to get the output I need?" It matters, but it's downstream of everything else. A well-crafted prompt cannot rescue a poorly understood problem or inadequate specification.
 
@@ -64,7 +64,7 @@ Good prompts are:
 
 * Aware of the model's strengths and limitations
 
-# **Verification & Validation**
+## **Verification & Validation**
 
 AI-generated code requires a different verification approach than human-written code. You're not checking for typos or syntax errors (after all a compiler picks those up); you're validating that the AI understood your intent and that its solution actually solves the problem. The basics still matter here:
 
@@ -74,13 +74,13 @@ AI-generated code requires a different verification approach than human-written 
 
 * Recognising when something "looks right" but isn't
 
-# **AI could lead us to change the specification to development process?**
+## **AI could lead us to change the specification to development process?**
 
-Specification was arguably never the strongest attribute in a developer’s skillset. We're trained to think in implementations, to optimise for efficiency, to value "working code" above all else. Agile methodologies even encouraged us to deprioritise upfront specification in favour of iterative development. However this probably now needs a rethink as AI requires more specification than humans.
+Specification was arguably never the strongest attribute in a developer’s skillset. We're trained to think in implementations, to optimise for efficiency, to value "working code" above all else. Agile methodologies even encouraged us to deprioritise upfront specification in favour of iterative development. However, this probably now needs a rethink as AI requires more specification than humans.
 
 As AI doesn't iterate like humans do. It doesn't learn your preferences through osmosis or pick up on your architectural vision through code reviews. Every interaction starts fresh. This means the quality of your specifications directly determines the quality of your outcomes. Might this lead to a revised operating model where we have the AI guess at a full set of \[missing\] specifications filling in gaps, implement them all and then present them as options? We need to start thinking about the different ways AI augmentation can help us build more effective and sustainable software. Can we avoid lots of costly round trips to the AI development tooling by re-imagining the development process?
 
-# **The Path Forward**
+## **The Path Forward**
 
 The good news: these are learnable skills. The better news: they make you a better developer regardless of AI tooling. Clear problem articulation, precise specification, and thorough verification were always valuable; AI has simply made them even more important.
 
