@@ -14,6 +14,7 @@ tags:
 summary: A comparison of open-source and proprietary LLMs for ESG report evaluation
   using InferESG and RAGAS.
 author: afonseca
+image: "/uploads/Evaluating-Answers-with-Large-Language-Models--How-InferESG-and-RAGAS-Helped-01-3d5099.jpg"
 ---
 
 In our latest project, we set out to evaluate how different Large Language Models (LLMs) perform when responding to user prompts. Our goal was not to determine which model is superior, but to assess whether open-source models can serve as viable alternatives to OpenAI’s proprietary models. We did this by building on our existing platform, [InferESG](https://blog.scottlogic.com/2025/04/02/inferesg-finding-the-right-architecture.html), which automatically generates reports from ESG disclosures.
