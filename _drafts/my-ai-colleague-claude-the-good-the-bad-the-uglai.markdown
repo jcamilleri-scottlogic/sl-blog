@@ -13,8 +13,8 @@ tags:
 - confluence
 - atlassian
 summary: How we leveraged AI to implement a compliance framework in record time –
-  and what we learned along the way
-author: Toni Webb
+  and what we learned along the way.
+author: twebb
 ---
 
 When I was asked to lead a management system certification project, I'll admit my first reaction wasn't enthusiasm. It was something closer to: "How on earth are we going to do this with a two-person team, no prior experience with this standard, or domain, and a tight deadline?"
