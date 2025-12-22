@@ -1,8 +1,13 @@
 ---
-title: 'The power of agentic loops - implementing flexbox layout in 3 hours'
+title: The power of agentic loops - implementing flexbox layout in 3 hours
+date: 2025-12-22 00:00:00 Z
 categories:
 - Artificial Intelligence
-summary: By leveraging AI agents with iterative feedback loops, a complete flexbox layout algorithm was implemented in just 3 hours, a task that took two weeks back in 2015. The key to this productivity gain was creating an effective agentic loop where the AI could test, debug, and improve its code autonomously using a browser's layout engine as a reference implementation.
+summary: By leveraging AI agents with iterative feedback loops, a complete flexbox
+  layout algorithm was implemented in just 3 hours, a task that took two weeks back
+  in 2015. The key to this productivity gain was creating an effective agentic loop
+  where the AI could test, debug, and improve its code autonomously using a browser's
+  layout engine as a reference implementation.
 author: ceberhardt
 image: ceberhardt/assets/flexbox.png
 ---
