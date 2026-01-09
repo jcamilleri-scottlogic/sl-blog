@@ -6,7 +6,9 @@ categories:
 tags:
 - Java, Functional Programming, Optics
 author: magnussmith
-summary: Java 25 embraces immutability with records and pattern matching. When it comes to deeply nested data then pattern matching solves reading, but provides no help for writing. 
+summary: Java 25 embraces immutability with records and pattern matching. When it
+  comes to deeply nested data then pattern matching solves reading, but provides no
+  help for writing.
 image: magnussmith/assets/java.jpg
 ---
 
