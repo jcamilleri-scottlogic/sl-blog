@@ -7,7 +7,8 @@ tags:
 - Agile
 - Team
 - Retrospective
-summary: By adapting retrospectives, teams can spark feedback that grows people, and nutures a culture where recognition comes naturally.
+summary: By adapting retrospectives, teams can spark feedback that grows people, and
+  nutures a culture where recognition comes naturally.
 author: dallsop
 ---
 
