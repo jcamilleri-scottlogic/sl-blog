@@ -6,7 +6,7 @@ categories:
 tags:
 - Java, Functional Programming, Optics
 author: magnussmith
-summary: This time we start to build an expression language interpreter
+summary: In Part 3 we are focusing on building an Abstract Syntax Tree (AST) for an expression language using Java 25 features and the Higher-Kinded-J library.  We will create an expression language(supporting literals, variables, binary operations, and conditionals) that is type-safe, immutable, and easy to transform.
 image: magnussmith/assets/mfj_logo.jpg
 ---
 
