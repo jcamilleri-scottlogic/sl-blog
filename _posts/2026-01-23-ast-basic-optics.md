@@ -36,7 +36,7 @@ Along the way, you'll see how optics transform what would otherwise be tedious t
 **All code examples from this article have [runnable demos:](https://github.com/higher-kinded-j/expression-language-example)**
 
 - **[ExprDemo](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/demo/ExprDemo.java)**: Building ASTs, using prisms, and Focus DSL composition
-- **[OptimiserDemo](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article2/demo/OptimiserDemo.java)**: Constant folding, identity simplification, and complex optimisation
+- **[OptimiserDemo](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/demo/OptimiserDemo.java)**: Constant folding, identity simplification, and complex optimisation
 
 The AST types are defined in [`org.higherkindedj.article3.ast`](../src/main/java/org/higherkindedj/article3/ast/), with transformations in [`org.higherkindedj.article3.transform`](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/transform/).
 
