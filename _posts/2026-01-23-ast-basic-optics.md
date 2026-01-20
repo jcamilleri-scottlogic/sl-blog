@@ -52,12 +52,14 @@ What exactly are we building? A small but powerful expression language suitable 
 - **Domain-specific calculations**: `principal * (1 + rate) ^ years`
 
 The language will support:
+
 - Literal values (integers, booleans, strings)
 - Variables with lexical scoping
 - Binary operations (arithmetic, comparison, logical)
 - Conditional expressions (if-then-else)
 
 Our design goals are:
+
 1. **Type-safe**: The compiler catches structural errors
 2. **Immutable**: Expressions never change; transformations produce new trees
 3. **Transformable**: Easy to analyse, optimise, and rewrite
@@ -66,21 +68,21 @@ This third goal is where optics become essential. An expression tree is a recurs
 
 ### Building on Data-Oriented Foundations
 
-Article 1 introduced Java 25's data-oriented programming features. As Brian Goetz articulates in *Data-Oriented Programming in Java*, the core insight is that "data is just data": immutable, transparent, and separate from behaviour. Records, sealed interfaces, and pattern matching embody this philosophy beautifully.
+Part 1 introduced Java 25's data-oriented programming features. As Brian Goetz articulates in *Data-Oriented Programming in Java*, the core insight is that _"data is just data"_: immutable, transparent, and separate from behaviour. Records, sealed interfaces, and pattern matching embody this philosophy beautifully.
 
 Eric Normand's work on data-oriented programming (from the Clojure tradition) takes this further: behaviour should be implemented as pure functions over immutable data, with polymorphism achieved through pattern matching rather than method dispatch. Java 25 now supports this style naturally.
 
-Yet there's a tension that pure DOP doesn't fully address. When behaviour is separate from data, *where do structural operations live*? Functions that transform nested trees must understand the shape of every node. In Normand's terms, we've separated "what the data is" from "what we do with it", but tree transformations blur this boundary: they're operations intimately tied to structure.
+Yet there's a tension that pure DOP does not fully address. When behaviour is separate from data, *where do structural operations live*? Functions that transform nested trees must understand the shape of every node. In Normand's terms, we've separated _"what the data is"_ from _"what we do with it"_, but tree transformations blur this boundary: they're operations intimately tied to structure.
 
-This is precisely where optics prove their worth. They're not behaviour embedded in data (that would violate DOP principles). They're *reified access paths*: first-class values representing the structure of your types. The structure of a record implies its lenses; the variants of a sealed interface imply its prisms. Optics make this correspondence explicit and composable.
+This is precisely where optics prove their worth. They're not behaviour embedded in data (that would violate DOP principles). They're *reified access paths*; first-class values representing the structure of your types. The structure of a record implies its lenses; the variants of a sealed interface imply its prisms. Optics make this correspondence explicit and composable.
 
-### A Literary Analogy: Optics as Directions
+### A Map Analogy: Optics as Directions
 
 Think of optics like directions in a treasure map. The treasure (This is your data) doesn't know the directions to itself; it just *is*. But the directions (The optics) are separate, shareable instructions that anyone can follow.
 
-A **lens** is like directions to a specific room in a house: "Go to the kitchen." You'll always find the kitchen there. A **prism** is like directions that might not apply: "If there's a garden, go to the fountain." Some houses have gardens; some don't. A **traversal** is like directions to multiple destinations: "Visit every bedroom."
+A **lens** is like directions to a specific room in a house: _"Go to the kitchen."_ You'll always find the kitchen there. A **prism** is like directions that might not apply: _"If there's a garden, go to the fountain."_ Some houses have gardens; some don't. A **traversal** is like directions to multiple destinations: _"Visit every bedroom."_
 
-The power comes from composition. "Go to the garden, then to the fountain, then to the bench" chains directions together. If any step fails (no garden?), you stop gracefully. Optics compose the same way: each step may narrow, widen, or multiply your focus, and the types track this automatically.
+The power comes from composition. _"Go to the garden, then to the fountain, then to the bench"_ chains directions together. If any step fails (no garden?), you stop gracefully. Optics compose the same way: each step may narrow, widen, or multiply your focus, and the types track this automatically.
 
 ---
 
@@ -108,6 +110,7 @@ public enum BinaryOp {
 ~~~~ 
 
 This covers more than you might expect:
+
 - `Literal(42)`: integer constant
 - `Literal(true)`: boolean constant
 - `Variable("x")`: variable reference
@@ -140,6 +143,7 @@ Notice the unnamed pattern `_` for components we don't need, a Java 22+ feature 
 ### Why Records?
 
 Records give us:
+
 - Immutability by default
 - Automatic `equals()`, `hashCode()`, `toString()`
 - Pattern matching with deconstruction
@@ -169,7 +173,7 @@ Expr foldConstants(Expr expr) {
 
 No interfaces to implement, no `accept()` methods polluting our data types, and the compiler verifies exhaustiveness. This is DOP in action: pure data, external functions, pattern-matched polymorphism.
 
-Yet notice the manual reconstruction in the `Binary` and `Conditional` cases. This recursive boilerplate appears in *every* tree transformation. DOP gives us elegant reading; the reconstruction cascade remains.
+Yet notice the manual reconstruction in the `Binary` and `Conditional` cases. This recursive boilerplate appears in *every* tree transformation. DOP gives us improved reading; the reconstruction cascade remains.
 
 ---
 
@@ -209,6 +213,7 @@ public final class ExprPrisms {
 ~~~~ 
 
 Each prism lets us:
+
 - Check if an `Expr` is a specific variant
 - Extract the variant if it matches
 - Transform just that variant, leaving others unchanged
@@ -230,6 +235,7 @@ public final class BinaryLenses {
 ~~~~ 
 
 Each lens lets us:
+
 - Get a field from a node
 - Set a field, producing a new node
 - Modify a field with a function
@@ -251,7 +257,7 @@ Focus classes wrap lenses in `FocusPath` objects that enable method chaining wit
 
 ### Composition: Where Optics Earn Their Keep
 
-The payoff comes when we compose these optics. Here's the traditional approach with raw optics:
+The benefit comes when we compose these optics. Here's the traditional approach with raw optics:
 
 ~~~~ java
 // Raw optics: explicit composition with andThen
@@ -277,7 +283,7 @@ Optional<Object> value = BinaryFocus.left()
 // Optional[5]
 ~~~~ 
 
-Both approaches navigate from `Binary` → `left` (Expr) → as `Literal` → `value`, but the Focus DSL reads more naturally. As we add navigators in Article 4, this becomes even more elegant.
+Both approaches navigate from `Binary` → `left` (Expr) → as `Literal` → `value`, but the Focus DSL reads more naturally. As we add navigators in Part 4, this becomes even more readable.
 
 ### Why Optics Instead of Just Pattern Matching?
 
@@ -367,7 +373,7 @@ public static Expr incrementLiterals(Expr expr) {
 }
 ~~~~ 
 
-But wait: this only transforms the top-level expression. If the literal is nested inside a `Binary`, it won't be touched. We need recursion.
+There is a problem here. This only transforms the top-level expression. If the literal is nested inside a `Binary`, it won't be touched. We need recursion.
 
 ### The Recursive Challenge
 
@@ -390,7 +396,7 @@ public static Expr incrementAllLiterals(Expr expr) {
 }
 ~~~~ 
 
-This works, but it's tedious. Every transformation requires the same recursive boilerplate. We're manually threading the transformation through every node type.
+This works, but it's very tedious. Every transformation requires the same recursive boilerplate code. We're manually threading the transformation through every node type.
 
 ### A Reusable Transformation Pattern
 
@@ -424,7 +430,7 @@ Expr result = transformExpr(expr, e ->
         e));
 ~~~~ 
 
-In Article 4, we'll see how traversals make this even more elegant. For now, let's work with what we have.
+In Part 4, we'll see how traversals improve this further. For now, let's work with what we have.
 
 ---
 
@@ -475,7 +481,7 @@ Expr doubled = ExprPrisms.literal().modify(lit -> {
 }, expr);
 ~~~~ 
 
-If `expr` isn't a `Literal`, it's returned unchanged. No explicit instanceof check needed.
+If `expr` isn't a `Literal`, it's returned unchanged. No explicit instanceof check is needed.
 
 ### Pattern-Based Matching
 
@@ -499,13 +505,13 @@ This pattern matching is where Java's native features work well alongside optics
 
 ## Building a Simple Optimiser
 
-Let's put everything together to build a constant folder: an optimiser that evaluates constant expressions at compile time.
+Let's put everything together to build a constant folder; an optimiser that evaluates constant expressions at compile time.
 
 ![ofTree.png]({{site.baseurl}}/magnussmith/assets/optics/astPipeline.png "Optimisation Pipeline")
 
 ### Constant Folding
 
-The idea is simple: if both operands of a binary expression are literals, we can compute the result:
+Here is the idea. If both operands of a binary expression are literals, we can compute the result:
 
 ~~~~ java
 public static Expr foldConstants(Expr expr) {
@@ -593,7 +599,7 @@ private static Expr simplifyIdentities(Expr expr) {
 
 ### Composing Optimisations
 
-Multiple optimisation passes compose naturally:
+Multiple optimisation passes compose quite naturally:
 
 ~~~~ java
 public static Expr optimise(Expr expr) {
@@ -621,19 +627,19 @@ We've built a solid foundation for expression language development using Java 25
 
 - **Sealed interfaces** define a closed universe of expression types
 - **Records** provide immutable, transparent data carriers
-- **Pattern matching** enables elegant, exhaustive case analysis
+- **Pattern matching** enables clean, exhaustive case analysis
 - **Optics** (via Higher-Kinded-J) add composable, bidirectional transformations
 - **Focus DSL** makes optic composition fluent and readable
 
 ### Optics and the DOP Philosophy
 
-There's a deeper point here worth pausing on. Critics of pure data-oriented programming sometimes observe that while DOP excels at *describing* data, it offers less guidance on *transforming* it. Pattern matching destructures beautifully but reconstructs tediously. The purity of "data separate from behaviour" runs into friction when behaviour must intimately understand data's shape.
+There's a deeper point here worth pausing on. Critics of pure data-oriented programming sometimes observe that while DOP excels at *describing* data, it offers less guidance on *transforming* it. Pattern matching destructures beautifully but reconstructs tediously. The purity of _"data separate from behaviour"_ runs into friction when behaviour must intimately understand data's shape.
 
-Optics resolve this tension elegantly. They're not methods on your data types (that would embed behaviour). They're not external functions that pattern-match (that leads to reconstruction cascades). They're something new: *structural correspondences* reified as values.
+Optics resolve this tension deftly. They're not methods on your data types (that would embed behaviour). They're not external functions that pattern-match (that leads to reconstruction cascades). They're something new: *structural correspondences* reified as values.
 
 The `@GenerateLenses` and `@GeneratePrisms` annotations embody this insight. The structure of a record *implies* its lenses; the variants of a sealed interface *imply* its prisms. Higher-Kinded-J makes these implications explicit and composable. You're not adding behaviour to data; you're deriving navigation from structure.
 
-This is why optics feel natural alongside DOP rather than against it. Both emphasise that structure should be transparent and operations should compose. Optics simply extend these principles from reading to writing.
+This is why optics feel natural alongside DOP rather than against it. Both emphasise that structure should be transparent and operations should compose. Optics simply extends these principles from reading to writing.
 
 ---
 
@@ -641,10 +647,10 @@ This is why optics feel natural alongside DOP rather than against it. Both empha
 
 There's a limitation in our current approach: the `transformExpr` function is hand-written boilerplate. Every time we add a new expression type, we must update it. This violates the DRY principle and risks bugs when someone forgets.
 
-In Article 4, we'll introduce *traversals* and the **Focus DSL's `TraversalPath`**: optics that focus on multiple values simultaneously. This is where the Focus DSL becomes truly powerful:
+In Part 4, we'll introduce *traversals* and the **Focus DSL's `TraversalPath`**: optics that focus on multiple values simultaneously. This is where the Focus DSL becomes powerful:
 
 ~~~~ java
-// Preview: what's coming in Article 4
+// Preview: what's coming in Part 4
 TraversalPath<Company, Employee> allEmployees = CompanyFocus
     .departments()
     .each()          // Navigate into each department
@@ -662,7 +668,7 @@ With the Focus DSL's collection navigation (`each()`, `at()`, `atKey()`), we can
 - **Chain arbitrarily deep**: Navigate through nested collections with method chains
 - **Apply conditional updates**: `modifyWhen()` transforms only elements matching a predicate
 
-We'll also tackle dead code elimination and common subexpression elimination, showcasing how the Focus DSL scales to real compiler optimisations.
+We'll also tackle dead code elimination and common subexpression elimination, demonstrating how the Focus DSL scales to real compiler optimisations.
 
 ---
 
@@ -684,7 +690,7 @@ We'll also tackle dead code elimination and common subexpression elimination, sh
 
 - **Philip Wadler, ["The Expression Problem"](http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt)** (1998): The classic formulation of the tension between adding new data types versus new operations. DOP with optics offers one resolution.
 
-- The expression problem asks: can you add both new variants *and* new operations without modifying existing code? Sealed interfaces make adding operations easy (just write a function); optics make the operations themselves composable and reusable.
+- The expression problem asks: can you add both new variants *and* new operations without modifying existing code? Sealed interfaces make adding operations easy (write a function); optics make the operations themselves composable and reusable.
 
 ### Higher-Kinded-J
 
@@ -696,7 +702,7 @@ We'll also tackle dead code elimination and common subexpression elimination, sh
 
 ---
 
-*Next: 
+### Next time
 
 Next time in Part 4 we look at how we visit *all* nodes in the tree, not just the top level using Traversals
 
