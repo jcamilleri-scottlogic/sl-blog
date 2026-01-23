@@ -6,10 +6,12 @@ categories:
 tags:
 - Java, Functional Programming, Optics
 author: magnussmith
-summary: In Part 3 we are focusing on building an Abstract Syntax Tree (AST) for an expression language using Java 25 features and Higher-Kinded-J.  We will create a complete expression language with parsing, type checking, optimisation, and interpretation that is type-safe, immutable, and easy to transform.
+summary: In Part 3 we are focusing on building an Abstract Syntax Tree (AST) for an
+  expression language using Java 25 features and Higher-Kinded-J.  We will create
+  a complete expression language with parsing, type checking, optimisation, and interpretation
+  that is type-safe, immutable, and easy to transform.
 image: magnussmith/assets/mfj_logo.jpg
 ---
-
 
 # Optics in Practice: An Expression Language AST
 
