@@ -590,6 +590,7 @@ This domain showcases every optic type:
 - **Traversals** for visiting all sub-expressions recursively
 
 We'll implement:
+
 - Variable renaming across an entire expression tree
 - Constant folding (evaluating `1 + 2` to `3` at compile time)
 - Dead code elimination (removing unreachable branches)
@@ -653,4 +654,4 @@ The optics learning curve is real. Some practitioners argue that pattern matchin
 
 ### Next time
 
-Next time in Part 3 we will look at how we apply optics in a real domain by starting to build a complete expression language with parsing, type checking, optimisation, and interpretation.
+Next time in [Part 3]({{site.baseurl}}/2026/01/23/ast-basic-optics.html) we will look at how we apply optics in a real domain by starting to build a complete expression language with parsing, type checking, optimisation, and interpretation.

@@ -1,12 +1,12 @@
 ---
 title: Functional Optics for Modern Java - Part 3
-date: 2026-01-16 00:00:00 Z
+date: 2026-01-23 00:00:00 Z
 categories:
 - Tech
 tags:
 - Java, Functional Programming, Optics
 author: magnussmith
-summary: In Part 3 we are focusing on building an Abstract Syntax Tree (AST) for an expression language using Java 25 features and the Higher-Kinded-J library.  We will create an expression language(supporting literals, variables, binary operations, and conditionals) that is type-safe, immutable, and easy to transform.
+summary: In Part 3 we are focusing on building an Abstract Syntax Tree (AST) for an expression language using Java 25 features and Higher-Kinded-J.  We will create a complete expression language with parsing, type checking, optimisation, and interpretation that is type-safe, immutable, and easy to transform.
 image: magnussmith/assets/mfj_logo.jpg
 ---
 
@@ -16,7 +16,7 @@ image: magnussmith/assets/mfj_logo.jpg
 *Part 3 of the Functional Optics for Modern Java series*
 
 In [Part 1]({{site.baseurl}}/2026/01/09/java-the-immutability-gap.html) and [Part 2]({{site.baseurl}}/2026/01/16/optics-fundamentals.html), 
-we established why optics matter and how they work. Now it's time to apply them to a real domain: an expression language interpreter.
+we established why optics matter and how they work. Now it's time to apply them to a real domain by building an expression language interpreter.
 
 Expression languages are the backbone of modern Java infrastructure, from Spring Expression Language (SpEL) to rule engines like Drools. 
 If you've ever configured a complex Spring application or written business rules, you've used one. In this article we will show how Java 25's data-oriented programming features, 
@@ -38,7 +38,7 @@ Along the way, you'll see how optics transform what would otherwise be tedious t
 - **[ExprDemo](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/demo/ExprDemo.java)**: Building ASTs, using prisms, and Focus DSL composition
 - **[OptimiserDemo](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/demo/OptimiserDemo.java)**: Constant folding, identity simplification, and complex optimisation
 
-The AST types are defined in [`org.higherkindedj.article3.ast`](../src/main/java/org/higherkindedj/article3/ast/), with transformations in [`org.higherkindedj.article3.transform`](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/transform/).
+The AST types are defined in [`org.higherkindedj.article3.ast`](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/ast/), with transformations in [`org.higherkindedj.article3.transform`](https://github.com/higher-kinded-j/expression-language-example/blob/main/src/main/java/org/higherkindedj/article3/transform/).
 
 ---
 
@@ -704,5 +704,6 @@ We'll also tackle dead code elimination and common subexpression elimination, de
 
 ### Next time
 
-Next time in Part 4 we look at how we visit *all* nodes in the tree, not just the top level using Traversals
+Next time in Part 4 we look at how we visit *all* nodes in the tree, not just the top level. This is where traversals become essential. A traversal focuses on zero or more elements within a structure, making it perfect for recursive tree operations.
+
 
