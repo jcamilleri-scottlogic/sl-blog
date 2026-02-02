@@ -5,7 +5,13 @@ categories:
 - Tech
 tags:
 - software engineering
-summary: Ever tried adding a simple feature to a legacy system, only to uncover a chain reaction of hidden quirks and ancient "fixes"? In this story, a seemingly straightforward PDF download update spirals into debugging mysteries involving strict security policies, sneaky iframes, and a forgotten double-click workaround. What should’ve taken minutes turned into a detective case—and ultimately, a cleaner, more maintainable solution. If you enjoy tales of real-world debugging, legacy surprises, and problem-solving under constraints, this one’s worth the read.
+summary: Ever tried adding a simple feature to a legacy system, only to uncover a
+  chain reaction of hidden quirks and ancient "fixes"? In this story, a seemingly
+  straightforward PDF download update spirals into debugging mysteries involving strict
+  security policies, sneaky iframes, and a forgotten double-click workaround. What
+  should’ve taken minutes turned into a detective case—and ultimately, a cleaner,
+  more maintainable solution. If you enjoy tales of real-world debugging, legacy surprises,
+  and problem-solving under constraints, this one’s worth the read.
 author: osharon
 ---
 
