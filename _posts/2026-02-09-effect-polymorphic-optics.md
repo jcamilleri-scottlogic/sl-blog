@@ -6,7 +6,10 @@ categories:
 tags:
 - Java, Functional Programming, Optics, Effects
 author: magnussmith
-summary: A unique feature of Higher-Kinded-J is uniting Optics with Effects in a fluent api. In Part 5 we dive into effect polymorphism and how effects structure our code with Higher-Kinded-J's Effect Path API; a fluent interface for computations that might fail, accumulate errors, or require deferred execution. 
+summary: A unique feature of Higher-Kinded-J is uniting Optics with Effects in a fluent
+  api. In Part 5 we dive into effect polymorphism and how effects structure our code
+  with Higher-Kinded-J's Effect Path API; a fluent interface for computations that
+  might fail, accumulate errors, or require deferred execution.
 image: magnussmith/assets/mfj_logo.jpg
 ---
 
