@@ -6,7 +6,11 @@ categories:
 tags:
 - Java, Functional Programming, Optics, Effects
 author: magnussmith
-summary: In the series finale, we move from theory to practice to ask when functional patterns actually pay for themselves. We break down Higher-Kinded-J’s architecture to demonstrate what ‘Java-native’ FP looks like, avoiding awkward ports, and explain why investing in these patterns today creates a distinct advantage as the Java language evolves.
+summary: In the series finale, we move from theory to practice to ask when functional
+  patterns actually pay for themselves. We break down Higher-Kinded-J’s architecture
+  to demonstrate what ‘Java-native’ FP looks like, avoiding awkward ports, and explain
+  why investing in these patterns today creates a distinct advantage as the Java language
+  evolves.
 image: magnussmith/assets/mfj_logo.jpg
 ---
 
