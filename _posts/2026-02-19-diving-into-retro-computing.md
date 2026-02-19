@@ -7,7 +7,8 @@ categories:
 tags:
 - Software Engineering
 - Retro Computing
-summary: After coming across an old computer in my attic, I decide to fix it up and code a game on it using BASIC.
+summary: After coming across an old computer in my attic, I decide to fix it up and
+  code a game on it using BASIC.
 author: lhancock-scottlogic
 ---
 
