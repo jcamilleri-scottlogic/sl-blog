@@ -8,7 +8,11 @@ tags:
 - AI
 - Artificial Intelligence
 - software engineering
-summary: AI will likely play a major role in software development, but using it effectively requires understanding its limits. While working with GitHub Copilot, I found that small, well-defined tasks and better prompting improved results, while context limits and over-eager implementations caused issues. By working incrementally and verifying each step, I increased my productivity and learned to collaborate with AI more deliberately.
+summary: AI will likely play a major role in software development, but using it effectively
+  requires understanding its limits. While working with GitHub Copilot, I found that
+  small, well-defined tasks and better prompting improved results, while context limits
+  and over-eager implementations caused issues. By working incrementally and verifying
+  each step, I increased my productivity and learned to collaborate with AI more deliberately.
 author: osharon
 ---
 
