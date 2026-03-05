@@ -1,5 +1,6 @@
 ---
-title: Analysis → Implementation → Reflection – a practical technique for issue resolution with agentic AI
+title: Analysis → Implementation → Reflection – a practical technique for issue resolution
+  with agentic AI
 date: 2026-03-05 00:00:00 Z
 categories:
 - Artificial Intelligence
@@ -7,7 +8,12 @@ tags:
 - Artificial Intelligence
 - AI
 - Agentic AI
-summary: This article presents Analysis / Implementation / Reflection, a simple pattern for resolving issues. While the core of this pattern, the implementation, is quite conventional, there are a couple of novel additions. In the analysis phase, the agent is used to explore the issue and create a suitable harness to evaluate the solution. While the reflection phase probes the agent to provide a qualitative assessment of the implementation.
+summary: This article presents Analysis / Implementation / Reflection, a simple pattern
+  for resolving issues. While the core of this pattern, the implementation, is quite
+  conventional, there are a couple of novel additions. In the analysis phase, the
+  agent is used to explore the issue and create a suitable harness to evaluate the
+  solution. While the reflection phase probes the agent to provide a qualitative assessment
+  of the implementation.
 author: dkerr
 ---
 
