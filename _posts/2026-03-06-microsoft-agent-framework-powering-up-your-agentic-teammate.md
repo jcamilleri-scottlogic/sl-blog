@@ -9,9 +9,9 @@ tags:
 - Microsoft Agent Framework
 author: dhunter
 layout: default_post
-summary: Building an Agentic AI teammate using Microsoft Agent Framework to handle user onboarding through email, with humans in the loop.
+summary: Building an Agentic AI teammate using Microsoft Agent Framework to handle
+  user onboarding through email, with humans in the loop.
 ---
-
 
 Recently our sister company [Marra](https://marra.co.uk/) built an agentic "teammate" for user onboarding using Microsoft Power Platform exploring new AI features available. They asked Scott Logic to do the same using Microsoft Agent Framework.  Luckily I was on the small team who got involved.
 
