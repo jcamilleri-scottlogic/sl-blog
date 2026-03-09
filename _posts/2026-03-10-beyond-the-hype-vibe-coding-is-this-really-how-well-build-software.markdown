@@ -1,6 +1,6 @@
 ---
 title: 'Beyond the Hype: Vibe coding – Is this really how we’ll build software?'
-date: 2026-03-10 01:01:00 Z
+date: 2026-03-10 10:01:00 Z
 categories:
 - Podcast
 - Artificial Intelligence
@@ -33,7 +33,7 @@ summary: In this episode of Beyond the Hype, I'm joined by Remi Van Goethem to u
 author: ceberhardt
 contributors:
 - rvango
-image: 
+image: "/uploads/BeyondTheHype---pink-and-yellow---episode-31---social.jpg"
 ---
 
 In this episode of Beyond the Hype, I'm joined by Remi Van Goethem to unpack the fast‑evolving world of AI‑accelerated software development. From everyday autocompletion to emerging multi‑agent frameworks, we explore how AI is reshaping coding practice and where human engineering judgement still matters.
