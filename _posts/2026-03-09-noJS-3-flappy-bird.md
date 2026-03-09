@@ -1,11 +1,14 @@
 ---
-author: garora
-title: NoJS 3 - The dawn of Flappy Bird. Making a Flappy Bird clone using pure HTML and CSS, no JavaScript
+title: NoJS 3 - The dawn of Flappy Bird. Making a Flappy Bird clone using pure HTML
+  and CSS, no JavaScript
+date: 2026-03-09 00:00:00 Z
 categories:
-  - Tech
+- Tech
+author: garora
 layout: default_post
-summary: Everyone loves CSS! Apparently, I have little better to do with my life. I have created a clone of the lesser-known game Flappy Bird. This was made without any JavaScript—only HTML and CSS. In this blog post, I discuss how I made it.
-category: Tech
+summary: Everyone loves CSS! Apparently, I have little better to do with my life.
+  I have created a clone of the lesser-known game Flappy Bird. This was made without
+  any JavaScript—only HTML and CSS. In this blog post, I discuss how I made it.
 image: garora/assets/noJs3/bird.svg
 ---
 
