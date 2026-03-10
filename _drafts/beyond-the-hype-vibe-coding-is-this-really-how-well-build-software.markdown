@@ -135,11 +135,11 @@ Yeah, well, what I like about this scale, even if I don't necessarily agree with
 
 You are doing things the new modern way or the old-fashioned, handcrafted writing-the-code way. And in reality, it is a spectrum that there are levels of vibe coding, and Steve Yegge's scale goes, I'd say, almost beyond vibe coding. And it is a sliding scale. So, with that in mind, I mean, do you expect all software development to start pushing further and further up this scale of automation?
 
-Remi Van Goethem
+**Remi Van Goethem**
 
 To me, it sounds like it seems to be a natural way at the moment. It's where the industry is heading. Some companies have started moving up in the scale. We've seen some companies like Square publishing how I think most developers are at stage five, and the second cohort is at stage six, so they're pushing towards the right side, where they manage a fleet of agents, basically.
 
-Colin Eberhardt
+**Colin Eberhardt**
 
 At the moment, though, do you think there are obstacles to moving to the higher stages? So what I get uncomfortable about is when, using his term, the diffs scroll by, you simply don't look at the code. It feels like with the technology that we have at the moment.
 
