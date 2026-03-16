@@ -11,7 +11,7 @@ summary: AI was trained on open source, but its rapid progress is now raising di
   coding agents, this post explores how AI may reshape the future motivations and
   sustainability of open source.
 author: ceberhardt
-Field name: 
+image: "/uploads/open-source-logos.png"
 ---
 
 Open source has long been driven by human frustration, curiosity and craftsmanship, creating better tools because existing ones didn’t quite feel right. But as AI agents increasingly write code for us, that dynamic may be changing.
