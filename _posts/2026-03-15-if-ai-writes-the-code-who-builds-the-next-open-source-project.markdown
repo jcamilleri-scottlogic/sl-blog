@@ -1,6 +1,17 @@
 ---
 title: If AI Writes the Code, Who Builds the Next Open Source Project?
 date: 2026-03-15 20:12:00 Z
+categories:
+- Artificial Intelligence
+tags:
+- Artificial Intelligence
+summary: AI was trained on open source, but its rapid progress is now raising difficult
+  legal, technical, and cultural questions for the ecosystem that enabled it. From
+  copyright and “fair use” debates to AI-generated code, cloned frameworks, and autonomous
+  coding agents, this post explores how AI may reshape the future motivations and
+  sustainability of open source.
+author: ceberhardt
+Field name: 
 ---
 
 Open source has long been driven by human frustration, curiosity and craftsmanship, creating better tools because existing ones didn’t quite feel right. But as AI agents increasingly write code for us, that dynamic may be changing.
@@ -83,4 +94,4 @@ If we no longer experience the pain (or the pleasure), what will motivate us to 
 
 I know this blog post seems all rather negative, I certainly don’t mean it to be. I am very excited about the potential of agentic AI and use it myself extensively. However, I don’t think we should be blind to the issues this is causing for open source.
 
-I don’t think open source is going to suddenly dissappear or die, in much the same way that I don’t think software engineers are going to cease to exist. But I do think that it is going to experience a period of rapid and uncomfortable change.
+I don’t expect open source  to suddenly disappear or die, in much the same way that I don’t think software engineers are going to cease to exist. You'll not find me writing a clickbait "Open source is dead, long live open source" blog post! But I do think that open source is going to experience a period of rapid and uncomfortable change.
