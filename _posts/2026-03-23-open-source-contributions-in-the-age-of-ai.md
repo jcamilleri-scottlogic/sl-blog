@@ -5,6 +5,7 @@ date: 2026-03-23 00:00:00 Z
 categories:
   - Artificial Intelligence
   - Open Source
+summary: While AI changes the way in which we write software, how do we ensure that our open-source contributions remain valuable and are welcomed by maintainers? This blog post explores this topic in the context of the DTCC Hackathon and our contributions to the Fluxnova project.
 ---
 
 If you've worked collaboratively on software before, you've probably experienced it. You open a pull request with the best of intentions, ready to dive in and understand your colleague's solution, leave a few helpful comments, and bless the code with your seal of approval. Suddenly, however, you're hit with thousands of lines of changed code, fifty files added and (if you're lucky) a brand-new README file created minutes before the code was put up for review with some vague instructions on how to get it set up. You've now got the thankless task of making sense of this gargantuan submission, disentangling a complex web of classes, configuration files, and cryptic comments. The one saving grace that you could count on until a few years ago was that a human had written this, and therefore at some point they had (presumably) put some thought into its design, and if all else failed, they could understand the reasons for the choices they had made. You might even be able to call them up and get them to walk you through a particularly confusing section, and in the process maybe you (or the author) would learn a thing or two.
