@@ -14,6 +14,10 @@ tags:
 - debugging skills
 - developer experience
 - AI in software
+summary: In this episode, I'm joined by Dean Kerr and Amy Laws to discuss 'The Experiment'
+  – a four‑week study we ran to explore how AI really affects software development.
+  Instead of synthetic benchmarks, the project team tackled genuine issues in an open‑source
+  project, alternating between AI‑assisted work and going completely 'cold turkey'.
 author: ceberhardt
 contributors:
 - alaws
@@ -22,7 +26,7 @@ contributors:
 
 INSERT IFRAME
 
-In this episode, I'm joined by Dean Kerr (Lead Developer) and Amy Laws (Developer) to discuss 'The Experiment' – a four‑week study we ran which explores how AI really affects software development. Instead of synthetic benchmarks, the project team tackled genuine issues in an open‑source project, alternating between AI‑assisted work and going completely 'cold turkey'.
+In this episode, I'm joined by Dean Kerr (Lead Developer) and Amy Laws (Developer) to discuss 'The Experiment' – a four‑week study we ran to explore how AI really affects software development. Instead of synthetic benchmarks, the project team tackled genuine issues in an open‑source project, alternating between AI‑assisted work and going completely 'cold turkey'.
 
 The contrasts were striking. Amy’s AI‑free period exposed how dependent everyday development has become on instant summaries and contextual answers. Meanwhile, Dean found that adopting a simple agentic loop (Analysis → Implementation → Reflection) helped him make better use of AI rather than blindly accept its output.
 
