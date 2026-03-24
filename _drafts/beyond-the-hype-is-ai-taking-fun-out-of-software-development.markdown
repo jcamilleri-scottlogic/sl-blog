@@ -22,6 +22,7 @@ author: ceberhardt
 contributors:
 - alaws
 - dkerr
+image: "/uploads/BeyondTheHype---green-and-yellow---episode-32---social.jpg"
 ---
 
 INSERT IFRAME
