@@ -39,6 +39,8 @@ Together, their experiences reveal a discipline in flux: developers gain speed a
 
 * [SWE-bench](https://www.swebench.com/) – SWE-bench Team
 
+* [Analysis → Implementation → Reflection – a practical technique for issue resolution with agentic AI](https://blog.scottlogic.com/2026/03/05/analysis-implementation-reflection-practical-techniques.html) – Dean Kerr, Scott Logic
+
 ## Subscribe to the podcast
 
 * [Apple Podcasts](https://podcasts.apple.com/dk/podcast/beyond-the-hype/id1612265563)
