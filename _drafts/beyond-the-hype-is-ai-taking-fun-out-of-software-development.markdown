@@ -35,11 +35,11 @@ Together, their experiences reveal a discipline in flux: developers gain speed a
 
 ## Useful links for this episode
 
+* [Analysis → Implementation → Reflection – a practical technique for issue resolution with agentic AI](https://blog.scottlogic.com/2026/03/05/analysis-implementation-reflection-practical-techniques.html) – Dean Kerr, Scott Logic
+
 * [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) – METR
 
 * [SWE-bench](https://www.swebench.com/) – SWE-bench Team
-
-* [Analysis → Implementation → Reflection – a practical technique for issue resolution with agentic AI](https://blog.scottlogic.com/2026/03/05/analysis-implementation-reflection-practical-techniques.html) – Dean Kerr, Scott Logic
 
 ## Subscribe to the podcast
 
