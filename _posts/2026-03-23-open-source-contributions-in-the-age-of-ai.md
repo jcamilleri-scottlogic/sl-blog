@@ -1,5 +1,5 @@
 ---
-title: Ensuring Valuable Open-Source Contributions in the Age of AI
+title: Responsible Open-Source Contribution in the Age of AI
 author: tstavert
 date: 2026-03-23 00:00:00 Z
 categories:
