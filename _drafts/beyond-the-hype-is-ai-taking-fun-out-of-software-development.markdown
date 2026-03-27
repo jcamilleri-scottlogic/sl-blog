@@ -1,6 +1,6 @@
 ---
 title: 'Beyond the Hype: Is AI taking the fun out of software development?'
-date: 2026-04-02 08:00:00 Z
+date: 2026-04-01 08:00:00 Z
 categories:
 - Podcast
 - Artificial Intelligence
@@ -22,7 +22,6 @@ author: ceberhardt
 contributors:
 - alaws
 - dkerr
-image: "/uploads/BeyondTheHype---green-and-yellow---episode-32---social.jpg"
 ---
 
 INSERT IFRAME
