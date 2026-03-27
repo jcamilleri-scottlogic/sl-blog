@@ -40,6 +40,8 @@ Together, their experiences reveal a discipline in flux: developers gain speed a
 
 * [SWE-bench](https://www.swebench.com/) – SWE-bench Team
 
+* [Agentic Engineering Patterns – Red/green TDD](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/) – Simon Willison's Weblog
+
 ## Subscribe to the podcast
 
 * [Apple Podcasts](https://podcasts.apple.com/dk/podcast/beyond-the-hype/id1612265563)
