@@ -24,7 +24,7 @@ contributors:
 - dkerr
 ---
 
-INSERT IFRAME
+<iframe title="Embed Player" src="https://play.libsyn.com/embed/episode/id/40603570/height/192/theme/modern/size/large/thumbnail/yes/custom-color/ffffff/time-start/00:00:00/playlist-height/200/direction/backward/download/yes/font-color/252525" height="192" width="100%" scrolling="no" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" style="border: none;"></iframe>
 
 In this episode, I'm joined by Dean Kerr (Lead Developer) and Amy Laws (Developer) to discuss 'The Experiment' – a four‑week study we ran to explore how AI really affects software development. Instead of synthetic benchmarks, the project team tackled genuine issues in an open‑source project, alternating between AI‑assisted work and going completely 'cold turkey'.
 
