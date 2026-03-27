@@ -1,5 +1,5 @@
 ---
-title: Responsible Open-Source Contribution in the Age of AI
+title: "From AI Slop to AI Empowerment: Raising the Bar for Open-Source Contribution"
 author: tstavert
 date: 2026-03-23 00:00:00 Z
 categories:
