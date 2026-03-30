@@ -13,8 +13,6 @@ author: Miriam Thomas
 
 *Before the Journey: A Disclaimer and an Admission*
 
-Errors didn’t always make sense.
-
 Let’s get this out of the way early. I’m not a Ruby expert, and before this adventure I hadn’t written a single line of Ruby (I’m not even sure I’ve seen a real ruby gem). So I figured I’d write about the journey—if nothing else, to help the next unsuspecting developer.
 
 ## **Rails in Context: What It Is and Why It Exists**
