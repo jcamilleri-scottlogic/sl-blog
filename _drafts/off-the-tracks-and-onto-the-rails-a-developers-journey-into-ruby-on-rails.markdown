@@ -29,7 +29,7 @@ Ruby on Rails — or simply Rails — is a server-side MVC framework and was ext
 *It actually powered early versions of platforms like GitHub and Shopify.*
 
 One of the earliest things you’ll notice is how Rails loves conventions — and expects you to love them too!\
- Rails’ naming convention philosophy extends everywhere — directories, classes, migrations, relationships — and the more you lean into it, the easier the framework gets.
+Rails’ naming convention philosophy extends everywhere — directories, classes, migrations, relationships — and the more you lean into it, the easier the framework gets.
 
 Rails chooses defaults for you and generates, handles, and maintains a lot of boilerplate so you don’t have to.
 
@@ -107,7 +107,7 @@ Becomes a fully functional DB‑mapped object with:
 
 ## *Defining relationships*
 
-Associations like *belongs_to, has_many, has_one, and has_many :through *(Rails supports six types of association ) express relationships clearly and reduce configuration overhead. When you set up an association, Rails helps define and manage the primary key and foreign key relationships between instances of the two models, while the database ensures that your data stays consistent and properly linked.
+Associations like *belongs_to, has_many, has_one, and has_many :through*  (Rails supports six types of association ) express relationships clearly and reduce configuration overhead. When you set up an association, Rails helps define and manage the primary key and foreign key relationships between instances of the two models, while the database ensures that your data stays consistent and properly linked.
 
 *Ruby*
 
@@ -118,8 +118,6 @@ Associations like *belongs_to, has_many, has_one, and has_many :through *(Rails 
     class Book < ApplicationRecord
     belongs_to :author
     end
-
-
 
 ActiveRecord automatically:
 
@@ -143,7 +141,7 @@ No database complaints. No manual cleanup. *No foreign key drama.* Just trust.
 
 ---
 
-#  Rails Console: Your Interactive Playground
+# Rails Console: Your Interactive Playground
 
 A delightful surprise is the **Rails console**, an environment where your entire application context loads, allowing you to experiment with real data instantly:
 
@@ -155,9 +153,7 @@ You can:
 
 `Product.last.destroy`
 
-No extra scripts.\
-No API calls.\
-No database tools.
+No extra scripts. No API calls. No database tools.
 
 It’s the perfect debugging and learning sandbox.
 
