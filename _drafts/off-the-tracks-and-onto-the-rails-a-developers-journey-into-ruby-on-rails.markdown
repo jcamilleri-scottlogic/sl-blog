@@ -14,11 +14,7 @@ author: Miriam Thomas
 
 *Before the Journey: A Disclaimer and an Admission*
 
-**1: Impressed but Skeptical**
-
-Let’s get this out of the way early:
-
-I’m not a Ruby expert, and before this adventure I hadn’t written a single line of Ruby (I’m not even sure I’ve seen a real ruby gem). So I figured I’d write about the journey—if nothing else, to help the next unsuspecting developer.
+Let’s get this out of the way early. I’m not a Ruby expert, and before this adventure I hadn’t written a single line of Ruby (I’m not even sure I’ve seen a real ruby gem). So I figured I’d write about the journey—if nothing else, to help the next unsuspecting developer.
 
 # **Rails in Context: What It Is and Why It Exists**
 
@@ -216,7 +212,7 @@ My journey through Rails followed a surprisingly emotional curve
 The generators felt magical. “Models, controllers, migrations — all created instantly? Nice.”\
 But also: “Wait, where did all these files come from?!”
 
-**Stage 2: Hate**
+### **Stage 2: Hate**
 
 Magic is cool…\
 Until it breaks.\
