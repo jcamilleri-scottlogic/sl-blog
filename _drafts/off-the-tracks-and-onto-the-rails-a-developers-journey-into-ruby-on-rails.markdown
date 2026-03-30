@@ -43,7 +43,7 @@ One of the first things that impressed me was how effortlessly Rails generates e
 
 Run this:
 
-> bin/rails generate model Product name:string
+    bin/rails generate model Product name:string
 
 Rails responds by generating:
 
@@ -90,11 +90,9 @@ Your model:
 
 *Ruby*
 
-> class Product < ApplicationRecord
->
->     has_many :reviews, dependent: :destroy
->
-> end
+    class Product < ApplicationRecord
+      has_many :reviews, dependent: :destroy
+    end
 
 Becomes a fully functional DB‑mapped object with:
 
@@ -112,17 +110,15 @@ Associations like \*belongs_to, has_many, has_one, and has_many :through \*(Rail
 
 *Ruby*
 
-> class Author < ApplicationRecord
->
-> has_many :books, dependent: :destroy
->
-> end
->
-> class Book < ApplicationRecord
->
-> belongs_to :author
->
-> end
+    class Author < ApplicationRecord
+    has_many :books, dependent: :destroy
+    end
+    
+    class Book < ApplicationRecord
+    belongs_to :author
+    end
+
+
 
 ActiveRecord automatically:
 
@@ -136,13 +132,11 @@ ActiveRecord automatically:
 
 A personal favourite was
 
-> dependent: :destroy
+`dependent: :destroy`
 
 a clean way to cascade deletes *without FK errors*:
 
-*Ruby*
-
-> has_many :comments, dependent: :destroy
+`has_many :comments, dependent: :destroy`
 
 No database complaints. No manual cleanup. *No foreign key drama.* Just trust.
 
@@ -154,13 +148,11 @@ A delightful surprise is the **Rails console**, an environment where your entire
 
 You can:
 
-*Ruby*
+`Product.first`
 
-> Product.first
->
-> Product.create(name: "Cupcake", stock: 12)
->
-> Product.last.destroy
+`Product.create(name: "Cupcake", stock: 12)`
+
+`Product.last.destroy`
 
 No extra scripts.\
 No API calls.\
