@@ -12,10 +12,7 @@ summary: I recently had to upskill in Ruby on Rails for a client project. What b
 author: Miriam Thomas
 ---
 
-
----
-
-** Before the Journey: A Disclaimer and an Admission**
+\*\* Before the Journey: A Disclaimer and an Admission\*\*
 
 Let’s get this out of the way early:
 
@@ -23,22 +20,22 @@ I’m not a Ruby expert, and before this adventure I hadn’t written a single l
 
 **Rails in Context: What It Is and Why It Exists**
 
-Ruby on Rails — or simply **Rails** — is a **server‑side MVC framework **and was extracted from the Basecamp project and released as open source by David Heinemeier Hansson in 2004** **and quickly became famous for three core principles:
+Ruby on Rails — or simply **Rails** — is a server‑side MVC framework and was extracted from the Basecamp project and released as open source by David Heinemeier Hansson in 2004  and quickly became famous for three core principles:
 
 > **Convention Over Configuration (CoC)**
 >
-> ** Don’t Repeat Yourself (DRY)**
+> \*\* Don’t Repeat Yourself (DRY)\*\*
 >
 > **ActiveRecord ORM**
 
 *It actually powered early versions of platforms like GitHub and Shopify.*
 
 One of the earliest things you’ll notice is how Rails loves conventions — and expects you to love them too!\
- Rails’ naming convention philosophy extends everywhere — directories, classes, migrations, relationships — and the more you lean into it, the easier the framework gets.
+Rails’ naming convention philosophy extends everywhere — directories, classes, migrations, relationships — and the more you lean into it, the easier the framework gets.
 
 Rails chooses defaults for you and generates, handles, and maintains a lot of boilerplate so you don’t have to.
 
-If you’re curious enough to dive in yourself (and if you like red‑themed UIs), the official [getting‑started](https://guides.rubyonrails.org/getting_started.html) guide is surprisingly excellent. It is detailed, explicit, and beginner‑friendly.  
+If you’re curious enough to dive in yourself (and if you like red‑themed UIs), the official [getting‑started](https://guides.rubyonrails.org/getting_started.html) guide is surprisingly excellent. It is detailed, explicit, and beginner‑friendly.
 
 ---
 
@@ -64,9 +61,9 @@ Rails responds by generating:
 
 With one line, you have:
 
-1. A database entity 
+1. A database entity
 
-2. A Ruby class 
+2. A Ruby class
 
 3. Migrations ready for rails db:migrate
 
@@ -83,7 +80,7 @@ Rails does it in under a second.
 **ActiveRecord: Similar to Java Entity Mapping, But Friendlier**
 
 It maps Ruby objects to database tables in a way that feels almost magical.\
- ActiveRecord handles:
+ActiveRecord handles:
 
 * Associations
 
@@ -119,9 +116,9 @@ Becomes a fully functional DB‑mapped object with:
 
 * Auto‑generated CRUD helpers
 
-** *Defining relationships***
+\*\* *Defining relationships*\*\*
 
-Associations like *belongs_to, has_many, has_one, and has_many :through *(Rails supports six types of association ) express relationships clearly and reduce configuration overhead. When you set up an association, Rails helps define and manage the primary Key and foreign key relationships between instances of the two models, while the database ensures that your data stays consistent and properly linked.
+Associations like \*belongs_to, has_many, has_one, and has_many :through \*(Rails supports six types of association ) express relationships clearly and reduce configuration overhead. When you set up an association, Rails helps define and manage the primary Key and foreign key relationships between instances of the two models, while the database ensures that your data stays consistent and properly linked.
 
 *Ruby*
 
@@ -161,11 +158,11 @@ No database complaints. No manual cleanup. *No foreign key drama.* Just trust.
 
 ---
 
-** Rails Console: Your Interactive Playground**
+\*\* Rails Console: Your Interactive Playground\*\*
 
 A delightful surprise is the **Rails console**, an environment where your entire application context loads, allowing you to experiment with real data instantly:
 
- You can:
+You can:
 
 *Ruby*
 
@@ -199,9 +196,10 @@ Which might be fine… unless you’re accustomed to IntelliJ / VS Code breakpoi
 
 At first, I genuinely panicked.
 
-But then:\
- * VS Code Ruby & Rails plugins*\
-Suddenly, breakpoints worked, variable inspection returned, threads were traceable, and debugging felt powerful again — especially combined with the terminal capabilities.
+But then:\\
+
+* VS Code Ruby & Rails plugins\*\
+  Suddenly, breakpoints worked, variable inspection returned, threads were traceable, and debugging felt powerful again — especially combined with the terminal capabilities.
 
 You get the best of both worlds: an interactive console *and* IDE-level debugging.
 
@@ -214,7 +212,7 @@ My journey through Rails followed a surprisingly emotional curve
 **Stage 1: Impressed but Skeptical**
 
 The generators felt magical. “Models, controllers, migrations — all created instantly? Nice.”\
- But also: “Wait, where did all these files come from?!”
+But also: “Wait, where did all these files come from?!”
 
 **Stage 2: Hate**
 
@@ -226,10 +224,10 @@ Errors didn’t always make sense.
 **Stage 3: Acceptance**
 
 Eventually, I realised:\
- Rails isn’t all bad\
- Rails is **opinionated**.\
- Stick to the path, and the framework carries you.\
- Once I stopped fighting conventions, everything aligned.
+Rails isn’t all bad\
+Rails is **opinionated**.\
+Stick to the path, and the framework carries you.\
+Once I stopped fighting conventions, everything aligned.
 
 **Stage 4: The Abrupt Ending: Will Rails Come Back Into My Life?**
 
@@ -243,10 +241,10 @@ Maybe fate will put me back on the Rails track —  for a longer journey someday
 
 ---
 
-** What Rails Actually Gets Right (Even in 2026)**
+\*\* What Rails Actually Gets Right (Even in 2026)\*\*
 
 Rails is no longer the internet’s darling, but it still holds its own and deserves respect.\
- it excels:
+it excels:
 
 * Rapid prototyping
 
