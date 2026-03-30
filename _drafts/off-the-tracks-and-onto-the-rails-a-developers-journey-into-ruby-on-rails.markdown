@@ -69,7 +69,8 @@ Rails does it in under a second.
 
 # **ActiveRecord: Similar to Java Entity Mapping, But Friendlier**
 
-It maps Ruby objects to database tables in a way that feels almost magical.\
+It maps Ruby objects to database tables in a way that feels almost magical.
+
 ActiveRecord handles:
 
 * Associations
@@ -106,7 +107,7 @@ Becomes a fully functional DB‑mapped object with:
 
 ## *Defining relationships*
 
-Associations like \*belongs_to, has_many, has_one, and has_many :through \*(Rails supports six types of association ) express relationships clearly and reduce configuration overhead. When you set up an association, Rails helps define and manage the primary Key and foreign key relationships between instances of the two models, while the database ensures that your data stays consistent and properly linked.
+Associations like *belongs_to, has_many, has_one, and has_many :through *(Rails supports six types of association ) express relationships clearly and reduce configuration overhead. When you set up an association, Rails helps define and manage the primary key and foreign key relationships between instances of the two models, while the database ensures that your data stays consistent and properly linked.
 
 *Ruby*
 
