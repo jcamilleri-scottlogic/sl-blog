@@ -18,7 +18,7 @@ Let’s get this out of the way early. I’m not a Ruby expert, and before this 
 
 # **Rails in Context: What It Is and Why It Exists**
 
-Ruby on Rails — or simply **Rails** — is a server‑side MVC framework and was extracted from the Basecamp project and released as open source by David Heinemeier Hansson in 2004  and quickly became famous for three core principles:
+Ruby on Rails — or simply Rails — is a server-side MVC framework and was extracted from the Basecamp project and released as open source by David Heinemeier Hansson in 2004 and quickly became famous for three core principles:
 
 > ***Convention Over Configuration (CoC)***
 >
@@ -29,7 +29,7 @@ Ruby on Rails — or simply **Rails** — is a server‑side MVC framework and w
 *It actually powered early versions of platforms like GitHub and Shopify.*
 
 One of the earliest things you’ll notice is how Rails loves conventions — and expects you to love them too!\
-Rails’ naming convention philosophy extends everywhere — directories, classes, migrations, relationships — and the more you lean into it, the easier the framework gets.
+ Rails’ naming convention philosophy extends everywhere — directories, classes, migrations, relationships — and the more you lean into it, the easier the framework gets.
 
 Rails chooses defaults for you and generates, handles, and maintains a lot of boilerplate so you don’t have to.
 
@@ -59,15 +59,7 @@ Rails responds by generating:
 
 With one line, you have:
 
-1. A database entity
-
-2. A Ruby class
-
-3. Migrations ready for rails db:migrate
-
-4. A consistent directory structure
-
-5. Zero manual configuration
+A database entity,a Ruby class, migrations ready for rails db:migrate. A consistent directory structure and zero manual configuration
 
 In languages like Java (with Hibernate/JPA), this would involve annotating classes, Creating migration scripts, Hand‑crafting repositories and arguing with your IDE about dependencies.
 
