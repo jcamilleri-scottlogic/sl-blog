@@ -157,7 +157,9 @@ Can you talk about that? I mean, you've already talked about searching for answe
 
 **Amy Laws**
 
-Yeah, so a big one for me was kind of summarising information. So, it's already been spoken about, but we worked on open source issues. But what we did with that is we actually went from the oldest ones on the backlog to the newest. So, a lot of the issues that we had were quite old. Some of them had very, very lengthy comment threads; some of them had over 60 comments. And a lot of that was noise, so people saying, “Oh, have you tried this workaround? This might have been fixed in this version.” No, it hasn't. And all that kind of information that isn't really that helpful a few years on. Trying to kind of understand that entire comment thread and retain the important bits of information was quite difficult, especially when our job involves things other than just coding. So I'd kind of get myself up to speed with it and then get broken off to go to a meeting or something, and then coming back and trying to get back into that thread and what was relevant and what wasn't was quite hard.
+Yeah, so a big one for me was kind of summarising information. So, it's already been spoken about, but we worked on open source issues. But what we did with that is we actually went from the oldest ones on the backlog to the newest. So, a lot of the issues that we had were quite old. Some of them had very, very lengthy comment threads; some of them had over 60 comments. And a lot of that was noise, so people saying, “Oh, have you tried this workaround? This might have been fixed in this version.” No, it hasn't. And all that kind of information that isn't really that helpful a few years on. 
+
+Trying to kind of understand that entire comment thread and retain the important bits of information was quite difficult, especially when our job involves things other than just coding. So I'd kind of get myself up to speed with it and then get broken off to go to a meeting or something, and then coming back and trying to get back into that thread and what was relevant and what wasn't was quite hard.
 
 And I felt it was frustrating to know that if I had AI, I could have just thrown that issue into AI and got a nice summary. And I think that's one of the things of having had it removed, you realise what you're missing more.
 
@@ -210,7 +212,7 @@ So, was that actually an agentic loop? Did you basically instruct it once you've
 Yeah. And, if it was a feature, implement the feature, or if it was a bug, you know, implement the fixes in it.
 I think you read in these articles, and it all feels very grand and formal, but it is really just prompting the agent to run tests until they pass. It's as simple as that, really.
 
-It doesn't have to be a heavyweight, super complex harness, uh, you can get away with a, with a simple prompt, really just to say, use red green.
+It doesn't have to be a heavyweight, super complex harness, uh, you can get away with a, with a simple prompt, really just to say, use red/green.
 
 **Colin Eberhardt**
 
