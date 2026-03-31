@@ -52,36 +52,66 @@ Together, their experiences reveal a discipline in flux: developers gain speed a
 
 *Please note: this transcript is provided for convenience and may include minor inaccuracies and typographical or grammatical errors.*
 
-Colin Eberhardt
+**Colin Eberhardt**
+
 Welcome to Beyond the Hype, a monthly podcast from the Scott Logic team where we cast a practical eye over what's new and exciting in software development. Everything from Kafka to Kubernetes, AI to APIs, microservices to microfrontends. We look beyond the promises, the buzz and the excitement to guide you towards the genuine value.
+
 I'm Scott Logic's CTO, Colin Eberhardt, and each month on this podcast, I bring together friends, colleagues, and experts for a demystifying discussion that aims to take you beyond the hype. In this episode, I'm joined by Amy and Dean, who have been undertaking an experiment to quantify the impact of AI on software development.
+
 And yes, they found that AI resulted in an increased velocity. However, through this experiment, we learned much more about the broader impact AI is having on software development. And the impact on the human beings who are still an important part of this process. This impact is leading us to ask questions about the future of this craft, and ultimately, here, we ask whether it's taking the fun out of software development.
+
 We pick up the conversation by discussing what this experiment was and why we undertook it in the first place.
-Introduction to The Experiment
-Colin Eberhardt
+
+### Introduction to The Experiment
+
+**Colin Eberhardt**
+
 We sort of came round to this discussion from something the two of you have been doing, uh, within Scott Logic, uh, recently, that internally we, we seem to call it by the shorthand of The Experiment, which makes it sound really quite grand. But Dean, for the benefit of the people who have no idea what The Experiment is, it would be great if you could describe what the two of you have been up to recently and why.
-Dean Kerr
+
+**Dean Kerr**
+
 Yeah, so we've got a small sort of AI Incubator team within Scott Logic, and we were looking at running an experiment, as you say, into the effectiveness of AI when it comes to, uh, development. Both from a sort of a qualitative standpoint and also from a quantitative standpoint. So, how much faster does it make you, but also, and it could be more importantly here, how does it make you feel, and does it improve or sort of reduce job satisfaction?
+
 And we ran this experiment over four weeks. So, we had two phases of The Experiment primarily. We had a two-week upskilling phase where we got to grips with an open source library of our choosing. We preselected 10 issues from that open source library. Uh, making sure that the issues were sort of real-world issues that we'd typically encounter in our role as software consultants.
+
 So, issues that are relevant to us. And then, the second half of The Experiment, the latter phase, was actually going away, pairing up and then individually within those pairs, working through each of those 10 issues using an approach. One approach was actually " cold turkey" – no AI whatsoever – which was quite interesting; some team members who had used AI previously are now going back to no AI, which has an interesting viewpoint there. And then the other approach was using what we termed basic AI. So, in this case, it was what we get from GitHub Copilot on the sort of bare-bones subscription, which is roughly, I think $20 a month per seat. And we picked a sort of free model. Which was GPT-5 mini.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Cool. So I guess there are lots of people and organisations trying to measure the impact of AI, but The Experiment, as we call it, does feel a bit different. A lot of the benchmarks that you see published tend to be more clean-room environments. Uh, often they are measuring the effectiveness of just the AI itself, not AI plus a human being.
-It, it feels like this experiment is a little bit more of a better reflection of the real work of a developer in a complicated and potentially unfamiliar environment. From your perspective, Dean, does it, did it feel like a good reflection of real work?
-Dean Kerr
+
+It feels like this experiment is a little bit more of a better reflection of the real work of a developer in a complicated and potentially unfamiliar environment. From your perspective, Dean, does it, did it feel like a good reflection of real work?
+
+**Dean Kerr**
+
 I believe so. I think it definitely felt closer to home. Like you said, there are plenty of experiments out there that we could lean back on that are fairly clean room. They're actually quite wide-scale as well, whereas we kept ours sort of smaller and simpler, and I think more focused.
+
 Importantly, so that we have evidence from these experiments that is actually relevant to us and our domains that we typically work in as well.
-Real‑World Workflows: Open Source, Quality and Benchmarks
-Colin Eberhardt
+
+### Real‑World Workflows: Open Source, Quality and Benchmarks
+
+**Colin Eberhardt**
+
 So why pick an open source project over just some internal code base? What was the thinking behind that?
-Dean Kerr
+
+**Dean Kerr**
+
 I think there were two caveats to picking an open source project, one of them being the ability to actually contribute back to open source. So we ended up picking a mock service worker, and the plan there is to contribute back to some of the libraries that we ourselves have used professionally in our day-to-day roles. So it's nice to contribute back there. But I guess secondly, there was also a sort of proof of a mechanism in play here, so that a lot of the experiments, you know, run an issue for you, the standard software development lifecycle. And we could actually use as proof the fact that the issues we worked on were actually reintegrated into a mock service worker or the open source library as a sort of a gold marker or gold standard to say, “Hey, the work we did, it wasn't just slop.” I know there was a lot of, uh, talk recently around a lot of open source libraries just getting a load of pull requests put up. But we wanted to ensure that our work was relevant and appropriate.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, that's really interesting because the benchmarks that the organisations that are developing the foundation models, they have a benchmark and some of them are relatively real-world things like SWE-Benches, a bunch of GitHub issues, and their goal is to typically make a suite of tests pass.
-So they, they're demonstrating that it's functionally correct, but there isn't really anything that assesses the quality. Whereas not only are you doing something of actual value by fixing a real-world issue, the fact that the quality gate is outside of the team means a maintainer has to go, "Yeah, I'm, I'm happy with that."
+
+So, they're demonstrating that it's functionally correct, but there isn't really anything that assesses the quality. Whereas not only are you doing something of actual value by fixing a real-world issue, the fact that the quality gate is outside of the team means a maintainer has to go, "Yeah, I'm, I'm happy with that."
+
 That's a real rubber stamp that the solution that you came up with, whether you used AI or not, was of good quality.
-Dean Kerr
+
+**Dean Kerr**
+
 There were a couple of issues we encountered as well, where we had maybe two or three solutions that were all equally valid, but it was more a matter of preference which one would be accepted. And it was almost sort of second-guessing what the library owner themselves would prefer. So, each of these three solutions, they all tackled the issue slightly differently, and that meant trade-offs in different ways for the mock service worker.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 So, one of the things that I found interesting about this experiment was not the obvious. The spoiler is, funnily enough, AI makes you faster. And I don't think anyone's surprised by that. I think we came up with a factor of 1.9. Could have been any number, really. We knew that it was, or at least we hoped that our experiment was going to demonstrate that you're faster, because we certainly feel that. What I found more interesting and quite surprising is some of the things that, that you as the team learned along the way. And I think some of the most extreme learnings and the most interesting learnings came from the team that wasn't allowed to use AI at all. What, what you called the "cold turkey" team.
 
 ### Cold Turkey Begins: Rediscovering Pre‑AI Development
