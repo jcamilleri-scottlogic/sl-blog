@@ -83,82 +83,151 @@ Dean Kerr
 There were a couple of issues we encountered as well, where we had maybe two or three solutions that were all equally valid, but it was more a matter of preference which one would be accepted. And it was almost sort of second-guessing what the library owner themselves would prefer. So, each of these three solutions, they all tackled the issue slightly differently, and that meant trade-offs in different ways for the mock service worker.
 Colin Eberhardt
 So, one of the things that I found interesting about this experiment was not the obvious. The spoiler is, funnily enough, AI makes you faster. And I don't think anyone's surprised by that. I think we came up with a factor of 1.9. Could have been any number, really. We knew that it was, or at least we hoped that our experiment was going to demonstrate that you're faster, because we certainly feel that. What I found more interesting and quite surprising is some of the things that, that you as the team learned along the way. And I think some of the most extreme learnings and the most interesting learnings came from the team that wasn't allowed to use AI at all. What, what you called the "cold turkey" team.
-Cold Turkey Begins: Rediscovering Pre‑AI Development
-Colin Eberhardt
-Now, Dean, you were lucky, you, you got to use AI even if it was the old, slightly rubbish version. But Amy, I'd love to hear more about your experience, because you were in cold turkey land, and I know you worked alongside Andy. And what I found really funny was that he, he went, he went deep, he tried to eradicate AI from his daily personal life as well.
+
+### Cold Turkey Begins: Rediscovering Pre‑AI Development
+
+**Colin Eberhardt**
+
+Now, Dean, you were lucky, you got to use AI even if it was the old, slightly rubbish version. But Amy, I'd love to hear more about your experience, because you were in cold turkey land, and I know you worked alongside Andy. And what I found really funny was that he, he went, he went deep, he tried to eradicate AI from his daily personal life as well.
 What, what, what was it like having AI taken away from you?
-Amy Laws
+
+**Amy Laws**
+
 Yeah, so I think like coming into this, um, obviously being on the, um, AI Incubator team, we're kind of encouraged to explore and use it more heavily than other people. So, it really was kind of a contrast having to go from using AI and experimenting with it to not using it at all. So, when we say no AI, Andy and I really tried to do everything we could to avoid AI. So, we disabled it in our IDEs because what I forgot is that it's so integrated now that, although I wasn't actively opening the Copilot chat panel, the autocomplete was still on, so I had to fully disable it. The same, even doing kind of Google searches, which is kind of your fallback, the AI search automatically pops up at the top.
+
 So, you are having to scroll straight past it, and it's one when you're actively trying to avoid it, you realise just how ingrained it has become in everything that we do. So, that was kind of a bit of a learning curve, I guess, reverting to an older way of working, of picking up, going back through your Stack Overflow and forums and reading docs and those kinds of things that I've not had to do for quite a long time.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 What was it like going back to Stack Overflow? Because I've seen the statistics that the Stack Overflow traffic has dropped considerably, so we know fewer people are using it, which makes sense, but for the few people that are using it, so you were forced to use it, what was it like going back to it? Is there a feeling that information is now lacking because Stack Overflow only exists because of an ongoing question-and-answer flow? But what's it like there now?
-Amy Laws
+
+**Amy Laws**
+
 Yeah, definitely. Like, I guess when I was using it a couple of years ago, I would kind of automatically discount older answers or take them with a pinch of salt because things in tech move so quickly. Something that was answered five years ago might not necessarily be relevant anymore. But that's really hard to do these days because, as you said, the response rate and, I guess, people asking questions on it, are dropping so rapidly. We just found that a lot of the things we were Googling or like searching on there, there just weren't modern responses, and it may not be compatible with the versions of the libraries we had and that kind of thing. So, I definitely found myself having to search a lot harder on it than I would've previously.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, so it is weird. We are, We are getting to a point where, without AI, it's fundamentally harder to find the answers.
-Amy Laws
+
+**Amy Laws**
+
 Yeah, I definitely agree with that. And I guess, I think I've lost the skill a little bit as well. Um, so I've not had to search through like documentation for quite a long time, and I think there's kind of a skill and a nuance to that, that you kind of have without realising it.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah. So, taking a step back, when you talk about AI-assisted software development, most of the time you think about AI writing the code.
-Losing Old Skills, Missing New Tools
-Colin Eberhardt
+
+### Losing Old Skills, Missing New Tools
+
+**Colin Eberhardt**
+
 And another thing that I found really interesting in this experiment was that so much of what you missed was not the fact that it wrote the code for you. It was all the other things.
+
 Can you talk about that? I mean, you've already talked about searching for answers to questions, but there were a lot more examples than that, weren't there?
-Amy Laws
-Yeah, so a big one for me was kind of summarising information. So, it's already been spoken about, but we worked on open source issues. But what we did with that is we actually went from the oldest ones on the backlog to the newest. Um, so a lot of the issues that we had were quite old. Some of them had very, very lengthy comment threads; some of them had over 60 comments. And a lot of that was noise, so people saying, “Oh, have you tried this workaround? This might have been fixed in this version.” No, it hasn't. And all that kind of information that isn't really that helpful a few years on. Trying to kind of understand that entire comment thread and retain the important bits of information was quite difficult, especially when our job involves things other than just coding. So I'd kind of get myself up to speed with it and then get broken off to go to a meeting or something, and then coming back and trying to get back into that thread and what was relevant and what wasn't was quite hard.
+
+**Amy Laws**
+
+Yeah, so a big one for me was kind of summarising information. So, it's already been spoken about, but we worked on open source issues. But what we did with that is we actually went from the oldest ones on the backlog to the newest. So, a lot of the issues that we had were quite old. Some of them had very, very lengthy comment threads; some of them had over 60 comments. And a lot of that was noise, so people saying, “Oh, have you tried this workaround? This might have been fixed in this version.” No, it hasn't. And all that kind of information that isn't really that helpful a few years on. Trying to kind of understand that entire comment thread and retain the important bits of information was quite difficult, especially when our job involves things other than just coding. So I'd kind of get myself up to speed with it and then get broken off to go to a meeting or something, and then coming back and trying to get back into that thread and what was relevant and what wasn't was quite hard.
+
 And I felt it was frustrating to know that if I had AI, I could have just thrown that issue into AI and got a nice summary. And I think that's one of the things of having had it removed, you realise what you're missing more.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, absolutely there. And thinking about how I use it and to, to your point, things like through Google search, I mean, often if I'm looking for something, I still use Google pretty much in the same way I'm trying to find a thing. But if I'm asking a question, more often than not, its AI-generated summary will answer that question. And I don't have to navigate to a different site. It's changed the way that I work without me intentionally, choosing that change or even acknowledging that's the change that's taken place.
-Dean Kerr
+
+**Dean Kerr**
+
 I guess it's one of the, sort of, the life cycles of the internet I've seen where it started with IRC (Internet Relay Chat) and message forums and things like Stack Overflow might be the next sort of format to sort of be cannibalised, really by the next format, which may well be just an input box where you ask AI.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, and that's a massive rabbit hole that I, I'm not sure we'll even go down because I, I couldn't work out, well, I can't work out what the future might look like because we know that the AI was trained on that data set, that's what makes it so powerful, and the feedback loop has gone. If we are not asking questions, what does the AI train on? As I said, we'll not go down that rabbit hole 'cause I have no idea what's gonna happen.
+
 But getting back to some of the things that you mentioned about using AI to help you answer questions, to summarise information. What I find really interesting about that is that there's a lot more tolerance for error in the AI. We, we focus a lot on how much code can it emit? How, how good is that code? And, and if it's not good, some people sort of reject AI for software development to a certain, to a certain extent because they don't think it writes quality code.
+
 Whereas when it's summarising an issue thread or you're just having a conversation with it, it feels like you can be a lot more tolerant. When you were using it to summarise issues, did you think about what the quality of the AI summarisation is, or was it just that it felt good enough?
-Dean Kerr
+
+**Dean Kerr**
+
 Yeah, I guess for me it did feel like it did a pretty good job. Like Amy mentioned, there are pretty long comment threads in some of the issues, and there is the case of, yeah, do you trust the summary because things will get cut out, and the AI is making a judgment of what things are relevant and no longer relevant.
+
 But looking, you know, I had a look afterwards, 'cause the, the raw sort thread is there. And it did seem to do a pretty good job at that. I think what's interesting is, I guess it's, in this case, it was a GitHub issue, but it could equally also be a Jira issue or a Trello issue. And one thing I didn't really get to explore, with the GitHub issue, is using the sort of multimodalness of modern AI now, where in Jira you typically have screenshots and, it could be error messages, or stack traces that you can all feed to the AI to summarise as well. So, I think I did a good job with the textural summary. I'll be really interested in terms of next, if I feed it more than just one piece of data, how it would actually do in terms of summarising all that as well.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, I guess this gets into, we've talked a bit about going cold turkey, and how that really made you sort of reflect on how much you use AI, and to a certain extent, we're all becoming dependent on AI. Another thing I found interesting in the experiment was from the team using AI, and that it wasn't a case of, oh yeah, roll up our sleeves, we are using AI.
-Agentic Loops and Structured AI Workflows
-Colin Eberhardt
+
+### Agentic Loops and Structured AI Workflows
+
+**Colin Eberhardt**
+
 Dean, you talked about the approach that you are using and, and you, you, you sort of described it as a particular pattern of Analysis → Implementation → Reflection. How did you get to that point? Why? Why did you sort of feel the need to almost formalise your own approach?
-Dean Kerr
+
+**Dean Kerr**
+
 There's been a lot of sort of literature recently that talked about closing the feedback loop with agentic AI and the sort of improvements that can be made through that. And, um, yeah, there's some, for example, some recent posts on porting across things as large as web browsers or parsers with relative ease and swiftness as well.
+
 So, I thought if that could work for sort of a larger-scale project going, I guess from a relatively greenfield, ground zero to a fully working application, I felt like it would be equally valid for just picking up a single issue as well. So yeah, I think putting a little bit of effort in at the very beginning, uh, knowing that I had to tackle 10 issues, to set up a, a lightweight harness that Analysis → Implementation → Reflection, I felt that that would pay dividends.
+
 So, and I think it did in the end, uh, the, the Analysis phase, looking at the issue, summarising the thread for me, giving me the chance to interject, I didn't agree with what it had summarised or if it was a bit off in, in, in some respects to its understanding of the issue. I gotta remember I was using the free model from around August, so I think the capabilities of models have jumped since then. So, um, I think it didn't get things as right as the premium models. So having the ability to interject was quite useful. The implementation phase as well, where I could set the model off now that I have sort of double-checked its understanding, let it run implementation against some test cases that were built during the Analysis phase and in a sort of red/green, uh, loop, uh, run into those test cases pass.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 So, was that actually an agentic loop? Did you basically instruct it once you've done your analysis and you've built up a test suite? Do you then basically say, right, now you can solve the issue.
-Dean Kerr
+
+**Dean Kerr**
+
 Yeah. And, if it was a feature, implement the feature, or if it was a bug, you know, implement the fixes in it.
 I think you read in these articles, and it all feels very grand and formal, but it is really just prompting the agent to run tests until they pass. It's as simple as that, really.
+
 It doesn't have to be a heavyweight, super complex harness, uh, you can get away with a, with a simple prompt, really just to say, use red green.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah. And that, that's something I find really interesting about AI and agents as a tool, that they're not in any way opinionated. And by that I mean they don't have an opinion about how you should use them. And I dunno, Dean, whether you've, whether you've had the time to think about how you used these tools in the past, was it more because we were running this experiment, you thought, I need to have a think about how I approach this. I've heard of agentic loops. I, I believe that to be a productive way of working. I'm gonna spend a lot of time working out how I approach the construction of an agentic loop. I mean, was that quite new to you, to spend that much time considering how you use this tool?
-Dean Kerr
+
+**Dean Kerr**
+
 I think a lot of it's fairly new to a lot of people. It moves that quickly. And that was the, I guess, the beauty of the first phase of the experiment, where you get two weeks to do upskilling. A lot of studies, uh, as you've seen elsewhere, don't give anyone any time to get to grips with the approach, which is, you know, what model you may be using, what tooling, be that GitHub Copilot or Claude or others. And then the approach being agentic AI, for example. So, having the time to actually experiment and see what does and doesn't work for a particular approach gave me the time necessary to fall into that sort of feedback mechanism, which is probably one of the latest styles of approaches that people are currently doing at the minute.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, I think this one was inspired, I think, by a study by METR, where they were looking at the impact of AI, I think, on open source maintainers. And what they effectively proved was that people who are experienced with AI are better at using AI. That was sort of paraphrasing it. But Amy, what are your thoughts on Analysis → Implementation → Reflection? To a certain extent, does that potentially reflect the way that you, as a human being, approach the problems?
-Amy Laws
+
+**Amy Laws**
+
 Yeah, I think so. Obviously, we didn't have the AI to help me with it, but I think it is kind of an extension of our natural workflow. And I think from using AI for other things, um, the more and more I kind of treat it in the same way that I would work without it, I have found it is more effective.
+
 I guess, kind of naturally, the Reflection part is the most important. And I would naturally do that before I put something up for PR (Pull Request). I would kind of sit and like almost review my own PR before I put it up. And I think probably with AI, I've developed a bit of a tendency not to do that quite as much or not be quite as critical.
+
 Whereas I think going back to not using it, I made sure that I really, really understood what every line of code was doing and that I was kind of happy with it. And I think that level of understanding is something that I didn't realise that maybe I've become a bit more lenient with.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, I think you make a great point 'cause it's, it can be really quite hard to work out how you should be using AI, and it's easy to think, oh, I'm using it wrong, but I use a similar approach. I, I think, how would a human being do this particular task, whether it's software development or something else, and more often than not, that's a pretty good path forward.
 On the reflection side of things, when you mentioned that Dean, I realised I don't think I've ever done that. I don't think I've ever, when using AI to write code, asked it, “Why did you do that? What was your reasoning for doing that?” That was really eye-opening for me. I dunno whether that's a thing that people typically do.
-Dean Kerr
+
+**Dean Kerr**
+
 I think with a lot of things, I guess it is just drawn from experiences before AI. As a software developer, if a junior team member put up a PR, you'd ask these questions, in your head at first, “Okay, a solution's being proposed to me, but what are the alternatives and why did they get ruled out”, so to speak?
+
 So, it's a natural tendency to reflect after you've done a bit of work. And I think with AI, there's the, I guess, there's also the tendency to just submit whatever generates immediately, and that always feels a little bit wrong to me. I like to sit and sort of study and stew on a particular solution, just for a little bit until I have the confidence and the, I wouldn't say bravery, but to put it up for review by others.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 I wonder if there's almost a psychological OB obstacle here, because I don't think AI genuinely thinks, and part of me is almost reluctant to ask it, “Why did you implement it this way? What other options did you consider? And then asking it, “What other options did you consider?” I don't think it really considered options. But it sounds like you could ask it those questions and still get a valuable output.
-Dean Kerr
+
+**Dean Kerr**
+
 Yeah, it's, it's treating it like I guess a fellow developer. It's it is a Large Language Model at the end of the day, but, yeah, talking to it as you would a human can, in a weird way, the closer you bring it to your old or current ways of working, the better you can understand the output half the time.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 And again, this is the weird thing about the tool, I think sometimes understanding that it's a large language model, understanding the basics, like what a prompt is, context engineering, context length. I think that's really helpful. But then, sometimes that actually understanding what it is feels counterproductive. Sometimes, you just have to suspend disbelief and pretend it's a human being. It's very weird.
 
 ### The Future of AI Work: Autonomy, Architecture and Senior Skills
 
-### **Colin Eberhardt**
+**Colin Eberhardt**
 
 So, just taking a step back, this is a difficult one, but where do you think this technology's heading in the future? Do you think we are gonna spend a lot more time effectively talking to AI and getting AI to write our code for us? It feels almost inevitable. What are your thoughts?
 
@@ -275,7 +344,7 @@ Yeah, it's interesting really 'cause as you say, it's, I guess, I've been in the
 
 So, yeah, there's still the satisfaction there for that, but there's equally, you know, you get satisfaction in building applications and products as well. Um, I think I've gradually shifted to be sort of in the middle, from doing purely development work to being, you know, a product owner only.
 
-So, I think that's a nice balance to have. But, I think, AI if it keeps progressing at this rate, I think you're gonna have less of that sort of lower-level working satisfaction and more of getting satisfaction and and morale from solving higher-level or maybe even product-oriented problems going forward.
+So, I think that's a nice balance to have. But, I think, AI if it keeps progressing at this rate, I think you're gonna have less of that sort of lower-level working satisfaction and more of getting satisfaction and morale from solving higher-level or maybe even product-oriented problems going forward.
 
 **Colin Eberhardt**
 
