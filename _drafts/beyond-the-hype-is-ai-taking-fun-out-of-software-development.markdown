@@ -155,49 +155,92 @@ Dean Kerr
 Yeah, it's, it's treating it like I guess a fellow developer. It's it is a Large Language Model at the end of the day, but, yeah, talking to it as you would a human can, in a weird way, the closer you bring it to your old or current ways of working, the better you can understand the output half the time.
 Colin Eberhardt
 And again, this is the weird thing about the tool, I think sometimes understanding that it's a large language model, understanding the basics, like what a prompt is, context engineering, context length. I think that's really helpful. But then, sometimes that actually understanding what it is feels counterproductive. Sometimes, you just have to suspend disbelief and pretend it's a human being. It's very weird.
-The Future of AI Work: Autonomy, Architecture and Senior Skills
-Colin Eberhardt
+
+### The Future of AI Work: Autonomy, Architecture and Senior Skills
+
+### **Colin Eberhardt**
+
 So, just taking a step back, this is a difficult one, but where do you think this technology's heading in the future? Do you think we are gonna spend a lot more time effectively talking to AI and getting AI to write our code for us? It feels almost inevitable. What are your thoughts?
-Dean Kerr
+
+**Dean Kerr**
+
 I think for the vast majority of use cases it's gonna move on that sliding scale towards full autonomy, really. At the minute it's sort of AI augmented development, but, um, I guess the step next after augmented is more inclined with autonomous. So, moving away from interjecting as much and perhaps just being more of a reviewer rather than a co-creator of software.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah. And Amy, as an example, outside of this experiment, does that reflect your day-to-day? If you're writing code for whatever reason, are you typically spending more time thinking about how you can encourage AI to write the correct code or create a harness or an agentic loop around it?
+
 Is that your mindset these days?
-Amy Laws
+
+**Amy Laws**
+
 Yeah, I think it is. So, I'd probably describe myself at the minute as using AI to maybe get 90% of the way to a solution. So, kind of using it to do a lot of the boilerplate and then being able to refine it on top. But to get that boilerplate to a good quality, as you said, there are other considerations that you've got to put in.
+
 So yeah, setting up feedback mechanisms in a way that the AI can usefully iterate, if that's something that you want to do. I think I spend more time defining my specs at the start and kind of thinking really carefully about what it is I want to build, because I know that I can take the leaps a lot faster.
+
 So, having that defined upfront is something that I'm having to do a lot more. I guess previously you would kind of build a little bit and then maybe think about what the next steps were, whereas now it feels like you've got to think two or three steps ahead because you don't know how fast you're gonna be able to jump between them.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, and that's the interesting thing, is that it feels like a very different type of skill, and more often than not, we associate that particular skill with being relatively senior and experienced within software. Dean, I can imagine that, well, you described it yourself, a lot of the experience you've used to help you make the most of AI is the experience that you've gained from working in software for a while.
+
 And Amy, I know your, your situation's slightly different in that most of your career has been with AI. For the people who are joining now, where AI is the tool that they will immediately be given, how do they gain those skills that you think are important, and I think we all agree are important to being successful with AI?
-Amy Laws
+
+**Amy Laws**
+
 Yeah, I think that's a really hard one, because it's something that is quite a new challenge. I think I've relied a lot on the skills that I first learned when I was learning to program. Kind of debugging is becoming really important. Often, I found that AI is not great at helping debug things.
+
 So, I think it probably is a case of challenging yourself to maybe not go completely cold turkey as we did, but maybe step back from the tools a little bit and make sure that those fundamentals are there, because I think you need both ends of the spectrum. You need to be able to get into the nitty gritty and, I dunno, debug a hard issue or resolve an issue that AI can't, but you've also got to be able to do the, like other extreme, as Dean said, of working as a more senior team member and I guess almost like treating the AI like a junior developer. And I think it's gonna be quite a hard one for people to learn both of those ends in parallel.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, I agree. I think there's gonna have to be a really considered change to how people learn because it would be all too easy to give someone inexperienced an AI tool and see them suddenly be very productive and think, “Okay, there's no need for them to learn anything.” For people who are new to software development, I think we're gonna have to intentionally slow down and make sure they do learn some of the skills that take a little while to pick up and work out how to do that.
+
 To your point, whether it is to a certain extent, taking the tools away. It feels like we've got to, to a certain extent, ignore the obvious productivity benefit and slow it down a little bit.
-Amy Laws
+
+**Amy Laws**
+
 Yeah, I guess it's the same when you train anybody junior in anything. Like, there is always a bit of a slowdown in speed for long-term gain, and I think it's the same kind of idea, just in a different setting.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 It is – the problem is that in a simple sense, we're measured on two things: speed and quality. And more often than not, speed is the thing that is more visible than quality. And I think that's where we have to be very, very careful not to over-index on speed and forget about quality, 'cause I think that takes you down really down the wrong path.
-Amy Laws
+
+**Amy Laws**
+
 Yeah, I definitely agree with that. I think there's probably a bit of an ongoing question, as you said, quality and what is it gonna be like to maintain these code bases in 5, 10, 15 years' time. It's something that we just don't know at the minute.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah. So Dean, from, from your perspective where do you think it's going and do you think perhaps some of the things that AI is less good at, at the moment it will potentially get better at, 'cause it, it feels like our role has shifted to, to hear how Amy sort of describes it, spending more time, 90% of your time working out how to describe the problem to the AI so that it is successful, and then maybe the last 10% is a little bit old fashioned. It's a bit more hands-on. How far do you think that's going to progress? Do you think AI will eventually be good at architecture? What? Where else will it start to consume our day jobs?
-Dean Kerr
+
+**Dean Kerr**
+
 It's a million-dollar question, isn't it? It's funny, right? Because AI is extremely knowledgeable. It knows everything. It's been trained on everything, yet it still needs a little bit of a nudge and a bit of curation when it comes to things like architecture, where a lot of the time, perhaps it's making architectural decisions based on things it doesn't know that you might know.
-It could be a future direction of the product, for example, or even just boiling down to a simple preference for how you think a library should scale for the end users. So I'm not sure if AI would ever get to the point where it could get those sort of, uh, characteristics because the information just wouldn't be available to them, but I think they'd certainly get better at making a good guess at it.
-Colin Eberhardt
+It could be a future direction of the product, for example, or even just boiling down to a simple preference for how you think a library should scale for the end users. So, I'm not sure if AI would ever get to the point where it could get those sort of, uh, characteristics because the information just wouldn't be available to them, but I think they'd certainly get better at making a good guess at it.
+
+**Colin Eberhardt**
+
 You make an interesting point there. When you talked about architecture, you talked about scalability and uh, I think talking about libraries, you talked about the end user. You start moving into concerns that AI just doesn't have any of the inputs. It's, it's good at writing code because you can give it pretty much all the inputs it needs to be successful.
+
 But even when you get to software architecture, that's not about looking down at the code, that's looking up at the business problem that, that this technology solves. And whilst AI's good at helping you sort of summarise Jira tickets and things like that. I haven't seen any evidence yet that it's good at discovering what a software product should actually do. I've not seen any evidence that it can do that yet. Which is reassuring.
-Dean Kerr
+
+**Dean Kerr**
+
 Yes, for now. But yeah, that's, I guess why you went with fuzzy information and, and, uh, preferences. I guess it may have all the access to the code base and the data associated with the code base. It still can make some interesting abstractions sometimes that might make sense to it, but the abstractions might not be human-readable or as human-readable as well, which is a, another interesting characteristic that I could see probably improving in the near future there.
-Colin Eberhardt
+
+**Colin Eberhardt**
+
 Yeah, it does feel like the limits are going to be at or close to the point where you need to get humans involved, whatever that might be. That feels like the area where AI will stop being useful. I guess to wrap up, and I think, one of the interesting things about AI is that it's changing the way that we approach software, but it's also having an impact on how people feel about software.
+
 And I know Amy, when you went cold turkey, I guess lots of the things that you mentioned were, were generally quite negative, and some of them were just quite funny about how frustrating it was.
-Joy, Craft, and What AI Changes About Coding
-Colin Eberhardt
+
+### Joy, Craft, and What AI Changes About Coding
+
+**Colin Eberhardt**
+
 But one of the things that you mentioned that I thought was really notable was that you had a sense of pride, or a bit more joy in actually handcrafting the solution.
+
 It'd be great if you could speak more about that. Was it a bit more fun? I know reading issues was drudgery, but the code part. How did that feel?
 
 **Amy Laws**
