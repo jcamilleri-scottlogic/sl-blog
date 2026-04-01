@@ -1,6 +1,6 @@
 ---
 title: 'Beyond the Hype: Is AI taking the fun out of software development?'
-date: 2026-04-01 01:00:00 Z
+date: 2026-04-01 00:01:00 Z
 categories:
 - Podcast
 - Artificial Intelligence
