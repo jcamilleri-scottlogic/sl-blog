@@ -1,11 +1,14 @@
 ---
-title: "From AI Slop to AI Empowerment: Raising the Bar for Open-Source Contribution"
-author: tstavert
+title: 'From AI Slop to AI Empowerment: Raising the Bar for Open-Source Contribution'
 date: 2026-04-14 00:00:00 Z
 categories:
-  - Artificial Intelligence
-  - Open Source
-summary: While AI changes the way in which we write software, how do we ensure that our open-source contributions remain valuable and are welcomed by maintainers? This blog post explores this topic in the context of the Depository Trust & Clearing Corporation (DTCC) Hackathon and our contributions to the Fluxnova project.
+- Artificial Intelligence
+- Open Source
+author: tstavert
+summary: While AI changes the way in which we write software, how do we ensure that
+  our open-source contributions remain valuable and are welcomed by maintainers? This
+  blog post explores this topic in the context of the Depository Trust & Clearing
+  Corporation (DTCC) Hackathon and our contributions to the Fluxnova project.
 ---
 
 If you've worked collaboratively on software before, you've probably experienced it. You check out a pull request with the intention of leaving a review, ready to dive in and understand your colleague's solution, leave a few helpful comments, and maybe bless the code with your seal of approval.
