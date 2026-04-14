@@ -1,7 +1,7 @@
 ---
 title: "From AI Slop to AI Empowerment: Raising the Bar for Open-Source Contribution"
 author: tstavert
-date: 2026-03-23 00:00:00 Z
+date: 2026-04-14 00:00:00 Z
 categories:
   - Artificial Intelligence
   - Open Source
