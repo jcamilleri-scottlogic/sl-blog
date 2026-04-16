@@ -3,6 +3,7 @@ title: Why you should rethink legacy and consider Event-Driven Architecture
 date: 2025-08-06 10:07:00 Z
 categories:
 - Tech
+- Data Engineering
 tags:
 - legacy modernisation
 - legacy technology
