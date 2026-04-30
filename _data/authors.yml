@@ -82,6 +82,7 @@ active-authors:
   - jwalledge
   - jwhite
   - jwren
+  - jzhou
   - kangel
   - kclark
   - kdavis
@@ -654,6 +655,10 @@ authors:
   jwright:
     author-summary: ""
     name: "John Wright"
+  jzhou:
+    name: "Junde Zhou"
+    author-summary: "I am a software developer at Scott Logic and I joined as a grad in March 2025."
+    picture: picture.jpg
   kclark:
     author-summary: "Test Engineer at Scott Logic born, raised and based in Edinburgh. Gym goer, Book reader, Knitter extraordinaire."
     name: "Kira Clark"
