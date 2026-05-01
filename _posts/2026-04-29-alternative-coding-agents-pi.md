@@ -17,7 +17,7 @@ In this post, I detail my exploration of a non-mainstream open-source coding age
 
 Pi is another coding agent like Claude Code or GitHub Copilot, however it is built upon 2 philosophies:
 
-- It is **minimal** - out the box, it come with only 4 tools: read, write, edit and bash;
+- It is **minimal** - out the box, it come with only 4 tools: read, write, edit and bash.
 - It is **transparent** - encourages users to tinker with it.
 
 These 2 philosophies are axiomatic to Pi and as a result, you can create an agent that fits around your workflow, rather than having to adapt to how an agent works.
@@ -320,8 +320,38 @@ Why do AI assistants always introduce themselves as "expert" coding assistants?
 Because if they said "I'm a pretty good coding assistant that sometimes hallucinates variable names," nobody would ask them to refactor their production database.
 ~~~
 
-Hilarious. Claude now one-shots comedy.
+Hilarious.
 
 Speaking of things you can modify in Pi, the next section explores, in my opinion, the main attractant of Pi - Extensions.
 
 ## Extensions
+
+Extensions are TypeScript modules that can be used to add custom keyboard shortcuts, commands, UI features and more. This is what I believe would pull people away form the mainstream agents, as this extensibility is two-fold. On the one hand, you can cherry-pick features you like across different agents and unify them into one place, in addition to adding your own ideas. On the other hand, Pi will remain consistent across all projects and for as long as you use it. You won't boot it up one day and find your beloved buddy missing.
+
+Speaking of buddy, here's one I made earlier:
+
+<video autoplay controls loop style="width: 100%">
+  <source src="{{site.baseurl}}/jzhou/assets/byte.mp4" type="video/mp4" />
+  Demonstration of how clicking to flap works
+</video>
+
+Feel free to tinker around with this little guy here: [Byte](https://github.com/JZhou-ScottLogic/pi-buddy). Just be sure to not overfeed them.
+
+This isn't a trivial extension since it interacts with many different parts: you have keyboard inputs, custom commands, 2 different UI modes, death and animations. Yet, whilst Pi did not one-shot it, it did not take many iterations to reach this state. Thus, I think this is a good demonstration of not only how extensible Pi can be, however also that it can deal with more intricate and technical extension ideas.
+
+Moreover, it's very simple to test out and use these TypeScript extensions. You can symlink them on a per launch of Pi basis using the `-e` flag. For example `pi -e <relative-path-to-extension>`. This flag is also repeatable, so you can test 2 or more extensions at the same time. Alternatively, you can link them globally by adding an `extensions` field to Pi's `settings.json`:
+
+~~~json
+"extensions": [
+    "<relative-path-to-extension1>",
+    "<relative-path-to-extension2>"
+]
+~~~
+
+Finally, a natural question to is: Has someone made this extension already, if so can I get it? The answer lead us to the [marketplace](https://pi.dev/packages). Thanks to the community surrounding Pi, this marketplace is already pretty populated with packages, which are not necessarily just extensions but can be, say, an extension and a prompt or an extension and a skill. There are already packages for sub-agents, MCP adapters, plan mode and all the features that would come out the box with other agents, except it's your choice to install them.
+
+## Summing up
+
+The core tenets of Pi are the **minimalism** and **transparency**. These stem from the idea that (most) LLMs are powerful enough as is to accomplish the tasks you want. 
+
+You modify this agent with custom system prompts, extensions, skills, etc, instead of needing to learn the best way to use an agent that come with the batteries included. This agent revolves around you, not the other way round.
