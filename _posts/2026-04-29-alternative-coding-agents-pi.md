@@ -332,7 +332,7 @@ Speaking of buddy, here's one I made earlier:
 
 <video autoplay controls loop style="width: 100%">
   <source src="{{site.baseurl}}/jzhou/assets/byte.mp4" type="video/mp4" />
-  Demonstration of how clicking to flap works
+  Demonstration of Byte
 </video>
 
 Feel free to tinker around with this little guy here: [Byte](https://github.com/JZhou-ScottLogic/pi-buddy). Just be sure to not overfeed them.
