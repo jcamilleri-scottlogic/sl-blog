@@ -1,12 +1,16 @@
 ---
-title: 'Open Source Is Not One-Size-Fits-All — Find Your Fit'
+title: Open Source Is Not One-Size-Fits-All — Find Your Fit
 date: 2026-04-29 00:01:00 Z
 categories:
 - Open Source
 tags:
 - open-source
 - contributions
-summary: Developers often feel stuck in repetitive roles, and open source provides a powerful path to break that cycle by offering real-world opportunities to learn, collaborate, and grow. This article shares the author’s journey—from an initial failed attempt to a successful, well‑aligned project—to show why choosing the right open-source fit makes all the difference.
+summary: Developers often feel stuck in repetitive roles, and open source provides
+  a powerful path to break that cycle by offering real-world opportunities to learn,
+  collaborate, and grow. This article shares the author’s journey—from an initial
+  failed attempt to a successful, well‑aligned project—to show why choosing the right
+  open-source fit makes all the difference.
 author: smendis-scottlogic
 ---
 
