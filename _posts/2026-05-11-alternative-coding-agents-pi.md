@@ -9,15 +9,15 @@ summary: In an industry as oversaturated as AI, we explore yet another coding ag
 author: jzhou
 ---
 
-Agentic software development has been a monumental wave impacting the industry and it is here to stay. This begs the natural question: Which agent is the best? Or, more specifically: Which agent is best suited to my ways of working and my needs?
+Agentic software development has been a monumental wave impacting the industry, and it is here to stay. This begs the natural question: Which agent is the best? Or, more specifically: Which agent is best suited to my ways of working and my needs?
 
-In this post, I detail my exploration of a non-mainstream open-source coding agent [Pi](https://pi.dev/). Namely, what's the point of it and why should I use it over Claude Code or GitHub Copilot? 
+In this post, I detail my exploration of a non-mainstream open-source coding agent, [Pi](https://pi.dev/). Namely, what's the point of it and why should I use it over Claude Code or GitHub Copilot? 
 
 ## What is it?
 
-Pi is another coding agent like Claude Code or GitHub Copilot, however it is built upon 2 philosophies:
+Pi is another coding agent, however what sets it apart from more commonly used ones is that it is built upon 2 philosophies:
 
-- It is **minimal** - out the box, it come with only 4 tools: read, write, edit and bash.
+- It is **minimal** - out the box, it comes with only 4 tools: read, write, edit, and bash.
 - It is **transparent** - encourages users to tinker with it.
 
 These 2 philosophies are axiomatic to Pi and as a result, you can create an agent that fits around your workflow, rather than having to adapt to how an agent works.
@@ -310,7 +310,7 @@ When a skill or instruction references {{VSCODE_VARIABLE_NAME}}, substitute the 
 </div>
 </div>
 
-As you can see the difference in length of the prompts is stark. The prompt isn't easy to find either, I went to the chat window, then the chat debug view, selected the request that was send off to the LLM and the prompt was in there. Furthermore, notice the level of detail that the GitHub Copilot prompt goes into. This, in combination with Copilot's prompt being non-trivial to find, speaks to the transparency of Pi. It has nothing to hide and you can change whatever you like about it.
+As you can see the difference in length of the prompts is stark. 25 lines for Pi versus 207 for GitHub Copilot. The prompt isn't easy to find either. In VS Code, I went to the GitHub Copilot chat window, then the chat debug view, in which lives the request that was sent off to the LLM and the prompt was in the request. Furthermore, notice the level of detail that the GitHub Copilot prompt goes into. This, in combination with Copilot's prompt being non-trivial to find, speaks to the transparency of Pi. It has nothing to hide and you can change whatever you like about it.
 
 However, one thing they both had in common is that they both needed a morale boost at the start of their prompts. So, in the vein of AI taking all our jobs, I asked Claude to write me a funny comment regarding that:
 
@@ -322,13 +322,13 @@ Because if they said "I'm a pretty good coding assistant that sometimes hallucin
 
 Hilarious.
 
-Speaking of things you can modify in Pi, the next section explores, in my opinion, the main attractant of Pi - Extensions.
+Speaking of things you can modify in Pi, the next section explores, in my opinion, the main attraction of Pi - Extensions.
 
 ## Extensions
 
-Extensions are TypeScript modules that can be used to add custom keyboard shortcuts, commands, UI features and more. This is what I believe would pull people away form the mainstream agents, as this extensibility is two-fold. On the one hand, you can cherry-pick features you like across different agents and unify them into one place, in addition to adding your own ideas. On the other hand, Pi will remain consistent across all projects and for as long as you use it. You won't boot it up one day and find your [beloved buddy missing](https://github.com/anthropics/claude-code/issues/45596).
+Extensions are TypeScript modules that can be used to add custom keyboard shortcuts, commands, UI features and more. These are typically a `.ts` file with an exported main default function that contains the logic to implement what you want, in addition to some helper classes and methods, as well as some constants. This is what I believe would pull people away from the mainstream agents, as this extensibility is two-fold. On the one hand, you can cherry-pick features you like across different agents and unify them into one place, in addition to adding your own ideas. On the other hand, Pi will remain consistent across all projects and for as long as you use it. You won't boot it up one day and find your [beloved buddy missing](https://github.com/anthropics/claude-code/issues/45596).
 
-Speaking of buddy, here's one I made earlier:
+Speaking of buddies, here's one I made earlier:
 
 <video autoplay controls loop style="width: 100%">
   <source src="{{site.baseurl}}/jzhou/assets/byte.mp4" type="video/mp4" />
@@ -337,7 +337,7 @@ Speaking of buddy, here's one I made earlier:
 
 Feel free to tinker around with this little guy here: [Byte](https://github.com/JZhou-ScottLogic/pi-buddy). Just be sure to not overfeed them.
 
-This isn't a trivial extension since it interacts with many different parts: you have keyboard inputs, custom commands, 2 different UI modes, death and animations. Yet, whilst Pi did not one-shot it, it did not take many iterations to reach this state. Thus, I think this is a good demonstration of not only how extensible Pi can be, however also that it can deal with more intricate and technical extension ideas.
+This isn't a trivial extension since it interacts with many different parts: you have keyboard inputs, custom commands, 2 different UI modes, death, and animations. Yet, whilst Pi, paired with Sonnet 4.6, did not implement the extension exactly right on the first time of asking, it did not take many iterations to reach my desired state. Thus, I think this is a good demonstration of not only how extensible Pi can be, however also that it can deal with more intricate and technical extension ideas.
 
 Moreover, it's very simple to test out and use these TypeScript extensions. You can symlink them on a per launch of Pi basis using the `-e` flag. For example `pi -e <relative-path-to-extension>`. This flag is also repeatable, so you can test 2 or more extensions at the same time. Alternatively, you can link them globally by adding an `extensions` field to Pi's `settings.json`:
 
@@ -348,13 +348,13 @@ Moreover, it's very simple to test out and use these TypeScript extensions. You 
 ]
 ~~~
 
-Finally, a natural question to is: Has someone made this extension already, if so can I get it? The answer lead us to the [marketplace](https://pi.dev/packages). Thanks to the community surrounding Pi, this marketplace is already pretty populated with packages, which are not necessarily just extensions but can be, say, an extension and a prompt or an extension and a skill. There are already packages for sub-agents, MCP adapters, plan mode and all the features that would come out the box with other agents, except it's your choice to install them.
+Finally, a natural question to ask is: Has someone made this extension already, and if so, can I get it? The answer leads us to the [marketplace](https://pi.dev/packages). Thanks to the community surrounding Pi, this marketplace is already pretty populated with packages, which are not necessarily just extensions but can be, say, an extension and a prompt or an extension and a skill. There are already packages for subagents, MCP adaptors, plan mode, and all the features that would come out the box with other agents, except it's your choice to install them.
 
 ## But...
 
 When would Pi and all its customisability be a downside? 
 
-As part of the graduate programme at Scott Logic, we have a graduate training phase, in which graduates are upskilled in both a frontend and backend technology. With the enormous impact AI is making, I think it would be remiss to not include some form of AI upskilling during this phase. Consequently, looking back on my own experience, I think it would've been more beneficial to me to start off with Claude Code or GitHub Copilot. Especially because I did not come from a computer science background, the introduction of object-orientated programming, design patterns, AGILE methodologies, etc, on top of needing to configure my own agent would have been quite overwhelming. So, learning about the agentic loop, system prompts and skills through the lens of an agent that is already well equipped would be more helpful than diving straight into Pi.
+As part of the graduate programme at Scott Logic, we have a graduate training phase, in which graduates are upskilled in both a frontend and backend technology. With the enormous impact AI is making, I think it would be remiss to not include some form of AI upskilling during this phase. Consequently, looking back on my own experience, I think it would've been more beneficial to me to start off with Claude Code or GitHub Copilot. Particularly because I did not come from a computer science background, the introduction of object-orientated programming, design patterns, AGILE methodologies, etc, on top of needing to configure my own agent would have been quite overwhelming. So, learning about the agentic loop, system prompts and skills through the lens of an agent that is already well equipped would be more helpful than diving straight into Pi.
 
 With that in mind, I believe Pi's main audience is established people with existing technical knowledge, who know what they want and don't want from an agent.
 
@@ -362,6 +362,6 @@ However, having said that, I do believe a beginner with some basic TypeScript kn
 
 ## Summing up
 
-The core tenets of Pi are the **minimalism** and **transparency**. These stem from the idea that (most) LLMs are powerful enough as is to accomplish the tasks you want. 
+The core tenets of Pi are the **minimalism** and **transparency**. These stem from the idea that (most of the latest) LLMs are powerful enough as-is to accomplish the tasks you want. 
 
-You modify this agent with custom system prompts, extensions, skills, etc. This has pros and cons - some downsides being that you need to be familiar with agent's implementation language (TypeScript) and you must be a sufficiently skilled developer in order to take full advantage of the customisation. Configuring will also take time away from your main task at hand. However, some of the best ways of learning are by modifying our tools, rather than learning the patterns to use an agent that comes with the batteries included. This agent revolves around you, not the other way round.
+You modify this agent with custom system prompts, extensions, skills, etc. This has pros and cons - some downsides being that you need to be familiar with the agent's implementation language (TypeScript) and you must be a sufficiently skilled developer in order to take full advantage of the customisation. Configuring will also take time away from the main task at hand. However, some of the best ways of learning are by modifying our tools, rather than learning the patterns to use with an agent that comes with the batteries included. This agent revolves around you, not the other way round.
