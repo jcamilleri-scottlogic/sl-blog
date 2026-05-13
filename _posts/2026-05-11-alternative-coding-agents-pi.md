@@ -1,6 +1,6 @@
 ---
 title: 'Alternative Coding Agents: Pi'
-date: 2026-05-11 09:00:00 Z
+date: 2026-05-13 09:00:00 Z
 categories:
 - Artificial Intelligence
 tags:
