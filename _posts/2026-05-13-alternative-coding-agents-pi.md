@@ -5,7 +5,8 @@ categories:
 - Artificial Intelligence
 tags:
 - Artificial Intelligence
-summary: In an industry as oversaturated as AI, we explore yet another coding agent and try to understand why it even exists.
+summary: In an industry as oversaturated as AI, we explore yet another coding agent
+  and try to understand why it even exists.
 author: jzhou
 ---
 
