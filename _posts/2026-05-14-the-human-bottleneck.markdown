@@ -7,7 +7,11 @@ tags:
 - Artificial Intelligence
 - AI
 - Agentic AI
-summary: The rapid acceleration of AI-augmented development has fundamentally shifted the software delivery bottleneck. As we write code exponentially faster, we are generating significantly more code that requires human review. As AI agents rapidly convert issues into potential solutions, the traditional pull request queue swells, leaving the human reviewer as the primary constraint in the pipeline.
+summary: The rapid acceleration of AI-augmented development has fundamentally shifted
+  the software delivery bottleneck. As we write code exponentially faster, we are
+  generating significantly more code that requires human review. As AI agents rapidly
+  convert issues into potential solutions, the traditional pull request queue swells,
+  leaving the human reviewer as the primary constraint in the pipeline.
 author: dkerr
 ---
 
