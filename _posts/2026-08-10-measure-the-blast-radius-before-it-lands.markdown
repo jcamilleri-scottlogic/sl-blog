@@ -7,27 +7,29 @@ tags:
 - AI
 - Artificial Intelligence
 - Agentic AI
-summary: A practical guide to rebalancing code review by building your own tool-chain that measures blast radius, classifies risk, and focuses human attention on the changes that matter most.
+summary: A practical guide to rebalancing code review by building your own toolchain that measures blast radius, classifies risk, and focuses human attention on the changes that matter most.
 author: jcamilleri
 image: "/uploads/Rapid-web-app-development-with-Devin---A-Developer%E2%80%99s-Perspective-.jpg"
 ---
 # Measure the blast radius before it lands
 
-*A blueprint for a code-review tool-chain for the agentic era*
+*A blueprint for a code-review toolchain in the agentic era*
 
 Over the past year I've been working with agentic coding tools such as Devin and Claude Code, both in my own projects and as part of Scott Logic's AI-assisted development programme. In [a previous post](https://blog.scottlogic.com/2025/10/20/rapid-development-with-devin.html) I described building a production-ready application with Devin in seven days, and noted that the hardest part wasn't generating the code, it was validating it. Given the volume these tools produce, I simply could not read every line.
 
-This observation has been noticed by many and is a concern I hear from my clients. In my experience, the bottleneck of software delivery is increasingly moving from writing code to reviewing it. Agent-authored changes have three properties that make traditional review a poor fit:
+This has been observed by many and is a concern I hear from my clients. In appears that the bottleneck of software delivery is increasingly moving from writing code to reviewing it. Agent-authored changes have three properties that make traditional review a poor fit:
 
-- **They're wide.** A single agent instruction can edit code across more modules than no one person hold in their head at once.
+- **They're wide.** A single agent instruction can edit code across more modules than any one person hold in their head at once.
 - **They're fast.** Changes land quicker than a reviewer can follow the chain of consequences by hand, so the velocity outruns comprehension.
-- **They're unfamiliar.** You're reviewing code you never watched being written, with no built-up mental model of the author's intent. There was handover of context and it is hard to go back to the LLM to find out the reasoning for a decision.
+- **They're unfamiliar.** You're reviewing code you never watched being written, with no built-up mental model of the author's intent. There was no handover of context and it is hard to go back to the LLM to find out the reasoning for a decision.
 
 Traditional review works best when changes are relatively small, understandable and accompanied by shared context. So rather than throttling the coding agent or asking reviewers to work harder, I think we need to rethink where the work of review actually happens.
 
-The building blocks for the solution are all readily available. You'll need a source control system (e.g. git), a language parser, and some tightly-scoped LLM calls. In this post I'll walk through how I would approach building a review tool-chain.
+One option is to get another LLM to code review the PR before a human does. Tools like Code-Rabbit are built for this approach and certainly work up to a point, but don't catch everything and so do not replace human revue. Instead, they supplement the review by catching things early so that a cleaner PR goes to the reviewer. However, most of the problems, such as volume of change and lack of context, remain.
 
-## The Purpose of Code Review
+The building blocks for the solution are all readily available. You'll need a source control system (e.g. git), a language parser, and some tightly scoped LLM calls. In this post I'll walk through how I would approach building a review toolchain.
+
+## The purpose of code review
 
 Before building anything, it's worth having a look at what code review does. Typically, I find it used for:
 
@@ -37,7 +39,7 @@ Before building anything, it's worth having a look at what code review does. Typ
 - maintaining quality and consistency
 - improving maintainability and readability
 - ensuring adequate testing and documentation
-- catching security and performance concerns
+- catching security concerns
 
 Traditionally we perform all seven at a single gate, when the pull request is raised. But do they all still belong there? In my experience, they don't. Before writing any tooling, redistribute them across three stages:
 
@@ -45,7 +47,7 @@ Traditionally we perform all seven at a single gate, when the pull request is ra
 - a code walkthrough
 - an automated review process 
 
-By splitting the concerns across different phases, where different tools can be applied, what finally reaches a human is a more focused review of the changes. The tool-chain you build only needs to cover the third stage; the first two are process changes that can be implemented into your agentic workflow.
+By splitting the concerns across different phases, where different tools can be applied, what finally reaches a human is a more focused review of the changes. The toolchain you build only needs to cover the third stage; the first two are process changes that can be implemented into your agentic workflow.
 
 ## Move correctness into the workflow
 
@@ -59,9 +61,9 @@ None of this removes human responsibility for correctness. The engineer orchestr
 
 Of the seven aims, knowledge sharing is the one most at risk of quietly disappearing. The fix is a deliberate code walkthrough.
 
-There are two ways to achieve this. The first is to simply get an LLM to reverse reason why a change was made. The problem with this approach is that the LLM could be very confidently wrong. But it may be better than nothing if there is no alternative. Just take the answer with a pinch of salt.
+There are two ways to achieve this. The first is to simply get an LLM to reverse-engineer the reasoning behind why a change was made. The problem with this approach is that the LLM could be very confidently wrong. But it may be better than nothing if there is no alternative. Just take the answer with a pinch of salt.
 
-A better approach is to get them agent to record a structured log of decisions it has made. This could take the form:
+A better approach is to get the agent to record a structured log of decisions it has made. This could take the following form:
 - requirements addressed
 - significant implementation decisions
 - alternatives considered
@@ -81,23 +83,23 @@ Next:
 
 This step deliberately rebuilds the mental model you would normally have acquired by writing the code yourself or pairing on it. It turns reviewing a stranger's work back into reviewing a colleague's.
 
-## Design your tool-chain around two analysis layers
+## Design your toolchain around two analysis layers
 
-So what should the tooling itself do? The remaining review tasks split cleanly into two analysis layers. Deterministic analysis uses static analysis tools to discover issues. AI reasoning uses LLM analysis in a fresh context to uncover more nuanced issues. Both streams serve to focus human review time on the most important parts of a PR.
+So what should the tooling itself do? The remaining review tasks split cleanly into two analysis layers. Deterministic analysis uses static analysis tools to discover issues. AI reasoning uses LLM analysis in a fresh context to uncover more nuanced issues. Both layers serve to focus human review time on the most important parts of a PR.
 
 | | **Deterministic analysis** | **AI reasoning** |
 | --- | --- | --- |
 | **Nature** | Questions with precise answers | Judgement calls over established facts |
-| **Implementation** | Static tooling, graph analysis | Tightly-scoped model calls |
+| **Implementation** | Static tooling, graph analysis | Tightly scoped model calls |
 | **Tasks** | Diff changed files; build and invert the import graph; blast-radius analysis; classify changed symbols as internal or external; map interface changes to callers; static code analysis; churn scoring; security signals; dependency integrity | Summary and decisions; anomaly detection; test-gap analysis; security scoring; regression analysis |
 
 The principle to follow is that if a question has an exact answer, compute it. Save the model calls for questions that genuinely require reasoning, and feed them the computed facts as context. This also keeps your costs down and your outputs reproducible. This makes it more likely the tool will be used and trusted.
 
-In terms of inputs, you need surprisingly little: a path to the repository and two commits to compare. Defaulting to comparing `HEAD~1` with `HEAD` is a good starting point.
+In terms of inputs, you need surprisingly little: a path to the repository and two commits to compare.
 
 ## Start with the blast radius
 
-The starting point of the deterministic stream is blast-radius analysis. For each file a change touched, who depends on it? The changes with the furthest-reaching impact are the ones that deserve attention first. The blast radius is one input to risk classification, not A risk score itself.
+The starting point of the deterministic layer is blast-radius analysis. For each file a change touched, who depends on it? The changes with the furthest-reaching impact are the ones that deserve attention first. The blast radius is one input to risk classification, not a risk score itself.
 
 It works in three steps:
 
@@ -124,13 +126,13 @@ The internal tag catches pure body edits. Map the changed line numbers from the 
 
 ## Scope the reasoning calls tightly
 
-When the reasoning stream does run, resist the temptation to make it one enormous "please review this PR" prompt with the whole repository stuffed into context. Instead, make a small set of tightly-scoped model calls, each given only the material it needs:
+When the reasoning layer does run, resist the temptation to make it one enormous "please review this PR" prompt with the whole repository stuffed into context. Instead, make a small set of tightly scoped model calls, each given only the material it needs:
 
-- **Summary, decisions and assumptions**: fed the diffs plus the blast-radius signatures.
+- **Summary, decisions, and assumptions**: fed the diffs plus the blast-radius signatures.
 - **Anomaly detection**: diffs plus before/neighbour signatures and file history, looking for changes that don't fit their surroundings.
 - **Test-gap analysis**: diffs plus the discovered test files.
 - **Security-signal scoring**: pattern signals, diffs, and file context.
-- **regression analysis**: diffs plus before/after signatures, checking whether a refactor actually preserved behaviour.
+- **Regression analysis**: diffs plus before/after signatures, checking whether a refactor actually preserved behaviour.
 
 Make the last two conditional so that they fire only when the deterministic layer has raised a flag worth investigating, such as a suspicious pattern in the diff or a change to a dependency manifest. This keeps cost proportionate to risk: routine changes get a summary and a sanity check, whilst suspicious ones get the full treatment. Dependency changes in particular reward a deterministic first pass. This checks new packages against a vulnerability database such as OSV, and looks for near-miss names and loosened version pins before any model gets involved.
 
@@ -144,13 +146,15 @@ A tool nobody runs reviews nothing, so think about where yours will live. The ai
 
 - Make it configurable per repository. Let teams mark high-sensitivity modules, such as authentication or payments, for extra scrutiny, and suppress known-noisy signals with a recorded reason. Noise can kill adoption; a finding the team has already accepted should not reappear on every pull request.
 
-- Keep a little history. Churn scoring needs to know how often an area has changed before, so retain a record of previous runs. You don't need a large data platform for this: a small database containing change history, findings and their outcomes is enough. Over time, that history can also show which signals are useful and which are generating noise.
+- Keep a little history. Churn scoring needs to know how often an area has changed before, so retain a record of previous runs. You don't need a large data platform for this: a small database containing change history, findings, and their outcomes is enough. Over time, that history can also show which signals are useful and which are generating noise.
 
-- Measure whether it helps. The goal is not to maximise the number of findings. Track things such as review time, accepted versus dismissed findings, escaped defects and the proportion of high-risk changes receiving human attention. The tool-chain should demonstrate that it is improving the allocation of review effort, not simply producing more analysis.
+- Measure whether it helps. The goal is not to maximise the number of findings. Track things such as review time, accepted versus dismissed findings, escaped defects, and the proportion of high-risk changes receiving human attention. The toolchain should demonstrate that it is improving the allocation of review effort, not simply producing more analysis.
+
+The tool should pull together a standardised report that pulls together the two layers of analysis for easy consumption by the reviewer. Put critical stats like the blast radius and churn at the top followed by a brief summary of the change. The rest of the report can then be navigated by the reviewer depending on their concerns.
 
 ## What lands on the reviewer
 
-By the time an engineer opens the pull request, your tool-chain should have given them:
+By the time an engineer opens the pull request, your toolchain should have given them:
 
 - Some confidence in the correctness of the code.
 - Style and conventions settled by linting and static analysis.
@@ -164,6 +168,6 @@ The engineer can now perform a more focused review of the parts of the PR that m
 
 I think the goal isn't to remove humans from code review. It's to stop spending human attention on questions machines can answer deterministically, and spend it where judgement actually matters.
 
-Strengthen your agentic coding process so correctness is tested at the point of creation, and have the agent walk engineers through its changes to preserve knowledge sharing. Then build tooling for what remains: deterministic analysis for complexity, churn, and blast radius, and tightly-scoped AI analysis for test gaps, security signals and anomalies, so human attention lands on the highest-risk, highest-value changes.
+Strengthen your agentic coding process so correctness is tested at the point of creation, and have the agent walk engineers through its changes to preserve knowledge sharing. Then build tooling for what remains: deterministic analysis for complexity, churn, and blast radius, and tightly scoped AI analysis for test gaps, security signals, and anomalies, so human attention lands on the highest-risk, highest-value changes.
 
 None of this requires a big platform investment. The pieces are well within reach of a motivated team. Agentic tools can genuinely accelerate delivery, but only if review keeps pace with generation. Measuring the blast radius before it lands is, I think, how we get there.
